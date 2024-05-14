@@ -18,13 +18,16 @@ import FeaturedWorks from "../components/FeaturedWorks.astro";
   <Hero />
 
   <!--* SECTION 2- SERVICES-------------------------------------------------------------------------------------------------------------------->
-  <div id="services" class="mt-[90px] border border-black">
+  <div id="services" class="mt-[90px]">
     <CenterPageBanner
-      title="About LC"
-      paragraph="why you should choose me for web development. why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
+      title="Services"
+      paragraph="What do you need help with? why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
     />
     <ServicesContent />
+    <!-- ? INSERT CTA LINKS INTO SERVICES -->
+    <!-- ? ------------------------------------?-->
   </div>
+
   <section
     id="flex-2"
     class="bg- grid md:grid-cols-2 grid-cols-1 gap-x-8 pt-5 mt-[65px]"
@@ -44,10 +47,7 @@ import FeaturedWorks from "../components/FeaturedWorks.astro";
     >
       <ul class="md:text-lg text-md pt-1 pl-4">
         <li class="lowercase" class="text-lg">
-          <p class="text-test text-xl font-extrabold">
-            <!-- WHAT DO YOU NEED HELP WITH? -->
-            Web Development
-          </p>
+          <p class="text-test text-xl font-extrabold">How can I help?</p>
         </li>
 
         <li class="lowercase">
@@ -65,69 +65,33 @@ import FeaturedWorks from "../components/FeaturedWorks.astro";
           <b>-</b> Peace of mind... for business owners who don't have time to build
           with software.
         </li>
+        <li class="pt-5 mt-5">
+          <b>-</b> Increased potential customers, easier to find on Google.
+        </li>
+
+        <li>
+          <b>-</b> A custom website that fits your business, personality, goals...
+          and you alone.
+        </li>
+
         <!-- * BTN WRAPPER-undecided v-->
-        <!-- <ButtonProps
+        <ButtonProps
           btn1="why choose LC?"
           btn2="contact"
           btn1Link="/#chooseLC"
           btn2Link="/#contact"
-        /> -->
-        <!-- * BTN WRAPPER   ^-->
-        <!-- <li>
-                   <b>-</b> Increased potential customers, easier to find on Google.
-                 </li> -->
+        />
 
-        <!-- <li>
-              <b>-</b> A custom website that fits your business, personality, goals...
-              and you alone.
-            </li> -->
+        <!-- * BTN WRAPPER   ^-->
+        <!-- <li class="pt-5 mt-5">
+          <b>-</b> Increased potential customers, easier to find on Google.
+        </li>
+
+        <li>
+          <b>-</b> A custom website that fits your business, personality, goals...
+          and you alone.
+        </li> -->
       </ul>
     </div>
-  </section>
-
-  <!--* SECTION 3- WEB DEV GRID-------------------------------------------------------------------------------------------------------------------->
-  <div id="web-development" class="">
-    <div id="featured-works-banner" class="bg- text-onyx py-[45px] my-[155px]">
-      <CenterPageBanner
-        title="Why choose LC?"
-        paragraph="view each sq for description of how LC can help you"
-      />
-      <Services />
-
-      <CenterPageBanner
-        title="Packages"
-        paragraph="which package best describes you? you should choose me for web development. why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
-      />
-      <!-- todo: FIGURE OUT COYOTE PACKAGES v-->
-      <>
-        <Packages />
-      </>
-      <!-- todo: FIGURE OUT COYOTE PACKAGES ^-->
-    </div>
-    <!--* SECTION 4- CLIENT WORK-------------------------------------------------------------------------------------------------------------------->
-    <div id="client-work" class="">
-      <CenterPageBanner
-        title="Client Work"
-        paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
-      />
-
-      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-      <!--*--*-CREATE  POSTS FORMAT FOR FEATURED WORKS v-*--*-->
-      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-      <FeaturedWorks />
-
-      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-      <!--*--*-CREATE  POSTS FORMAT FOR FEATURED WORKS v-*--*-->
-      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-    </div>
-  </div>
-
-  <!--* SECTION 5- CONTACT-------------------------------------------------------------------------------------------------------------------->
-  <section id="contact" class="mt-[50px] pt-5">
-    <CenterPageBanner
-      title="Contact"
-      paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
-    />
-    <ContactSection />
   </section>
 </MainLayout>

@@ -1,12 +1,21 @@
 ---
 import TestCard from "./TestCard.astro";
+import CenterPageBanner from "./shared/CenterPageBanner.astro";
 ---
 
 - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 <!--*--*--*--*--*-DYNAMIC LISTS v-*--*--*--*--*--*--*--*--*--*-->
 <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-<div class="">
-  <div id="ROOF" class="bg- pb-[50px] border border-black">
+<div
+  id="featured-works-banner"
+  class="bg- text-onyx py-[45px] my-[155px] bg-teal"
+>
+  <div id="ROOF" class="bg- pb-[50px] border border-t-black">
+    <CenterPageBanner
+      title="Client Work"
+      paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
+    />
+
     <TestCard
       title="Hovey Roofing"
       listitem1="website creation"

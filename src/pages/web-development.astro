@@ -1,0 +1,26 @@
+---
+import FeaturedWorks from "../components/FeaturedWorks.astro";
+import Packages from "../components/Packages.astro";
+import Services from "../components/Services.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <div id="designs-GRID" class="mt-5">
+    <CenterPageBanner
+      title="Web Development"
+      paragraph="Why choose LC? Because of their endless designs and combinations available view each sq for description of how LC can help you"
+    />
+    <Services />
+  </div>
+
+  <!--* SECTION 4- CLIENT WORK-------------------------------------------------------------------------------------------------------------------->
+  <FeaturedWorks />
+
+  <CenterPageBanner
+    title="Packages"
+    paragraph="which package best describes you? you should choose me for web development. why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
+  />
+  <Packages />
+</MainLayout>
