@@ -18,18 +18,20 @@ const { title, listitem1, listitem2, listitem3, listitem4 } =
     <div id="SQ1" class="bg- lg:p-5 px-1 py-3 mb-5 2xl:mt-[250px] mt-1">
       <div id="padding" class="lg:p-5 p-1 bg-">
         <div class="">
-          <h2 class="text-test lg:text-4xl text-3xl font-extrabold pb-2">
+          <h1 class="text-test lg:text-4xl text-3xl font-extrabold pb-2">
             {title}
-          </h2>
-          <ul>
-            <li class="lowercase md:text-xl text-md">- {listitem1}</li>
-            <li class="lowercase md:text-xl text-md">- {listitem2}</li>
-            <li class="lowercase md:text-xl text-md">- {listitem3}</li>
-            <li class="lowercase md:text-xl text-md">- {listitem4}</li>
-          </ul>
+          </h1>
+          <div>
+            <h2 class="font-bold lowercase md:text-xl text-md">
+              - {listitem1}
+            </h2>
+            <p class="mt-1 lowercase md:text-xl text-md">- {listitem2}</p>
+            <p class="lowercase md:text-xl text- my-1">- {listitem3}</p>
+            <p class="lowercase md:text-xl text-md">- {listitem4}</p>
+          </div>
           <!-- * BTN WRAPPER   v-->
           <ButtonProps
-            btn1="see services"
+            btn1="see templates"
             btn2="contact"
             btn1Link="/#services"
             btn2Link="/#contact"

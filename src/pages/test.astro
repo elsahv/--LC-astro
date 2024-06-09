@@ -1,0 +1,183 @@
+---
+import ContactSection from "../components/ContactSection.astro";
+import FeaturedWorks from "../components/FeaturedWorks.astro";
+import Hero from "../components/Hero.astro";
+import Packages from "../components/Packages.astro";
+import Services from "../components/Services.astro";
+import ServicesContent from "../components/ServicesContent.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const items = [
+  {
+    title: "Services",
+    listitem1: "this is the about section, ",
+    listitem2: "Lorem ipsum do officiis ipsum veniam,",
+    listitem3: "Lorem ipsum do officiis ipsum venfdfiam,",
+    listitem4:
+      "Lorem ipsum dolor sit amet consectet nim officiis ipsum veniam,",
+    img: "img",
+  },
+
+  {
+    title: "Web Dev",
+    listitem1: "Lorem ipsum d iis ipsum veniam,",
+    listitem2: "Lorem ipsum dolor sit amet consectet ciis ipsum veniam,",
+    listitem3:
+      "Content Management System (CMS) Development: Building custom or utilizing existing platforms like WordPress, Drupal, or Joomla for managing website content.",
+    listitem4:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
+    img: "img",
+  },
+  {
+    title: "Design",
+    listitem1:
+      " Crafting visually appealing and user-friendly website layouts. ",
+    listitem2: "Lorem ipsum dolor sit  ,",
+    listitem3:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
+    listitem4:
+      "Lorem ipsum ur adipisicing elit. Amet enim officiis ipsum veniam,",
+    img: "img",
+  },
+  {
+    title: "content writing",
+    listitem1: "Lorem ipsum dolor et enim officiis ipsum veniam, ",
+    listitem2: "Lorem ipsum dolor et enim officiis ipsum veniam,",
+    listitem3:
+      "Lorem ipsum dolor sit amet consectetur adip Amet enim officiis ipsum veniam,",
+    listitem4: "Lorem ipsum dolor . Amet enim officiis ipsum veniam,",
+    img: "img",
+  },
+  {
+    title: "maintenance",
+    listitem1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam, ",
+    listitem2: "Lorem ipsum do officiis ipsum veniam,",
+    listitem3: "Lorem ipsum do officiis ipsum venfdfiam,",
+    listitem4:
+      "Lorem ipsum dolor sit amet consectet nim officiis ipsum veniam,",
+    img: "img",
+  },
+  {
+    title: "SEO",
+    listitem1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam, ",
+    listitem2: "Lorem ipsum do officiis ipsum veniam,",
+    listitem3: "Lorem ipsum do officiis ipsum venfdfiam,",
+    listitem4:
+      "Lorem ipsum dolor sit amet consectet nim officiis ipsum veniam,",
+    img: "img",
+  },
+];
+---
+
+<MainLayout>
+  <Hero />
+
+  <!-- SECTION 1 -->
+  <section id="services">
+    <CenterPageBanner
+      title="Services CTA"
+      paragraph="What do you need help with? why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
+    />
+    <ServicesContent />
+  </section>
+
+  <!-- SECTION 2 -->
+  <section id="web-dev" class="bg-lavender">
+    <div id="designs-GRID" class="mt-5">
+      <CenterPageBanner
+        title="Web Development"
+        paragraph="Why choose LC? Because of their endless designs and combinations available view each sq for description of how LC can help you"
+      />
+      <Services />
+    </div>
+    <FeaturedWorks />
+    <!-- <CenterPageBanner
+      title="Packages"
+      paragraph="which package best describes you? you should choose me for web development. why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
+    /> -->
+    <Packages />
+  </section>
+
+  <!-- * SECTION 3 -->
+  <section id="writing">
+    <CenterPageBanner
+      title="Writing"
+      paragraph="What do you need help with? why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
+    />
+    <div id="wrapper" class="flex justify-center pb-5 mb-5 md:p-5 p-0">
+      <div id="container" class="md:p-5 p-1 m-5">
+        <div
+          id="grid"
+          class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12"
+        >
+          {
+            items.map((item) => (
+              <div id="sq" class="p-5 bg-test1">
+                <div class="flex items-center">
+                  <h2 class="font-bold text-2xl ">{item.title}</h2>
+                  <i class="bg- ml-2">img</i>
+                </div>
+                <ul class="text-lg">
+                  <li>- {item.listitem1}</li>
+                  <li>- {item.listitem2}</li>
+                  <li>- {item.listitem3}</li>
+                  <li>- {item.listitem4}</li>
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODO SECTION 4 -->
+  <div id="contact" class="bg-test2 mx-5 px-5">
+    <!-- <Banner title="contact" /> -->
+    <div id="" class="md:mt-[100px] mt-1 mx-5 pt-5 px-5">
+      <div id="contact-form-wrapper" class="mt-5 p-5 bg-test">
+        <div id="contact-form-container" class="lg:px-5 px-0 mt-5 bg-">
+          <div id="grid" class="grid 2xl:grid-cols-2 grid-cols-1 gap-5">
+            <div id="sq1" class="border border-black bg- rounded p-2">
+              <h2 class="font-bold pt-2">Just Fill Out the Form</h2>
+              <p class="pt-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                ea maxime consectetur quam facilis vero tempora exercitationem
+                aliquam saepe fugiat ex delectus repellat numquam corrupti, odit
+                ullam magni hic animi?
+              </p>
+              <p class="pt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                ea maxime consectetur quam facilis vero tempora exercitationem
+                aliquam saepe fugiat ex delectus repellat numquam corrupti, odit
+                ullam magni hic animi?
+              </p>
+            </div>
+            <div id="sq2">
+              <div id="form-container" class="2xl:px-5">
+                <form class="flex flex-col gap-5 mt-5">
+                  <input
+                    class="border border-onyx rounded px-1 py-2 bg-aquamarine"
+                    placeholder="first name"
+                  />
+                  <input
+                    class="border border-onyx rounded px-1 py-2 bg-aquamarine"
+                    placeholder="email"
+                  />
+                  <!-- <label>message</label> -->
+                  <textarea
+                    class="border border-onyx rounded pt-2 pl-1 bg-aquamarine h-32"
+                    placeholder="message"></textarea>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <Footer /> -->
+  </div>
+</MainLayout>
