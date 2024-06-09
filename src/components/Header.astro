@@ -1,12 +1,10 @@
 ---
-import MoonBurger from "./MoonBurger.astro";
-
 const links = [
   // { label: "Home", href: "/#HERO" },
   { label: "Services", href: "/#services" },
-  { label: "Web Development", href: "/web-development" },
-  { label: "Writing", href: "/writing" },
-  { label: "Contact", href: "/contact" },
+  { label: "Web Development", href: "/#web-dev" },
+  { label: "Writing", href: "/#writing" },
+  { label: "Contact", href: "  /#contact" },
 ];
 ---
 
@@ -22,11 +20,6 @@ const links = [
         <a href="/">Laughing Coyote Dev</a>
       </div>
     </div>
-    <!-- todo: COME BACK TO V -->
-    <div id="hamburger" class="lg:hidden flex justify-end md:p-5 p-0">
-      <MoonBurger />
-    </div>
-    <!-- todo: COME BACK TO ^ -->
 
     <div id="block-hidden" class="xl:block hidden">
       <ul class="flex justify-end 2xl:items-end items-center">
