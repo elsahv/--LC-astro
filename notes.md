@@ -1,6 +1,6 @@
--What specialties does LC offer?? ---small, quickly built websites for small and creative businesses. Colorful, modernist style, fast acting, headless cms niche
+**CURRENTLY: CHANGE CLIENT WORK LAYOUT**
 
-**CURRENTLY- CONVERT ALL PGS TO ONE PAGE- use one pg fo**
+-What specialties does LC offer?? ---small, quickly built websites for small and creative businesses. Colorful, modernist style, fast acting, headless cms niche
 
 EVENTUALLY- CHANGE SERVICES CONTENT TO ABOUT/ DIFFERENT CATEGORY\*\*
 EVENTUALLY- CREATE DYNAMIC MAP FOR HERO LISTS-HERO, CLIENT WORK, CONTACT

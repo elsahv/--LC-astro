@@ -1,0 +1,51 @@
+---
+import ButtonProps from "./shared/ButtonProps.astro";
+
+export interface Props {
+  title: string;
+  listitem1: string;
+  listitem2: string;
+  listitem3: string;
+  listitem4: string;
+}
+
+const { title, listitem1, listitem2, listitem3, listitem4 } =
+  Astro.props as Props;
+---
+
+<div id="grid-wrapper" class="flex justify-center">
+  <div id="grid" class="">
+    <div id="sq1" class="pt-[120px] pb-1 px-5">
+      <img
+        src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="border border-black"
+      />
+    </div>
+    <div id="sq2" class="px-1 text-">
+      <div id="padding" class="lg:p-5 p-1 bg-">
+        <div class="">
+          <h1 class="text-test lg:text-4xl text-3xl font- pb-2">
+            {title}
+          </h1>
+          <div>
+            <h2 class="lowercase md:text-lg text-md">
+              - {listitem1}
+            </h2>
+            <p class="mt-1 lowercase md:text-lg text-md">- {listitem2}</p>
+            <p class="lowercase md:text-lg text- my-1">- {listitem3}</p>
+            <p class="lowercase md:text-lg text-md">- {listitem4}</p>
+          </div>
+          <!-- * BTN WRAPPER   v-->
+          <ButtonProps
+            btn1="see templates"
+            btn2="contact"
+            btn1Link="/#services"
+            btn2Link="/#contact"
+          />
+          <!-- * BTN WRAPPER   ^-->
+        </div>
+      </div>
+    </div>
+    <!-- /////////////////////////////////// -->
+  </div>
+</div>
