@@ -3,19 +3,24 @@ import ButtonProps from "./shared/ButtonProps.astro";
 
 export interface Props {
   title: string;
+  // listitem1: string;
   listitem1: string;
   listitem2: string;
   listitem3: string;
-  listitem4: string;
 }
 
-const { title, listitem1, listitem2, listitem3, listitem4 } =
-  Astro.props as Props;
+const {
+  title,
+  //  listitem1,
+  listitem1,
+  listitem2,
+  listitem3,
+} = Astro.props as Props;
 ---
 
 <div id="grid-wrapper" class="flex justify-center">
   <div id="grid" class="">
-    <div id="sq1" class="pt-[120px] pb-1 px-5">
+    <div id="sq1" class="pt-5 pb-1 px-5">
       <img
         src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         class="border border-black"
@@ -28,24 +33,26 @@ const { title, listitem1, listitem2, listitem3, listitem4 } =
             {title}
           </h1>
           <div>
-            <h2 class="lowercase md:text-lg text-md">
-              - {listitem1}
-            </h2>
-            <p class="mt-1 lowercase md:text-lg text-md">- {listitem2}</p>
-            <p class="lowercase md:text-lg text- my-1">- {listitem3}</p>
-            <p class="lowercase md:text-lg text-md">- {listitem4}</p>
-          </div>
-          <!-- * BTN WRAPPER   v-->
-          <ButtonProps
-            btn1="see templates"
+            <!-- <h2 class="lowercase md:text-lg text-md">
+              {listitem1}
+            </h2> -->
+            <p class="mt-1 lowercase md:text-lg text-md">{listitem1}</p>
+            <p class="lowercase md:text-lg text- my-1">
+              {listitem2}/p>
+              <p class="lowercase md:text-lg text-md">{listitem3}</p>
+            </p>
+            <!-- * BTN WRAPPER   v-->
+            <!-- <ButtonProps
+            btn1="visit     "
             btn2="contact"
             btn1Link="/#services"
             btn2Link="/#contact"
-          />
-          <!-- * BTN WRAPPER   ^-->
+          /> -->
+            <!-- * BTN WRAPPER   ^-->
+          </div>
         </div>
       </div>
+      <!-- /////////////////////////////////// -->
     </div>
-    <!-- /////////////////////////////////// -->
   </div>
 </div>

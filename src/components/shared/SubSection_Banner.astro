@@ -1,0 +1,16 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+<div id="content-wrapper" class="px-[200px] mt-5 pt-5">
+  <h2 class="bg-test text-4xl mt-5 py-1">{title}</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sunt porro
+    soluta reiciendis, adipisci atque incidunt quibusdam, officiis iure impedit
+    ducimus eum, nemo odio vel delectus hic voluptatibus quisquam fugit.
+  </p>
+</div>

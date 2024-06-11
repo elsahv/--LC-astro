@@ -1,4 +1,4 @@
-**CURRENTLY: CHANGE CLIENT WORK LAYOUT**
+**CURRENTLY: CHANGE PACKAGES LAYOUT**
 
 -What specialties does LC offer?? ---small, quickly built websites for small and creative businesses. Colorful, modernist style, fast acting, headless cms niche
 
