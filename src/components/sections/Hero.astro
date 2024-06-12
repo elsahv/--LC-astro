@@ -1,8 +1,11 @@
 ---
 import TestCard from "../TestCard.astro";
+import TestCta from "../TestCta.astro";
+import ButtonProps from "../shared/ButtonProps.astro";
+import SubSectionBanner from "../shared/SubSection_Banner.astro";
+const allServices = await Astro.glob("../../pages/services/*.md");
 ---
 
-<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--><!--*--*--*--*--*-DYNAMIC LISTS v-*--*--*--*--*--*--*--*--*--*--><!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 <section id="hero-section">
   <TestCard
     title=" A subscription website service for busy small-businesses owners."
@@ -11,8 +14,37 @@ import TestCard from "../TestCard.astro";
     listitem2="Or Rising Carnivore? You need a website not just to promote your business, but have the the ablity to tell your story and brand"
     listitem4="A custom website that fits your business, personality, goals... and you alone."
   />
-</section>
+  <div
+    id="gallery-container"
+    class="mt-5 p-5 bg-teal border border-t-black text-parchment"
+  >
+    <TestCta />
 
-<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-<!--*--*--*--*--*-DYNAMIC LISTS v-*--*--*--*--*--*--*--*--*--*-->
-<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    <div class="ml-5 pl-5">
+      <h2 class="text-2xl pl-3x">Reasons why you need LC</h2>
+    </div>
+    <!-- !similar to PHOTOGALLERY COMP  v-->
+    <div
+      id="grid"
+      class="mt-[35px] mb-5 lg:px-[55px] px-5 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
+    >
+      {
+        allServices.map((service) => (
+          <div id="sq" class="hover:opacity-70">
+            {/* <a href={service.url} class=""> */}
+            <h2 class="absolute p-2 text-test1  bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+              {service.frontmatter.title}
+            </h2>
+            <img
+              src={service.frontmatter.image.url}
+              alt=""
+              class="border border-black w-[650px] h-[350px]"
+            />
+            {/* </a> */}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <!-- !similar to PHOTOGALLERY COMP  ^-->
+</section>

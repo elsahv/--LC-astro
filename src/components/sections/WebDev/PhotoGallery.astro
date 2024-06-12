@@ -10,7 +10,7 @@ const allServices = await Astro.glob("../../../pages/services/*.md");
     allServices.map((service) => (
       <div id="sq" class="">
         {/* <a href={service.url} class=""> */}
-        <h2 class="absolute p-2 text-test1  bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+        <h2 class="absolute p-2 text-test1 bg-teal lowercase dropshadow-2xl text-2xl">
           {service.frontmatter.title}
         </h2>
         <img
