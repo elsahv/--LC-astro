@@ -1,0 +1,19 @@
+<?php
+<div class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12">
+        {
+          items.map((item) => (
+            <div id="sq" class="p-5">
+              <div class="flex items-center">
+                <h2 class="font-bold text-2xl ">{item.title}</h2>
+                <i class="bg- ml-2">img</i>
+              </div>
+              <ul class="text-lg">
+                <li>- {item.listitem1}</li>
+                <li>- {item.listitem2}</li>
+                <li>- {item.listitem3}</li>
+                {/* <li>- {item.listitem4}</li> */}
+              </ul>
+            </div>
+          ))
+        }
+      </div>

@@ -2,18 +2,20 @@
 import SectionBanner from "../shared/Section_Banner.astro";
 ---
 
-<section id="contact" class="m-5 p-5">
+<section id="contact" class="md:m-5 m-0 2xl:p-[140px] md:p-5 p-0 text-">
   <SectionBanner
     title="Contact"
     paragraph="What do you need help with? why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
   />
 
-  <div id="" class="mt-1 mx-5 pt-5 px-5">
-    <div id="contact-form-wrapper" class="mt-5 p-5 bg-test">
+  <div id="" class="mt-1 m-5 md:pt-5 pt-0 md:px-5 px-0">
+    <div id="contact-form-wrapper" class="md:mt-5 mt-0 md:p-5 p-0 bg-test">
       <div id="contact-form-container" class="lg:px-5 px-0 mt-5 bg-">
-        <div id="grid" class="grid 2xl:grid-cols-2 grid-cols-1 gap-5">
+        <div id="grid" class="bg-test grid 2xl:grid-cols-2 grid-cols-1 gap-5">
           <div id="sq1" class="border border-black bg- rounded p-2">
-            <h2 class="font-bold pt-2">Just Fill Out the Form</h2>
+            <h2 class="font-bold pt-2 text-caribbean text-2xl">
+              Just Fill Out the Form
+            </h2>
             <p class="pt-1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea
               maxime consectetur quam facilis vero tempora exercitationem
@@ -31,16 +33,16 @@ import SectionBanner from "../shared/Section_Banner.astro";
             <div id="form-container" class="2xl:px-5">
               <form class="flex flex-col gap-5 mt-5">
                 <input
-                  class="border border-onyx rounded px-1 py-2 bg-aquamarine"
+                  class="border border-onyx bg-teal rounded px-1 py-2 bg-aquamarine"
                   placeholder="first name"
                 />
                 <input
-                  class="border border-onyx rounded px-1 py-2 bg-aquamarine"
+                  class="border border-onyx bg-teal rounded px-1 py-2 bg-aquamarine"
                   placeholder="email"
                 />
                 <!-- <label>message</label> -->
                 <textarea
-                  class="border border-onyx rounded pt-2 pl-1 bg-aquamarine h-32"
+                  class="border border-onyx bg-teal rounded pt-2 pl-1 bg-aquamarine h-32"
                   placeholder="message"></textarea>
               </form>
             </div>

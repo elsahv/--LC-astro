@@ -25,14 +25,14 @@ const posts = [
     title="Writing"
     paragraph="What do you need help with? why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
   />
-  <div id="grid-wrapper" class="flex justify-center items-center py-5 px-5">
+  <div id="grid-wrapper" class="flex justify-center items-center md:p-5 p-1">
     <div
       id="grid"
       class="grid md:grid-cols-2 grid-cols-1 gap-4 py-[50px] 2xl:px-[150px] px-5"
     >
       {
         posts.map((post) => (
-          <div id="sq" class="p-4 cursor-pointer">
+          <div id="sq" class="md:my-1 my-5 md:p-4 p-0 cursor-pointer">
             <h2 class="capitalize font-bold hover:underline cursor-pointer py-1">
               {post.title}
             </h2>

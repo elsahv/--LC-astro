@@ -39,6 +39,6 @@ I will finish the Astro tutorial, and then keep adding more posts. Watch this sp
 
 **2Inception**: Share the backstory of how the website came into existence. This could include the inspiration behind its creation, the individuals or team involved, and any challenges or obstacles they faced in bringing it to life.
 
-**1Purpose**: Clearly articulate the purpose or goals of the website. What problem or need does it address? How does it aim to make a difference in its users' lives or in the broader context of its industry or community?
+**1Purpose**: Clearly articulate the **_purpose_** or goals of the website. What problem or need does it address? How does it aim to make a difference in its users' lives or in the broader context of its industry or community?
 
 **12313Evolution**: Describe how the website has evolved over time. This could include updates to its design, functionality, or content, as well as any major milestones or achievements it has reached along the way.
