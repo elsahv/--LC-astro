@@ -19,13 +19,13 @@ const allServices = await Astro.glob("../../pages/services/*.md");
 >
   <TestCta />
 
-  <div class="bg-test2 md:ml-5 ml-0 md:pl-5 pl-0 mt-5 py-5">
+  <div class="md:ml-5 ml-0 md:pl-5 pl-0 mt-5 py-5">
     <SubSectionBanner title="Reasons you need LC" />
   </div>
   <!-- !similar to PHOTOGALLERY COMP  v-->
   <div
     id="grid"
-    class="mt-[35px] mb-5 2xl:px-[205px] md:px-[65px] px-5 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
+    class="mt-[35px] mb-5 2xl:px-[205px] md:px-[65px] px-0 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
   >
     {
       allServices.map((service) => (
