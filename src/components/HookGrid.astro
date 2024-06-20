@@ -1,0 +1,53 @@
+---
+import site2 from "../images/screenshots/site2.png";
+import site3 from "../images/screenshots/site1.png";
+import site4 from "../images/screenshots/site3.png";
+import site5 from "../images/screenshots/site4.png";
+import site6 from "../images/screenshots/site7.png";
+import site7 from "../images/screenshots/site4.png";
+import { Image } from "astro:assets";
+---
+
+<div
+  id="websites"
+  class="mt-[150px] dropshadow-lg border-6 border-brown my-[55px]"
+>
+  <div class="grid 2xl:grid-cols-3 grid-cols-2 gap-1">
+    <div class="bg-test1">
+      <Image class="h-[100%] border-2 border-onyx rounded" src={site2} alt="" />
+    </div>
+    <div class="bg-test2">
+      <Image class="h-[100%] border-2 border-onyx rounded" src={site2} alt="" />
+    </div>
+    <div class="bg-test1">
+      <Image class="h-[100%] border-2 border-onyx rounded" src={site3} alt="" />
+    </div>
+    <div class="flex justify-center col-span-2 py-5">
+      <section class="2xl:w-1/2 w-3/4 py-5" id="content">
+        <h2
+          class="text-black font-bold 2xl:text-4xl md:text-3xl text-2xl 2xl:my-5"
+        >
+          Endless Designs available
+        </h2>
+        <p>
+          - Custom and unique designs available. Here at Laughing Coyote, we
+          work together to not only use your website to display information, but
+          to express {"it's"} individuality and your personality.
+        </p>
+      </section>
+    </div>
+
+    <div class="bg-test1">
+      <Image class="h-[100%] border-2 border-onyx rounded" src={site4} alt="" />
+    </div>
+    <div class="bg-test2">
+      <Image class="h-[100%] border-2 border-onyx rounded" src={site5} alt="" />
+    </div>
+    <div class="bg-test1">
+      <Image class="h-[100%] border-2 border-onyx rounded" src={site6} alt="" />
+    </div>
+    <div class="bg-test2">
+      <Image class="h-[100%] border-2 border-onyx rounded" src={site7} alt="" />
+    </div>
+  </div>
+</div>

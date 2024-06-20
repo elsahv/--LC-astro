@@ -1,16 +1,56 @@
 ---
+import HookGrid from "../components/HookGrid.astro";
+import TestCta from "../components/TestCta.astro";
 import Contact from "../components/sections/Contact.astro";
 import Hero from "../components/sections/Hero.astro";
-import Services from "../components/sections/Services.astro";
-import WebDev from "../components/sections/WebDev/index.astro";
-import Writing from "../components/sections/Writing.astro";
+import RecentWork from "../components/sections/WebDev/RecentWork.astro";
+import TemplatePackages from "../components/sections/WebDev/TemplatePackages.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
+  <!--*HERO -->
   <Hero />
-  <Services />
-  <WebDev />
-  <Writing />
+  <HookGrid />
+
+  <!--*HOW IT WORKS CTA-->
+  <TestCta />
+
+  <!-- TODO: CONTENT & DESIGN: SECTION CTA-->
+  <section id="build-authority-section" class="bg-test1">
+    <h2>I've helped over [num] of clients achieve [result]</h2>
+    <p>
+      a short section introducing who you are and establishing yourself as an
+      authority and building connection with your audience.
+    </p>
+  </section>
+
+  <!-- *RECENT WORKS -->
+  <RecentWork />
+
+  <!-- TODO: GLOWING TESTIMONIAL CTA-->
+  <!-- <section id="testimonial-section" class="bg-teal">
+    Glowing Testimonial CTA
+  </section> -->
+
+  <!-- TODO: CONTENT & DESIGN: SECTION CTA-->
+  <!-- <section id='client-showcase-section"' class="bg-orange">
+    <h2>Client Showcase</h2>
+    <p>a few examples  of what we can do</p> -->
+  <!-- gallery example at 17:34 -->
+  <!-- </section> -->
+
+  <!-- *PACKAGES-->
+  <TemplatePackages />
+
+  <!-- TODO: FAQ-->
+  <section id="FAQ">FAQ</section>
+
+  <!-- TODO: CONTENT & DESIGN: SECTION CTA-->
+  <!-- <section id="is-this-for-me-section" class="bg-lavender">
+    <h2>Is this for me?</h2>
+    21:26 https://www.youtube.com/watch?v=Ny-Az8nAAaM&t=1064s
+  </section> -->
+
   <Contact />
 </MainLayout>

@@ -1,70 +1,56 @@
 ---
-import ButtonProps from "../components/shared/ButtonProps.astro";
+import HookGrid from "../components/HookGrid.astro";
+import TestCta from "../components/TestCta.astro";
+import Contact from "../components/sections/Contact.astro";
+import Hero from "../components/sections/Hero.astro";
+import RecentWork from "../components/sections/WebDev/RecentWork.astro";
+import TemplatePackages from "../components/sections/WebDev/TemplatePackages.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<section
-  id="flex-2"
-  class="bg- grid md:grid-cols-2 grid-cols-1 gap-x-8 pt-5 mt-[65px]"
->
-  <div
-    id="sq3"
-    class="flex justify-end items-center mr-[75px] 2xl:m-0 ml-[45px]"
-  >
-    <img
-      src="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt=""
-    />
-  </div>
-  <div
-    id="sq4"
-    class="bg- flex justify-start items-end md:pb-5 pb-[55px] md:pr-5 p-1 ml-2"
-  >
-    <ul class="md:text-lg text-md pt-1 pl-4">
-      <li class="lowercase" class="text-lg">
-        <p class="text-test text-xl font-extrabold">How can I help?</p>
-      </li>
+<MainLayout>
+  <!--*HERO -->
+  <Hero />
+  <HookGrid />
 
-      <li class="lowercase">
-        <b>-</b><a href="/web-development" class="font-semibold">
-          CREATING A WEBSITE,</a
-        >
-        TO INCREASE YOUR POTENTIAL CUSTOMERS?
-      </li>
-      <li class="lowercase">
-        <b>-</b> The ablity to tell your <a href="/writing" class="font-bold"
-          >story and brand?</a
-        >
-      </li>
-      <li>
-        <b>-</b> Peace of mind... for business owners who don't have time to build
-        with software.
-      </li>
-      <li class="pt-5 mt-5">
-        <b>-</b> Increased potential customers, easier to find on Google.
-      </li>
+  <!--*HOW IT WORKS CTA-->
+  <TestCta />
 
-      <li>
-        <b>-</b> A custom website that fits your business, personality, goals...
-        and you alone.
-      </li>
+  <!-- TODO: CONTENT & DESIGN: SECTION CTA-->
+  <section id="build-authority-section" class="bg-test1">
+    <h2>I've helped over [num] of clients achieve [result]</h2>
+    <p>
+      a short section introducing who you are and establishing yourself as an
+      authority and building connection with your audience.
+    </p>
+  </section>
 
-      <!-- * BTN WRAPPER-undecided v-->
-      <ButtonProps
-        btn1="why choose LC?"
-        btn2="contact"
-        btn1Link="/#chooseLC"
-        btn2Link="/#contact"
-      />
+  <!-- *RECENT WORKS -->
+  <RecentWork />
 
-      <!-- * BTN WRAPPER   ^-->
-      <!-- <li class="pt-5 mt-5">
-      <b>-</b> Increased potential customers, easier to find on Google.
-    </li>
+  <!-- TODO: GLOWING TESTIMONIAL CTA-->
+  <!-- <section id="testimonial-section" class="bg-teal">
+    Glowing Testimonial CTA
+  </section> -->
 
-    <li>
-      <b>-</b> A custom website that fits your business, personality, goals...
-      and you alone.
-    </li> -->
-    </ul>
-  </div>
-</section>
+  <!-- TODO: CONTENT & DESIGN: SECTION CTA-->
+  <!-- <section id='client-showcase-section"' class="bg-orange">
+    <h2>Client Showcase</h2>
+    <p>a few examples  of what we can do</p> -->
+  <!-- gallery example at 17:34 -->
+  <!-- </section> -->
+
+  <!-- *PACKAGES-->
+  <TemplatePackages />
+
+  <!-- TODO: FAQ-->
+  <section id="FAQ">FAQ</section>
+
+  <!-- TODO: CONTENT & DESIGN: SECTION CTA-->
+  <!-- <section id="is-this-for-me-section" class="bg-lavender">
+    <h2>Is this for me?</h2>
+    21:26 https://www.youtube.com/watch?v=Ny-Az8nAAaM&t=1064s
+  </section> -->
+
+  <Contact />
+</MainLayout>
