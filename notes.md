@@ -1,4 +1,34 @@
-**CURRENTLY: CHANGE PACKAGES LAYOUT**
+\*\*CURRENTLY: FILL OUT ALL CONTENT
+
+<!-- TODO: 6/20/24 v -->
+
+**HERO**
+**Why should you prefer a custom-made website, when you can simply use wix or wordpress? Why should you prefer a custom-made website, when you can simply use wix or wordpress? Because a custom website fits your business, personality, goals... and you alone.**
+
+**We have one main goal, to get more views towards your business! With Laughing Coyote Dev, you get more than just a website:**
+**Information displayed, accessible, easier to find on Google**
+**The ability to tell your story, owning a website gives you the ability to tell your business story without any limitations.**
+**Mobile Optimization- Studies show that majority of website use is through mobile phones and tablets**
+
+**ABOUT**
+**Hi there, and welcome to Laughing Coyote!**
+**I'm Elsa, and I love creating colorful and unconventional websites.**
+**As someone who has started a creative career from the ground up, I know what its like to be overwhelmed with figuring out web design, selling strategies, and marketing. This was what Laughing Coyote Dev was created for, to save you some headaches that come with learning about:** - **how to design a website** - **how to pick a domain and use hosting** - **and etc! See services below!**
+
+Services Include:
+-Service and Support
+I assist with: domains, hosting, web development and design. In other words... pretty much everything from setup to ongoing service, leaving you more time to spend on your business!
+
+-Development and design advantages
+As a developer who designs, I rely on Javascript languages and frameworks, mainly NextJs. My knowledge on coding gives me the advantage to design and breaking the limits!
+
+-Monthly Updates
+Need to make a change? Or add more content or photos?. Monthly updates are available with subscription.
+
+-Mobile Optimization
+Studies show that the majority of website visitors use phones and tablets, as opposed to computers at home.
+
+<!--  TODO: 6/20/24 ^ -->
 
 -What specialties does LC offer?? ---small, quickly built websites for small and creative businesses. Colorful, modernist style, fast acting, headless cms niche
 

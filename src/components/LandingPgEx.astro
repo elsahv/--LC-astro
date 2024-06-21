@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+import Img1 from "../images/screenshots/site3.png";
+import Img2 from "../images/screenshots/site6.png";
+---
+
+<div class="bg-teal p-5 px-[50px]">
+  <h2 class="text-parchment text-center text-3xl pb-5 underline">
+    Landing Pg Examples
+  </h2>
+  <div id="wrapper" class="flex justify-center p-5">
+    <div id="grid" class="mt-5 pt-5 grid grid-cols-2 gap-x-4 gap-y-60">
+      <div
+        id="sq1"
+        class="text-lavender p-5 flex justify-center items-center text-right"
+      >
+        <a href="https://writingtobetterhealth.com">
+          <div class="dropshadow">
+            <h3 class="text-4xl hover:underline">Writing To Better Health</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+              sit laboriosam exercitationem beatae, similique voluptatem fuga
+              velit a deleniti, consectetur obcaecati id. Provident illo veniam
+              pariatur beatae nulla minima sed?
+            </p>
+            <p class="pt-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+              sit laboriosam exerc id. Provident illo veniam pariatur beatae
+              nulla minima sed?
+            </p>
+          </div>
+        </a>
+      </div>
+      <div id="sq2" class="border border-black hover:opacity-85">
+        <a href="https://writingtobetterhealth.com">
+          <Image src={Img1} alt="" class="" />
+        </a>
+      </div>
+
+      <div id="sq3" class="border border-black hover:opacity-85">
+        <a href="https://theindoorjungleproject.com">
+          <Image src={Img2} alt="" />
+        </a>
+      </div>
+      <div
+        id="sq4"
+        class="dropshadow text-test2 p-5 flex justify-center items-center"
+      >
+        <a href="https://theindoorjungleproject.com">
+          <div class="">
+            <h3 class="text-4xl hover:underline">The Indoor Jungle Project</h3>
+            <p class="mb-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+              sit laboriosam exercitationem beatae, similique voluptatem fuga
+              velit a deleniti, consectetur obcaecati id. Provident illo veniam
+              pariatur beatae nulla minima sed?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+              sit laboriosam exercitationem beatae, similique voluptatem fuga
+              velit a deleniti, consectetur obcaecati id. Provident illo veniam
+              pariatur beatae nulla minima sed?exercitationem beatae, similique
+              voluptatem fuga velit a deleniti, consectetur obcaecati id.
+              Provident illo veniam pariatur beatae nulla minima
+              sed?exercitationem beatae, similique voluptatem fuga velit a
+              deleniti, consectetur obcaecati id. Provident illo veniam pariatur
+              beatae nulla minima sed?
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

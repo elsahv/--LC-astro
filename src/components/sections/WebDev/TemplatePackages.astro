@@ -1,298 +1,335 @@
 ---
 import SubSectionBanner from "../../shared/SubSection_Banner.astro";
+
+const items = [
+  {
+    title: "Service and Support",
+    p: "I assist with: domains, hosting, web development and design. In other words... pretty much everything from setup to ongoing service, leaving you more time to spend on your business!",
+  },
+  {
+    title: "Development and design advantages",
+    p: "As a developer who designs, I rely on Javascript languages and frameworks, mainly NextJs. My knowledge on coding gives me the advantage to design and breaking the limits!",
+  },
+  {
+    title: "Monthly Updates",
+    p: "Need to make a change? Or add more content or photos?. Monthly updates are available with subscription.",
+  },
+  {
+    title: "Mobile Optimization",
+    p: "Studies show that the majority of website visitors use phones and tablets, as opposed to computers at home. ",
+  },
+];
 ---
 
 <div class="bg-test mt-[150px]">
   <SubSectionBanner title="Template Packages" />
-
-  {/* Section Pricing */}
-  <section>
-    {/* Pricing Container*/}
-    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
-      {/* Pricing Title */}
-      <h2 class="text-center text-3xl font-bold md:text-5xl">
-        Get Started Today!
-      </h2>
-      <p
-        class="mx-auto mb-8 mt-4 max-w-lg text-center text-[#636262] md:mb-12 lg:mb-16"
-      >
-        30 days money-back guarantee
-      </p>
-      {/* Pricing Content */}
-      <ul
-        class="m-auto grid w-full grid-flow-row grid-cols-1 gap-8 md:grid-cols-2 md:gap-4 lg:w-[70%]"
-      >
-        {/* Pricing Item */}
-        <li
-          class="bg-caribbean flex max-w-md flex-col items-start justify-self-center border border-solid border-orange p-8"
-        >
-          <div class="mb-4 rounded-md bg-[orange] px-4 py-1.5">
-            <h2 class="text-sm font-bold">The Growing Pup</h2>
-          </div>
-          <p class="mb-6 font-light text-orange md:mb-10 lg:mb-12">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam,
-            purus sit
-          </p>
-          <p
-            class="mb-5 text-left text-3xl font-bold md:mb-6 md:text-5xl lg:mb-8"
-          >
-            $99<span class="text-sm font-light">/year</span>
-          </p>
-          <a
-            href="#"
-            class="mb-5 flex w-full grid-cols-2 flex-row items-center justify-center border-2 border-solid border-black px-8 py-4 text-center font-semibold text-black transition [box-shadow:rgb(0,_0,_0)_-8px_8px] hover:[box-shadow:rgb(0,_0,_0)_0px_0px] md:mb-6 lg:mb-8"
-          >
-            <div class="mr-6 font-bold">Get Started</div>
-            <div class="h-4 w-4">
-              <svg
-                fill="currentColor"
-                viewBox="0 0 20 21"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Arrow Right</title>
-                <polygon
-                  points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"
-                ></polygon>
-              </svg>
+  <!-- TODO: SERVICES v -->
+  <div class="pt-[90px] px-[190px]">
+    <h2 class="underline text-2xl font-3xl pl-5">SERVICES INCLUDES</h2>
+    <div id="wrapper" class="p-5">
+      <div id="grid" class="grid grid-cols-2 gap-5">
+        {
+          items.map((item) => (
+            <div id="sq" class="bg-test1 border border-teal p-5">
+              <h3 class="font-bold text-lg">{item.title}</h3>
+              <p>{item.p}</p>
             </div>
-          </a>
-          <div class="mt-2 flex flex-row items-center text-left">
-            <svg
-              class="mr-2"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_911_1122)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
-                  fill="black"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_911_1122">
-                  <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-
-            <p class="">Premium Designs</p>
-          </div>
-          <div class="mt-2 flex flex-row items-center text-left">
-            <svg
-              class="mr-2"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_911_1122)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
-                  fill="black"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_911_1122">
-                  <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-
-            <p class="">Exclusive Freebies</p>
-          </div>
-          <div class="mt-2 flex flex-row items-center text-left">
-            <svg
-              class="mr-2"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_911_1122)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
-                  fill="black"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_911_1122">
-                  <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-
-            <p class="">Monthly Free Exclusive</p>
-          </div>
-          <div class="mt-2 flex flex-row items-center text-left">
-            <svg
-              class="mr-2"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_911_1122)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
-                  fill="black"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_911_1122">
-                  <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-
-            <p class="">Customer Support</p>
-          </div>
-        </li>
-        {/* Pricing Item */}
-        <li
-          class="flex max-w-md flex-col items-start justify-self-center border border-solid border-[#dfdfdf] bg-[#f2f2f7] p-8"
-        >
-          <div class="mb-4 rounded-md bg-[#abc4f5] px-4 py-1.5">
-            <p class="text-sm font-bold">The Rising Carnivore</p>
-          </div>
-          <p class="mb-6 font-light text-[#636262] md:mb-10 lg:mb-12">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam,
-            purus sit
-          </p>
-          <h2
-            class="mb-5 text-left text-3xl font-bold md:mb-6 md:text-5xl lg:mb-8"
-          >
-            $149<span class="text-sm font-light">/year</span>
-          </h2>
-          <a
-            href="#"
-            class="mb-5 flex w-full grid-cols-2 flex-row items-center justify-center bg-[#276ef1] px-8 py-4 text-center font-semibold text-white transition [box-shadow:rgb(171,_196,_245)_-8px_8px] hover:[box-shadow:rgb(171,_196,_245)_0px_0px] md:mb-6 lg:mb-8"
-          >
-            <div class="mr-6 font-bold">Get Started</div>
-            <div class="h-4 w-4">
-              <svg
-                fill="currentColor"
-                viewBox="0 0 20 21"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Arrow Right</title>
-                <polygon
-                  points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"
-                ></polygon>
-              </svg>
-            </div>
-          </a>
-          <div class="mt-2 flex flex-row items-center text-left">
-            <svg
-              class="mr-2"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_911_1122)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
-                  fill="black"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_911_1122">
-                  <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-
-            <p class="">Premium Designs</p>
-          </div>
-          <div class="mt-2 flex flex-row items-center text-left">
-            <svg
-              class="mr-2"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_911_1122)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
-                  fill="black"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_911_1122">
-                  <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-
-            <p class="">Exclusive Freebies</p>
-          </div>
-          <div class="mt-2 flex flex-row items-center text-left">
-            <svg
-              class="mr-2"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_911_1122)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
-                  fill="black"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_911_1122">
-                  <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-
-            <p class="">Monthly Free Exclusive</p>
-          </div>
-          <div class="mt-2 flex flex-row items-center text-left">
-            <svg
-              class="mr-2"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_911_1122)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
-                  fill="black"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_911_1122">
-                  <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-
-            <p class="">Customer Support</p>
-          </div>
-        </li>
-      </ul>
+          ))
+        }
+      </div>
     </div>
-  </section>
+    <!-- TODO: SERVICES ^ -->
+
+    {/* Section Pricing */}
+    <section>
+      {/* Pricing Container*/}
+      <div
+        class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32"
+      >
+        {/* Pricing Title */}
+        <h2 class="text-center text-3xl font-bold md:text-5xl">
+          Get Started Today!
+        </h2>
+        <p
+          class="mx-auto mb-8 mt-4 max-w-lg text-center text-[#636262] md:mb-12 lg:mb-16"
+        >
+          30 days money-back guarantee
+        </p>
+        {/* Pricing Content */}
+        <ul
+          class="m-auto grid w-full grid-flow-row grid-cols-1 gap-8 md:grid-cols-2 md:gap-4 lg:w-[70%]"
+        >
+          {/* Pricing Item */}
+          <li
+            class="bg-caribbean flex max-w-md flex-col items-start justify-self-center border border-solid border-orange p-8"
+          >
+            <div class="mb-4 rounded-md bg-[orange] px-4 py-1.5">
+              <h2 class="text-sm font-bold">The Growing Pup</h2>
+            </div>
+            <p class="mb-6 font-light text-orange md:mb-10 lg:mb-12">
+              WEBSITE BUILD + BASIC SUPPORT SERVICES - perfect for when you need
+              something a bit quicker!
+            </p>
+            <p
+              class="mb-5 text-left text-3xl font-bold md:mb-6 md:text-5xl lg:mb-8"
+            >
+              $99<span class="text-sm font-light">/year</span>
+            </p>
+            <a
+              href="#"
+              class="mb-5 flex w-full grid-cols-2 flex-row items-center justify-center border-2 border-solid border-black px-8 py-4 text-center font-semibold text-black transition [box-shadow:rgb(0,_0,_0)_-8px_8px] hover:[box-shadow:rgb(0,_0,_0)_0px_0px] md:mb-6 lg:mb-8"
+            >
+              <div class="mr-6 font-bold">Get Started</div>
+              <div class="h-4 w-4">
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 21"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Arrow Right</title>
+                  <polygon
+                    points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"
+                  ></polygon>
+                </svg>
+              </div>
+            </a>
+            <div class="mt-2 flex flex-row items-center text-left">
+              <svg
+                class="mr-2"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_911_1122)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
+                    fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_911_1122">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="">STANDARD PAGES TEMPLATES (w/ template components)</p>
+            </div>
+            <div class="mt-2 flex flex-row items-center text-left">
+              <svg
+                class="mr-2"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_911_1122)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
+                    fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_911_1122">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="">Home Page</p>
+            </div>
+            <div class="mt-2 flex flex-row items-center text-left">
+              <svg
+                class="mr-2"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_911_1122)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
+                    fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_911_1122">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="">About- w/interactive Photo Gallery</p>
+            </div>
+            <div class="mt-2 flex flex-row items-center text-left">
+              <svg
+                class="mr-2"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_911_1122)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
+                    fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_911_1122">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="">Contact Page and form</p>
+            </div>
+          </li>
+          {/* Pricing Item */}
+          <li
+            class="flex max-w-md flex-col items-start justify-self-center border border-solid border-[#dfdfdf] bg-[#f2f2f7] p-8"
+          >
+            <div class="mb-4 rounded-md bg-[#abc4f5] px-4 py-1.5">
+              <p class="text-sm font-bold">The Rising Carnivore</p>
+            </div>
+            <p class="mb-6 font-light text-[#636262] md:mb-10 lg:mb-12">
+              WEBSITE BUILD + SUBSCRIPTION SUPPORT SERVICES
+            </p>
+            <h2
+              class="mb-5 text-left text-3xl font-bold md:mb-6 md:text-5xl lg:mb-8"
+            >
+              $149<span class="text-sm font-light">/year</span>
+            </h2>
+            <a
+              href="#"
+              class="mb-5 flex w-full grid-cols-2 flex-row items-center justify-center bg-[#276ef1] px-8 py-4 text-center font-semibold text-white transition [box-shadow:rgb(171,_196,_245)_-8px_8px] hover:[box-shadow:rgb(171,_196,_245)_0px_0px] md:mb-6 lg:mb-8"
+            >
+              <div class="mr-6 font-bold">Get Started</div>
+              <div class="h-4 w-4">
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 21"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Arrow Right</title>
+                  <polygon
+                    points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"
+                  ></polygon>
+                </svg>
+              </div>
+            </a>
+            <div class="mt-2 flex flex-row items-center text-left">
+              <svg
+                class="mr-2"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_911_1122)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
+                    fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_911_1122">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="">SPECIALIZED PGS (w/ specialized components)</p>
+            </div>
+            <div class="mt-2 flex flex-row items-center text-left">
+              <svg
+                class="mr-2"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_911_1122)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
+                    fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_911_1122">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="">Monthly hosting on secure off-site servers</p>
+            </div>
+            <div class="mt-2 flex flex-row items-center text-left">
+              <svg
+                class="mr-2"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_911_1122)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
+                    fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_911_1122">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="">Domain name purchase & annual renewals</p>
+            </div>
+            <div class="mt-2 flex flex-row items-center text-left">
+              <svg
+                class="mr-2"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_911_1122)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.00008 0.666656C3.95008 0.666656 0.666748 3.94999 0.666748 7.99999C0.666748 12.05 3.95008 15.3333 8.00008 15.3333C12.0501 15.3333 15.3334 12.05 15.3334 7.99999C15.3334 3.94999 12.0501 0.666656 8.00008 0.666656ZM11.1787 6.75999C11.2373 6.69308 11.2818 6.61515 11.3098 6.53077C11.3378 6.44639 11.3486 6.35727 11.3416 6.26865C11.3346 6.18003 11.31 6.0937 11.2691 6.01474C11.2283 5.93578 11.1721 5.86579 11.1038 5.80888C11.0355 5.75198 10.9565 5.7093 10.8715 5.68336C10.7865 5.65743 10.6971 5.64876 10.6087 5.65787C10.5202 5.66698 10.4345 5.69369 10.3566 5.73641C10.2786 5.77914 10.21 5.83702 10.1547 5.90666L7.28808 9.34599L5.80475 7.86199C5.67901 7.74055 5.51061 7.67335 5.33581 7.67487C5.16102 7.67639 4.99381 7.7465 4.8702 7.87011C4.7466 7.99372 4.67648 8.16092 4.67496 8.33572C4.67345 8.51052 4.74064 8.67892 4.86208 8.80466L6.86208 10.8047C6.92759 10.8701 7.00601 10.9212 7.09236 10.9547C7.17871 10.9882 7.27108 11.0033 7.36359 10.9991C7.45611 10.9949 7.54673 10.9715 7.62969 10.9303C7.71265 10.8891 7.78611 10.8311 7.84541 10.76L11.1787 6.75999Z"
+                    fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_911_1122">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="">Monthly security & software updates</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </div>

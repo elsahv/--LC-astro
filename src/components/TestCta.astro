@@ -1,7 +1,10 @@
 ---
 import ButtonProps from "./shared/ButtonProps.astro";
+import SelfImg from "../images/self.jpg";
+import { Image } from "astro:assets";
 ---
 
+<!-- !: NEW ABOUT COMP -->
 <section
   id="how-it-works"
   class="bg- grid md:grid-cols-2 grid-cols-1 gap-x-8 pt-5 my-[105px]"
@@ -10,10 +13,12 @@ import ButtonProps from "./shared/ButtonProps.astro";
     id="sq3"
     class="flex md:justify-end justify-center items-center 2xl:mr-[75px] mr-1 2xl:m-0 2xl:ml-[45px] md:ml-2 ml-0"
   >
-    <img
-      src="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    <Image
+      src={SelfImg}
       alt=""
       class="border border-black"
+      height={400}
+      width={400}
     />
   </div>
   <div
@@ -23,26 +28,28 @@ import ButtonProps from "./shared/ButtonProps.astro";
     <ul class="md:text-lg text-md pt-1 pl-4">
       <li class="" class="text-lg">
         <!-- <p class="text-test text-xl font-extrabold pt-4">How can I help?</p> -->
-        <p class="text-test text-xl font-extrabold pt-4">How It Works CTA</p>
+        <p class="text-test text-xl font-extrabold pt-4">
+          Hi there, and welcome to Laughing Coyote!
+        </p>
       </li>
 
       <li class="">
         <b>-</b><a href="/web-development" class="font-semibold">
-          CREATING A WEBSITE,</a
+          I'm Elsa, and I love creating colorful and unconventional websites,</a
         >
-        TO INCREASE YOUR POTENTIAL CUSTOMERS?
+        As someone who has started a creative career from the ground up, I know what
+        its like to be overwhelmed with figuring out web design, selling strategies,
+        and marketing. This was what Laughing Coyote Dev was created for, to save
+        you some headaches that come with learning about:
       </li>
       <li class="">
-        <b>-</b> The ablity to tell your <a href="/writing" class="font-bold"
-          >story and brand?</a
-        >
+        <b>-</b> how to design a website, story and brand?
       </li>
       <li>
-        <b>-</b> Peace of mind... for business owners who don't have time to build
-        with software.
+        <b>-</b> use hosting** - **and etc! See services below!**
       </li>
       <li class="pt-5 mt-5">
-        <b>-</b> Increased potential customers, easier to find on Google.
+        <b>-</b> and etc! See services below!
       </li>
 
       <li>
@@ -50,15 +57,15 @@ import ButtonProps from "./shared/ButtonProps.astro";
         and you alone.
       </li>
 
-      <!-- * BTN WRAPPER-undecided v-->
-      <ButtonProps
+      <!-- ?BTN WRAPPER-undecided v-->
+      <!-- <ButtonProps
         btn1="why choose LC?"
         btn2="contact"
         btn1Link="/#chooseLC"
         btn2Link="/#contact"
-      />
+      /> -->
 
-      <!-- * BTN WRAPPER   ^-->
+      <!-- ?BTN WRAPPER   ^-->
       <!-- <li class="pt-5 mt-5">
     <b>-</b> Increased potential customers, easier to find on Google.
   </li>
