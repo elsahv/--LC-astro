@@ -4,19 +4,24 @@ import Img1 from "../images/screenshots/site3.png";
 import Img2 from "../images/screenshots/site6.png";
 ---
 
-<div class="bg-teal p-5 px-[50px]">
-  <h2 class="text-parchment text-center text-3xl pb-5 underline">
+<div class="bg-teal p-5 lg:px-[50px] px-2">
+  <h2 class="text-parchment text-center text-4xl mb-5 py-5 underline">
     Landing Pg Examples
   </h2>
-  <div id="wrapper" class="flex justify-center p-5">
-    <div id="grid" class="mt-5 pt-5 grid grid-cols-2 gap-x-4 gap-y-60">
+  <div id="wrapper" class="flex justify-center md:p-5 p-1 bg-">
+    <div
+      id="grid"
+      class="mt-5 pt-5 grid 2xl:grid-cols-2 grid-cols-1 gap-x-4 2xl:gap-y-60 gap-y-5 bg-"
+    >
       <div
         id="sq1"
-        class="text-lavender p-5 flex justify-center items-center text-right"
+        class="text-lavender p-5 mt-5 flex items-center text-right bg-"
       >
         <a href="https://writingtobetterhealth.com">
           <div class="dropshadow">
-            <h3 class="text-4xl hover:underline">Writing To Better Health</h3>
+            <h3 class="md:text-4xl text-3xl hover:underline pb-1">
+              Writing To Better Health
+            </h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
               sit laboriosam exercitationem beatae, similique voluptatem fuga
@@ -31,7 +36,10 @@ import Img2 from "../images/screenshots/site6.png";
           </div>
         </a>
       </div>
-      <div id="sq2" class="border border-black hover:opacity-85">
+      <div
+        id="sq2"
+        class="border border-black hover:opacity-85 2xl:mb-0 mb-[100px]"
+      >
         <a href="https://writingtobetterhealth.com">
           <Image src={Img1} alt="" class="" />
         </a>
@@ -48,7 +56,9 @@ import Img2 from "../images/screenshots/site6.png";
       >
         <a href="https://theindoorjungleproject.com">
           <div class="">
-            <h3 class="text-4xl hover:underline">The Indoor Jungle Project</h3>
+            <h3 class="md:text-4xl text-3xl hover:underline">
+              The Indoor Jungle Project
+            </h3>
             <p class="mb-5">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
               sit laboriosam exercitationem beatae, similique voluptatem fuga
