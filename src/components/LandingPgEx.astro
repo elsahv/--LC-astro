@@ -4,7 +4,7 @@ import Img1 from "../images/screenshots/site3.png";
 import Img2 from "../images/screenshots/site6.png";
 ---
 
-<div class="bg-teal p-5 lg:px-[50px] px-2">
+<div class="bg-teal border-t-2 border-b-2 border-black p-5 lg:px-[50px] px-2">
   <h2 class="text-parchment text-center text-4xl mb-5 py-5 underline">
     Landing Pg Examples
   </h2>
@@ -13,16 +13,15 @@ import Img2 from "../images/screenshots/site6.png";
       id="grid"
       class="mt-5 pt-5 grid 2xl:grid-cols-2 grid-cols-1 gap-x-4 2xl:gap-y-60 gap-y-5 bg-"
     >
-      <div
-        id="sq1"
-        class="text-lavender p-5 mt-5 flex items-center text-right bg-"
-      >
+      <div id="sq1" class="text-lavender p-5 mt-5 flex items-centerbg-">
         <a href="https://writingtobetterhealth.com">
           <div class="dropshadow">
-            <h3 class="md:text-4xl text-3xl hover:underline pb-1">
+            <h3
+              class="text-right md:text-4xl text-3xl hover:underline pb-1 pr-5 mr-4"
+            >
               Writing To Better Health
             </h3>
-            <p>
+            <p class="">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
               sit laboriosam exercitationem beatae, similique voluptatem fuga
               velit a deleniti, consectetur obcaecati id. Provident illo veniam
@@ -31,21 +30,23 @@ import Img2 from "../images/screenshots/site6.png";
             <p class="pt-5">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
               sit laboriosam exerc id. Provident illo veniam pariatur beatae
-              nulla minima sed?
+              nulla minima sed? Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Soluta sit laboriosam exerc id. Provident illo
+              veniam pariatur beatae nulla minima sed?
             </p>
           </div>
         </a>
       </div>
       <div
         id="sq2"
-        class="border border-black hover:opacity-85 2xl:mb-0 mb-[100px]"
+        class="border hover:border-2 border-black hover:opacity-85 2xl:mb-0 mb-[100px]"
       >
         <a href="https://writingtobetterhealth.com">
           <Image src={Img1} alt="" class="" />
         </a>
       </div>
 
-      <div id="sq3" class="border border-black hover:opacity-85">
+      <div id="sq3" class="border hover:border-2 border-black hover:opacity-85">
         <a href="https://theindoorjungleproject.com">
           <Image src={Img2} alt="" />
         </a>
