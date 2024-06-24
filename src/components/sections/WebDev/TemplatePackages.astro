@@ -1,9 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import SubSectionBanner from "../../shared/SubSection_Banner.astro";
+import TestImg1 from "../../../images/screenshots/site1.png";
+import TestImg2 from "../../../images/screenshots/site2.png";
 
 const items = [
   {
     title: "Service and Support",
+
     p: "I assist with: domains, hosting, web development and design. In other words... pretty much everything from setup to ongoing service, leaving you more time to spend on your business!",
   },
   {
@@ -24,39 +28,9 @@ const items = [
 <div class="bg-test mt-[150px]">
   <SubSectionBanner title="Template Packages" />
 
-  <!-- TODO SOONER: demo -->
-  <div id="BG-MUNSELL" class="bg-teal flex justify-center">
-    <div id="DEMOS-TEST" class="grid grid-cols-2">
-      <div id="sq1" class="bg-test1">
-        <h2>1st demo</h2>
-        img
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          nesciunt consectetur sed pariatur sequi explicabo, sunt facilis, rerum
-          dolorum, illum accusamus quis necessitatibus sit. Illo esse inventore
-          et obcaecati consequuntur?
-        </p>
-      </div>
-      <div id="sq2" class="bg-test2">
-        <h2>2nd demo</h2>
-        img
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          nesciunt consectetur sed pariatur sequi explicabo, sunt facilis, rerum
-          dolorum, illum accusamus quis necessitatibus sit. Illo esse inventore
-          et obcaecati consequuntur?
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- !DEMOS - (check test pg!!)-->
-  <!--TODO EVENTUALLY: CODE GROWING PUP DEMO COMP-->
-  <!-- TODO EVENTUALLY: RISING CARNIVORE DEMO -->
-
   <!-- *SERVICES v -->
   <div class="pt-[90px] 2xl:px-[190px] px-1 bg-">
-    <h2 class="underline text-2xl font-3xl pl-5">SERVICES INCLUDES</h2>
+    <h2 class="underline text-2xl font-3xl pl-5">SERVICES INCLU DES</h2>
     <div id="wrapper" class="p-5">
       <div id="grid" class="grid md:grid-cols-2 grid-cols-1 gap-5">
         {
@@ -79,12 +53,12 @@ const items = [
       >
         {/* Pricing Title */}
         <h2 class="text-center text-3xl font-bold md:text-5xl">
-          Get Started Today!
+          See templates below!
         </h2>
         <p
           class="mx-auto mb-8 mt-4 max-w-lg text-center text-[#636262] md:mb-12 lg:mb-16"
         >
-          30 days money-back guarantee
+          some random font
         </p>
         {/* Pricing Content */}
         <ul
@@ -101,6 +75,14 @@ const items = [
               WEBSITE BUILD + BASIC SUPPORT SERVICES - perfect for when you need
               something a bit quicker!
             </p>
+            <>
+              <Image
+                src={TestImg2}
+                alt=""
+                class="border hover:border-2 border-black mb-5"
+              />
+            </>
+
             <p
               class="mb-5 text-left text-3xl font-bold md:mb-6 md:text-5xl lg:mb-8"
             >
@@ -110,7 +92,7 @@ const items = [
               href="#"
               class="mb-5 flex w-full grid-cols-2 flex-row items-center justify-center border-2 border-solid border-black px-8 py-4 text-center font-semibold text-black transition [box-shadow:rgb(0,_0,_0)_-8px_8px] hover:[box-shadow:rgb(0,_0,_0)_0px_0px] md:mb-6 lg:mb-8"
             >
-              <div class="mr-6 font-bold">Get Started</div>
+              <div class="mr-6 font-bold">see "Rising Carnivore" demo</div>
               <div class="h-4 w-4">
                 <svg
                   fill="currentColor"
@@ -235,6 +217,14 @@ const items = [
             <p class="mb-6 font-light text-[#636262] md:mb-10 lg:mb-12">
               WEBSITE BUILD + SUBSCRIPTION SUPPORT SERVICES
             </p>
+            <>
+              <Image
+                src={TestImg1}
+                alt=""
+                class="border hover:border-2 border-black mb-5"
+              />
+            </>
+
             <h2
               class="mb-5 text-left text-3xl font-bold md:mb-6 md:text-5xl lg:mb-8"
             >
@@ -244,7 +234,7 @@ const items = [
               href="#"
               class="mb-5 flex w-full grid-cols-2 flex-row items-center justify-center bg-[#276ef1] px-8 py-4 text-center font-semibold text-white transition [box-shadow:rgb(171,_196,_245)_-8px_8px] hover:[box-shadow:rgb(171,_196,_245)_0px_0px] md:mb-6 lg:mb-8"
             >
-              <div class="mr-6 font-bold">Get Started</div>
+              <div class="mr-6 font-bold">see "Growing Pup" demo</div>
               <div class="h-4 w-4">
                 <svg
                   fill="currentColor"
