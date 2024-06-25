@@ -5,6 +5,7 @@ import site4 from "../images/screenshots/site3.png";
 import site5 from "../images/screenshots/site4.png";
 import site6 from "../images/screenshots/site7.png";
 import site7 from "../images/screenshots/site4.png";
+import AboutMe from "../images/self.jpg";
 import { Image } from "astro:assets";
 ---
 
@@ -36,6 +37,7 @@ import { Image } from "astro:assets";
           work together to not only use your website to display information, but
           to express {"it's"} individuality and your personality.
         </p>
+        <Image src={AboutMe} alt="" class="w-1/2" />
         <p class="pt-2">
           - View all website template demos cta. We take all the guesswork out
           of that. With a diverse range of design elements, color palettes,
@@ -45,7 +47,7 @@ import { Image } from "astro:assets";
     </div>
 
     <div class="bg-test1">
-      <Image class="h-[100%] border-2 border-onyx rounded" src={site4} alt="" />
+      <!-- <Image class="h-[100%] border-2 border-onyx rounded" src={site5} alt="" /> -->
     </div>
     <div class="bg-test2">
       <Image class="h-[100%] border-2 border-onyx rounded" src={site5} alt="" />

@@ -1,62 +1,89 @@
 ---
 import HookGrid from "../components/HookGrid.astro";
-import LandingPgEx from "../components/LandingPgEx.astro";
 import TestCta from "../components/TestCta.astro";
-import Contact from "../components/sections/Contact.astro";
 import Hero from "../components/sections/Hero.astro";
+import LandingPgEx from "../components/LandingPgEx.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 import RecentWork from "../components/sections/WebDev/RecentWork.astro";
 import TemplatePackages from "../components/sections/WebDev/TemplatePackages.astro";
-import MainLayout from "../layouts/MainLayout.astro";
+import Contact from "../components/sections/Contact.astro";
 ---
 
 <MainLayout>
-  <!--*HERO -->
   <Hero />
-  <HookGrid />
+  <!-- *1.HERO SECTION: If you could give one statement about the transformation this services offers, what would it be? -->
+  <!-- -communicate in under 3 seconds:
+--what is it?
+--who is it for?
+--how will it make my life better?
+--what do you want me to do next? -->
 
-  <!--*HOW IT WORKS CTA-->
+  <!-- *2. PROBLEM SOLVING SECTION:   -->
+  <!-- -where we address the key problem that our audience is experiencing, empathize with what they're going through... then position out product as the solution to this problem, and to help us structure this into a compelling story -->
+  <!-- --Attention
+--interest
+--desire
+--action -->
   <TestCta />
 
-  <!-- TODO: CONTENT & DESIGN: SECTION CTA-->
+  <!-- *3. FIRST PERSON -->
+  <!--*HOW IT WORKS CTA-->
+  <!-- -give a step by step guide from start to finish, keep it simple to give your client an easy map of things, work from first interaction with you to end result -->
+  <!-- --3 to 5 steps max.  -->
+  <!-- --we want our customers to quickly scan the section and be able to envision a clear path to their goals -->
+
+  <!-- ?: CONTENT & DESIGN: SECTION CTA-->
   <section id="build-authority-section" class="bg-">
     <!-- ?list own small businesses to establish authority? -->
     <!-- ?interactive landing page examples-->
-
-    <!-- <h2>I've helped over [num] of clients achieve [result]</h2>
-    <p>
-      a short section introducing who you are and establishing yourself as an
-      authority and building connection with your audience.
-    </p> -->
+    <!-- *4.SOCIAL PROOF- use wtbh and jungle?? establish authority??-->
+    <!-- -headings -->
+    <!-- -testimonials -->
     <LandingPgEx />
+    <RecentWork />
   </section>
 
-  <!-- *RECENT WORKS -->
-  <RecentWork />
+  <!-- *5. WHATS INCLUDED-(ref section 5: Whats Included) -->
+  <!-- -use bullets and focus on the benefits rather than the features, (features can be displayed in headings) -->
+  <!-- --use a short one-sentence description -->
+  <!-- --HEADING -->
+  <!-- --DESCRIPTION -->
+  <!-- --CTA -->
 
-  <!-- TODO: GLOWING TESTIMONIAL CTA-->
-  <!-- <section id="testimonial-section" class="bg-teal">
-    Glowing Testimonial CTA
-  </section> -->
-
-  <!-- TODO: CONTENT & DESIGN: SECTION CTA-->
-  <!-- <section id='client-showcase-section"' class="bg-orange">
-    <h2>Client Showcase</h2>
-    <p>a few examples  of what we can do</p> -->
-  <!-- gallery example at 17:34 -->
-  <!-- </section> -->
-
-  <!-- *PACKAGES-->
+  <!-- *6. ARE YOU READY? -->
+  <!-- -Add details of the package or payment plans you offer, and buttons to buy apply now. Think about how you want people to puchase this offer, will it link to the generic contact page on your website? Or straight to a purchase page? -->
+  <!-- --HEADING
+--DESCRIPTION
+--CTA -->
   <TemplatePackages />
 
-  <!-- ? UNSURE IF I WANT TO KEEP: FAQ v-->
-  <!-- <section id="FAQ">FAQ</section> -->
-  <!-- ? UNSURE IF I WANT TO KEEP: FAQ ^-->
+  <!-- *7. ABOUT ME-  -->
+  <!-- -qualifications, achievements, how many clients you've helped to get a certain result. -->
+  <!-- --"I am a [insert impressive qualification] that;s helped over [x number] of clients achieve [this result] -->
+  <!-- --HEADING -->
+  <!-- --DESCRIPTION -->
+  <HookGrid />
 
-  <!-- TODO: CONTENT & DESIGN: SECTION CTA-->
-  <!-- <section id="is-this-for-me-section" class="bg-lavender">
-    <h2>Is this for me?</h2>
-    21:26 https://www.youtube.com/watch?v=Ny-Az8nAAaM&t=1064s
-  </section> -->
+  <!-- *8. IS THIS FOR ME? -->
+  <!-- -list 3-5 successful outcomes that your offer/product will help your audience to achieve. Again, use specific and inspirational scenarios to have your client think:"yes, that's exactly what I want!" -->
 
+  <!-- *8. IS THIS NOT FOR ME? -->
+  <!-- -list 3-5 successful outcomes that your offer/product will help your audience to achieve. Again, use specific and inspirational scenarios to have your client think:"yes, that's exactly what I want!" -->
+  <!-- --the more specific the better, helps ideal customer feel like your talking directly to them, and understand what they're going through
+--description: "does this sound familiar?" 
+--now imagine if you could... [list 3 to 5 successful outcomes that your offer/product will help your audience to achieve  -->
+
+  <!-- *9. THIS IS NOT FOR YOU IF… -->
+  <!-- -attracts the right people -->
+  <!-- -sets yourself apart from others -->
+
+  <!-- *10. FAQ- answer common questions by utilizing AI -->
+
+  <!-- *11. CTA- finish desirable outcome and final cta- what do you want your customers to do next? -->
   <Contact />
+  <!-- --HEADING- always use a question- (will you start your fitness journey now? instead of start your fitness journey now!)
+--DESCRIPTION
+--CTA -->
+  <!-- ---gives your customer a sense of control and therefore they're more LIKELY TO TAKE THAT ACTION, SO YOU'RE NOT TELLING THEM WHAT TO DO OR THAT THEY NEED TO BUY YOUR PRODUCT NOW -->
+  <!-- ---you want to ask them a yes or no question, give them a sense of ownership -->
 </MainLayout>
