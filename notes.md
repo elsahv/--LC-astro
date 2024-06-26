@@ -1,4 +1,22 @@
+    <!-- TODO: 6/25/24 v -->
+
 \*\*CURRENTLY: FILL OUT ALL CONTENT
+
+- COPY PROMPTS
+- you're struggling to get [desirable result] because you don't have [missing piece]'
+- you have [example], but you aren't [achieving this result]
+- How does this make them feel?
+- have you been in the same situation? How did you overcome this? How can you help them do the same?
+
+-YOU'RE NOT LAZY, YOU JUST NEED THE RIGHT PLAN-(Attention)
+
+-(Interest)
+-The reason most people give up when it comes to working out, is they either follow random videos with no plan or guidance, or try to go from zero to 100 overnight- only to give up when it doesn't stick.
+-That's why my workout plans are designed to gently ease you in to build habits that stick with you for life.
+-and my community will be here to give you the support, guidance, and accountability you need to be able to stick with it long term.
+
+-So that a year from now... you'll be able to look back at yourself and think, "wow! Did I do that?" -(Desire)
+PLAN MY WORKOUT -(Action)
 
 <!-- TODO: 6/20/24 v -->
 
