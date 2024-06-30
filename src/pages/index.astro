@@ -7,6 +7,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 import RecentWork from "../components/sections/WebDev/RecentWork.astro";
 import TemplatePackages from "../components/sections/WebDev/TemplatePackages.astro";
 import Contact from "../components/sections/Contact.astro";
+import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
+const allWorks = await Astro.glob("./works/*.md");
 ---
 
 <MainLayout>
@@ -27,47 +29,88 @@ import Contact from "../components/sections/Contact.astro";
     <!-- -headings -->
     <!-- -testimonials -->
     <LandingPgEx />
+    <!-- TODO: v -->
     <RecentWork />
+    <!-- TODO: ^ -->
+
+    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    <!--*--*--*--*--*-NEW DYNAMIC PGS v-*--*--*--*--*--*--*--*--*--*-->
+    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    <div id="wrapper" class="mt-5 pt-5">
+      <SubSectionBanner title="Recent Clients" />
+      <div id="grid-wrapper" class="px-[50px]">
+        <div
+          id="grid"
+          class="mt-5 pt-5 grid grid-cols-2 gap-x-[100px] px-[150px]"
+        >
+          {
+            allWorks.map((work) => (
+              <div id="sq">
+                <a href={work.url}>
+                  <img
+                    src={work.frontmatter.image.url}
+                    alt={work.frontmatter.image.alt}
+                    class="border border-black hover:border-2 hover:cursor-pointer h-[500px] w-full"
+                  />
+
+                  <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
+                    <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
+                      {work.frontmatter.title}
+                    </h2>
+                    <p class="">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing ediv
+                      id="sq"t. Itaque ex nostrum veniam est? Voluptatum
+                      corporis inventore veniam quas, minus sed corrupti magnam,
+                      nostrum voluptates ipsum quibusdam fugit exercitationem?
+                      Maxime, eos!
+                    </p>
+                  </div>
+                </a>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- TODO 5. WHATS INCLUDED-(ref section 5: Whats Included) -->
-  <!-- -use bullets and focus on the benefits rather than the features, (features can be displayed in headings) -->
-  <!-- --use a short one-sentence description -->
-  <!-- --HEADING -->
-  <!-- --DESCRIPTION -->
-  <!-- --CTA -->
+  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*-NEW DYNAMIC PGS ^-*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
-  <!-- TODO- 6. ARE YOU READY? -->
-  <!-- -Add details of the package or payment plans you offer, and buttons to buy apply now. Think about how you want people to puchase this offer, will it link to the generic contact page on your website? Or straight to a purchase page? -->
-  <!-- --HEADING
+  <AboutMe />
+</MainLayout>
+
+<!-- TODO 5. WHATS INCLUDED-(ref section 5: Whats Included) -->
+<!-- -use bullets and focus on the benefits rather than the features, (features can be displayed in headings) -->
+<!-- --use a short one-sentence description -->
+<!-- --HEADING -->
+<!-- --DESCRIPTION -->
+<!-- --CTA -->
+
+<!-- TODO- 6. ARE YOU READY? -->
+<!-- -Add details of the package or payment plans you offer, and buttons to buy apply now. Think about how you want people to puchase this offer, will it link to the generic contact page on your website? Or straight to a purchase page? -->
+<!-- --HEADING
 --DESCRIPTION
 --CTA -->
-  <TemplatePackages />
+<TemplatePackages />
 
-  <!-- *7. ABOUT ME-  -->
-  <!-- -qualifications, achievements, how many clients you've helped to get a certain result. -->
-  <!-- --"I am a [insert impressive qualification] that;s helped over [x number] of clients achieve [this result] -->
-  <!-- --HEADING -->
-  <!-- --DESCRIPTION -->
-  <AboutMe />
-
-  <!--  TODO- 8. IS THIS FOR ME? -->
-  <!-- -list 3-5 successful outcomes that your offer/product will help your audience to achieve. Again, use specific and inspirational scenarios to have your client think:"yes, that's exactly what I want!" -->
-  <!-- --the more specific the better, helps ideal customer feel like your talking directly to them, and understand what they're going through
+<!--  TODO- 8. IS THIS FOR ME? -->
+<!-- -list 3-5 successful outcomes that your offer/product will help your audience to achieve. Again, use specific and inspirational scenarios to have your client think:"yes, that's exactly what I want!" -->
+<!-- --the more specific the better, helps ideal customer feel like your talking directly to them, and understand what they're going through
 --description: "does this sound familiar?" 
 --now imagine if you could... [list 3 to 5 successful outcomes that your offer/product will help your audience to achieve  -->
 
-  <!--  TODO- 9. THIS IS NOT FOR YOU IF… -->
-  <!-- -attracts the right people -->
-  <!-- -sets yourself apart from others -->
+<!--  TODO- 9. THIS IS NOT FOR YOU IF… -->
+<!-- -attracts the right people -->
+<!-- -sets yourself apart from others -->
 
-  <!-- *10. FAQ- answer common questions by utilizing AI -->
+<!-- *10. FAQ- answer common questions by utilizing AI -->
 
-  <!-- *11. CTA- finish desirable outcome and final cta- what do you want your customers to do next? -->
-  <Contact />
-  <!-- --HEADING- always use a question- (will you start your fitness journey now? instead of start your fitness journey now!)
+<!-- *11. CTA- finish desirable outcome and final cta- what do you want your customers to do next? -->
+<Contact />
+<!-- --HEADING- always use a question- (will you start your fitness journey now? instead of start your fitness journey now!)
 --DESCRIPTION
 --CTA -->
-  <!-- ---gives your customer a sense of control and therefore they're more LIKELY TO TAKE THAT ACTION, SO YOU'RE NOT TELLING THEM WHAT TO DO OR THAT THEY NEED TO BUY YOUR PRODUCT NOW -->
-  <!-- ---you want to ask them a yes or no question, give them a sense of ownership -->
-</MainLayout>
+<!-- ---gives your customer a sense of control and therefore they're more LIKELY TO TAKE THAT ACTION, SO YOU'RE NOT TELLING THEM WHAT TO DO OR THAT THEY NEED TO BUY YOUR PRODUCT NOW -->
+<!-- ---you want to ask them a yes or no question, give them a sense of ownership -->

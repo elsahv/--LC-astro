@@ -8,8 +8,8 @@ description:
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:
-  url: "https://hoveyroofing.com/assets/sliderImg1-f08cf62e.jpg"
-  alt: "The full Astro logo."
+  url: "https://docs.astro.build/assets/rose.webp"
+  alt: "The Astro logo on a dark background with a pink glow."
 websiteUrl: "https://hoveyroofing.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]

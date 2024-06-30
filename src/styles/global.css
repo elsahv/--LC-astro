@@ -1,22 +1,13 @@
-p {
-  font-size: 18px;
+body {
+  background-color: #f0ead2;
 }
 
-/* section {
-} */
-
-._ShadowBorder {
-  border: solid 1px black;
-  border-radius: 15px;
-  box-shadow: 5px 10px #888888;
+p {
+  font-size: 18px;
 }
 
 ._PrimaryBorder {
   border: solid 1px #35373d;
   border-radius: 12px;
   box-shadow: 5px 1px #000;
-}
-
-section {
-  padding: 45px 0;
 }
