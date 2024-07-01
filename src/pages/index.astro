@@ -5,9 +5,10 @@ import Hero from "../components/sections/Hero.astro";
 import LandingPgEx from "../components/LandingPgEx.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import RecentWork from "../components/sections/WebDev/RecentWork.astro";
-import TemplatePackages from "../components/sections/WebDev/TemplatePackages.astro";
 import Contact from "../components/sections/Contact.astro";
 import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
+import PkgTemplates from "../components/PkgTemplates.astro";
+
 const allWorks = await Astro.glob("./works/*.md");
 ---
 
@@ -33,9 +34,6 @@ const allWorks = await Astro.glob("./works/*.md");
     <RecentWork />
     <!-- TODO: ^ -->
 
-    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-    <!--*--*--*--*--*-NEW DYNAMIC PGS v-*--*--*--*--*--*--*--*--*--*-->
-    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
     <div id="wrapper" class="mt-5 pt-5">
       <SubSectionBanner title="Recent Clients" />
       <div id="grid-wrapper" class="px-[50px]">
@@ -73,11 +71,6 @@ const allWorks = await Astro.glob("./works/*.md");
       </div>
     </div>
   </section>
-
-  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-  <!--*--*--*--*--*-NEW DYNAMIC PGS ^-*--*--*--*--*--*--*--*--*--*-->
-  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-
   <AboutMe />
 </MainLayout>
 
@@ -89,11 +82,16 @@ const allWorks = await Astro.glob("./works/*.md");
 <!-- --CTA -->
 
 <!-- TODO- 6. ARE YOU READY? -->
-<!-- -Add details of the package or payment plans you offer, and buttons to buy apply now. Think about how you want people to puchase this offer, will it link to the generic contact page on your website? Or straight to a purchase page? -->
-<!-- --HEADING
---DESCRIPTION
---CTA -->
-<TemplatePackages />
+<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+<!--*--*--*--*--*-NEW DYNAMIC PGS TEMPLATE PKGS v-*--*--*--*--*--*--*--*--*--*-->
+<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+<> </>
+<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+<!--*--*--*--*--*-NEW DYNAMIC PGS TEMPLATE PKGS ^-*--*--*--*--*--*--*--*--*--*-->
+<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+<!-- <TemplatePackages /> -->
+
+<PkgTemplates />
 
 <!--  TODO- 8. IS THIS FOR ME? -->
 <!-- -list 3-5 successful outcomes that your offer/product will help your audience to achieve. Again, use specific and inspirational scenarios to have your client think:"yes, that's exactly what I want!" -->

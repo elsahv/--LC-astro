@@ -1,0 +1,109 @@
+---
+import { Image } from "astro:assets";
+
+import Pic1 from "../images/screenshots/site3.png";
+import Pic2 from "../images/screenshots/site4.png";
+import SubSectionBanner from "./shared/SubSection_Banner.astro";
+
+const serviceItems = [
+  {
+    title: "Service and Support",
+
+    p: "I assist with: domains, hosting, web development and design. In other words... pretty much everything from setup to ongoing service, leaving you more time to spend on your business!",
+  },
+  {
+    title: "Development and design advantages",
+    p: "As a developer who designs, I rely on Javascript languages and frameworks, mainly NextJs. My knowledge on coding gives me the advantage to design and breaking the limits!",
+  },
+  {
+    title: "Monthly Updates",
+    p: "Need to make a change? Or add more content or photos?. Monthly updates are available with subscription.",
+  },
+  {
+    title: "Mobile Optimization",
+    p: "Studies show that the majority of website visitors use phones and tablets, as opposed to computers at home. ",
+  },
+];
+
+const pkgItems = [
+  {
+    title: "The Growing Pup",
+    p: "WEBSITE BUILD + BASIC SUPPORT SERVICES - perfect for when you need something a bit quicker!",
+    img: Pic1,
+    price: "99",
+    listItem1: "STANDARD PAGES TEMPLATES (w/template components)",
+    listItem2: "Home Page",
+    listItem3: "About- w/ Interactive Photo Gallery",
+    listItem4: "Contact Page and Form",
+  },
+  {
+    title: "Rising Carnivore",
+    p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
+    img: Pic2,
+    price: "149",
+    listItem1: "SPECIALIZED PGS(w/ specialized components)",
+    listItem2: "Monthly hosting on secure off-site servers",
+    listItem3: "Domain name purchase & annual renewals",
+    listItem4: "Monthly security & software updates",
+  },
+];
+---
+
+<SubSectionBanner title="Template Packages" />
+<h2 class="underline text-2xl font-3xl pl-5">SERVICES INCLUDES</h2>
+<div id="wrapper" class="p-5">
+  <div id="grid" class="grid md:grid-cols-2 grid-cols-1 gap-5">
+    {
+      serviceItems.map((serviceItem) => (
+        <div id="sq" class="bg-test2 border border-teal p-5">
+          <h3 class="font-bold text-lg">{serviceItem.title}</h3>
+          <p>{serviceItem.p}</p>
+        </div>
+      ))
+    }
+  </div>
+</div>
+<div id="wrapper" class="2xl:mx-[230px]">
+  <div id="container" class="2xl:mx-[150px]">
+    <div id="grid-wrapper" class="p-5 bg-test">
+      <div
+        id="grid"
+        class="bg-test1 grid md:grid-cols-2 grid-cols-1 gap-y-[55px]"
+      >
+        {
+          pkgItems.map((item) => (
+            <div
+              id="sq"
+              class="bg-teal text-papaya xl:mx-5 mx-3 xl:px-4 px-1 py-2 rounded"
+            >
+              <div id="padding" class="py-2">
+                <div id="top-sq-content" class="p-2">
+                  <h2 class="">{item.title}</h2>
+                  <p class="text-test2 2xl:text-2xl md:text-lg text-md">
+                    {item.p}
+                  </p>
+                </div>
+                <Image src={item.img} alt="" class="my-1" />
+                <div id="btm-sq-content" class="text- font-bold p-2">
+                  <p class="pl-1 pt-1">
+                    <span class="text-4xl">${item.price}</span>
+                    /year
+                  </p>
+                  <button class="bg-caribbean text-test2 hover:text-orange pt-1 px-2 py-1 my-2">
+                    see '{item.title}' demo
+                  </button>
+                  <ul class="text-lavender space-y-1 pt-2">
+                    <li>{item.listItem1}</li>
+                    <li>{item.listItem2}</li>
+                    <li>{item.listItem3}</li>
+                    <li>{item.listItem4}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>

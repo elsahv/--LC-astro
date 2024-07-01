@@ -1,6 +1,7 @@
     <!-- TODO: 6/25/24 v -->
 
-\*\*CURRENTLY: FILL OUT ALL CONTENT
+**CURRENTLY:CREATE DYNAMIC OUT OF COYOTE PACKAGES USING MARKDOWNPOSTLAYOUT.ASTRO**
+**_CURRENTLY: FILL OUT ALL CONTENT_**
 
 - COPY PROMPTS
 - you're struggling to get [desirable result] because you don't have [missing piece]'

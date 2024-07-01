@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "Hoveyroofing"
+title: "small business- Hoveyroofing"
 pubDate: 2022-07-01
 description:
   "a future Morongo Basin community website.  Corporis doloremque sit minus, asperiores quia velit
