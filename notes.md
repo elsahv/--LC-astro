@@ -1,7 +1,8 @@
-    <!-- TODO: 6/25/24 v -->
-
 **CURRENTLY:CREATE DYNAMIC OUT OF COYOTE PACKAGES USING MARKDOWNPOSTLAYOUT.ASTRO**
 **_CURRENTLY: FILL OUT ALL CONTENT_**
+
+ON DECK:
+-CREATE HAMBURGER MENU-7/2/24
 
 - COPY PROMPTS
 - you're struggling to get [desirable result] because you don't have [missing piece]'

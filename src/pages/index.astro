@@ -4,7 +4,6 @@ import ProblemSolving from "../components/sections/ProblemSolving.astro";
 import Hero from "../components/sections/Hero.astro";
 import LandingPgEx from "../components/LandingPgEx.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import RecentWork from "../components/sections/WebDev/RecentWork.astro";
 import Contact from "../components/sections/Contact.astro";
 import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
 import PkgTemplates from "../components/PkgTemplates.astro";
@@ -30,46 +29,47 @@ const allWorks = await Astro.glob("./works/*.md");
     <!-- -headings -->
     <!-- -testimonials -->
     <LandingPgEx />
-    <!-- TODO: v -->
-    <RecentWork />
-    <!-- TODO: ^ -->
+    <!-- TODO:CREATE IN RECENT WORKS COMP v -->
+    <div id="wrapper" class="bg-test mt-[70px] pt-5">
+      <div id="container" class="py-5 my-5">
+        <SubSectionBanner title="Recent Clients" />
+        <div id="grid-wrapper" class="2xl:px-[50px] px-5">
+          <div
+            id="grid"
+            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-x-[100px] gap-4 2xl:px-[150px] px-0"
+          >
+            {
+              allWorks.map((work) => (
+                <div id="sq">
+                  <a href={work.url}>
+                    <img
+                      src={work.frontmatter.image.url}
+                      alt={work.frontmatter.image.alt}
+                      class="border border-black hover:border-2 hover:cursor-pointer lg:h-[500px] h-[300px] w-full"
+                    />
 
-    <div id="wrapper" class="mt-5 pt-5">
-      <SubSectionBanner title="Recent Clients" />
-      <div id="grid-wrapper" class="px-[50px]">
-        <div
-          id="grid"
-          class="mt-5 pt-5 grid grid-cols-2 gap-x-[100px] px-[150px]"
-        >
-          {
-            allWorks.map((work) => (
-              <div id="sq">
-                <a href={work.url}>
-                  <img
-                    src={work.frontmatter.image.url}
-                    alt={work.frontmatter.image.alt}
-                    class="border border-black hover:border-2 hover:cursor-pointer h-[500px] w-full"
-                  />
-
-                  <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
-                    <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
-                      {work.frontmatter.title}
-                    </h2>
-                    <p class="">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing ediv
-                      id="sq"t. Itaque ex nostrum veniam est? Voluptatum
-                      corporis inventore veniam quas, minus sed corrupti magnam,
-                      nostrum voluptates ipsum quibusdam fugit exercitationem?
-                      Maxime, eos!
-                    </p>
-                  </div>
-                </a>
-              </div>
-            ))
-          }
+                    <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
+                      <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
+                        {work.frontmatter.title}
+                      </h2>
+                      <p class="">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing ediv
+                        id="sq"t. Itaque ex nostrum veniam est? Voluptatum
+                        corporis inventore veniam quas, minus sed corrupti
+                        magnam, nostrum voluptates ipsum quibusdam fugit
+                        exercitationem? Maxime, eos!
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              ))
+            }
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- TODO:CREATE IN RECENT WORKS COMP ^ -->
   </section>
   <AboutMe />
 </MainLayout>
