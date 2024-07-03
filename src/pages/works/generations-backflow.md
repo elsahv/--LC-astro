@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "small business- Generations Backflow"
+title: "Generations Backflow"
+category: "small business"
 pubDate: 2022-07-01
 description: "sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."

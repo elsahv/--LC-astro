@@ -1,7 +1,19 @@
-**CURRENTLY:CREATE DYNAMIC OUT OF COYOTE PACKAGES USING MARKDOWNPOSTLAYOUT.ASTRO**
-**_CURRENTLY: FILL OUT ALL CONTENT_**
+ <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*-v-*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
+**CURRENTLY:IMPROVE MARKDOWNPOSTLAYOUT LAYOUT**
+title img
+fdfds img
+slot
+
+ <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*-^-*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+
+**_CURRENTLY: FILL OUT ALL CONTENT_**
 ON DECK:
+-CREATE DYNAMIC RECENT WORKS COMP
 -CREATE HAMBURGER MENU-7/2/24
 
 - COPY PROMPTS
@@ -74,9 +86,7 @@ EVENTUALLY- 'CREATE BACK TO TOP' COMPONENT
 - CONTACT
 
 - 4/29
-- <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-   <!--*--*--*--*--*-CENTER PAGE BANNER v-*--*--*--*--*--*--*--*--*--*-->
-   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+-
 
 - 4/25
   1.move all photos to /src/images folder?????

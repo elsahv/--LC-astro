@@ -1,13 +1,11 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "Hoveyroofing"
-category: "small business"
+title: "Rising Carnivore"
+category: "demo"
 pubDate: 2022-07-01
-description:
-  "a future Morongo Basin community website.  Corporis doloremque sit minus, asperiores quia velit
-  inventore nostrum! Dicta alias corporis numquam."
-author: "Astro Learner"
+description: "WEBSITE BUILD + BASIC SUPPORT SERVICES"
+price: "139"
 image:
   url: "https://docs.astro.build/assets/rose.webp"
   alt: "The Astro logo on a dark background with a pink glow."
@@ -35,6 +33,8 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
  -->
+
+**VISIT DEMO CTA BTN**
 
 # Telling the story of a website involves _highlighting_ its **inception, purpose, evolution, and impact**. Here's how you could go about it:
 
