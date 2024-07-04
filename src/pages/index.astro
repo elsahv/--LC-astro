@@ -14,30 +14,30 @@ const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
 import Pic1 from "../images/screenshots/site3.png";
 import Pic2 from "../images/screenshots/site4.png";
 
-const pkgItems = [
-  {
-    title: "The Growing Pup",
-    p: "WEBSITE BUILD + BASIC SUPPORT SERVICES - perfect for when you need something a bit quicker!",
-    img: Pic1,
-    price: "99",
-    listItem1: "STANDARD PAGES TEMPLATES (w/template components)",
-    listItem2: "Home Page",
-    listItem3: "About- w/ Interactive Photo Gallery",
-    listItem4: "Contact Page and Form",
-    demoLinks: "/demos/growing-pup-demo",
-  },
-  {
-    title: "Rising Carnivore",
-    p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
-    img: Pic2,
-    price: "149",
-    listItem1: "SPECIALIZED PGS(w/ specialized components)",
-    listItem2: "Monthly hosting on secure off-site servers",
-    listItem3: "Domain name purchase & annual renewals",
-    listItem4: "Monthly security & software updates",
-    demoLinks: "/demos/rising-carnivore-demo",
-  },
-];
+// const pkgItems = [
+//   {
+//     title: "The Growing Pup",
+//     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES - perfect for when you need something a bit quicker!",
+//     img: Pic1,
+//     price: "99",
+//     listItem1: "STANDARD PAGES TEMPLATES (w/template components)",
+//     listItem2: "Home Page",
+//     listItem3: "About- w/ Interactive Photo Gallery",
+//     listItem4: "Contact Page and Form",
+//     demoLinks: "/demos/growing-pup-demo",
+//   },
+//   {
+//     title: "Rising Carnivore",
+//     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
+//     img: Pic2,
+//     price: "149",
+//     listItem1: "SPECIALIZED PGS(w/ specialized components)",
+//     listItem2: "Monthly hosting on secure off-site servers",
+//     listItem3: "Domain name purchase & annual renewals",
+//     listItem4: "Monthly security & software updates",
+//     demoLinks: "/demos/rising-carnivore-demo",
+//   },
+// ];
 ---
 
 <MainLayout>
@@ -58,47 +58,47 @@ const pkgItems = [
     <!-- -headings -->
     <!-- -testimonials -->
     <LandingPgEx />
-    <!-- TODO:CREATE IN RECENT WORKS COMP v -->
-    <div id="wrapper" class="bg-test mt-[70px] pt-5">
-      <div id="container" class="py-5 my-5">
-        <SubSectionBanner title="Recent Clients" />
-        <div id="grid-wrapper" class="2xl:px-[50px] px-5">
-          <div
-            id="grid"
-            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-x-[100px] gap-4 2xl:px-[150px] px-0"
-          >
-            {
-              allWorks.map((work) => (
-                <div id="sq">
-                  <a href={work.url}>
-                    <img
-                      src={work.frontmatter.image.url}
-                      alt={work.frontmatter.image.alt}
-                      class="border border-black hover:border-2 hover:cursor-pointer lg:h-[500px] h-[300px] w-full"
-                    />
+      <!-- TODO:CREATE IN RECENT WORKS COMP v -->
+      <div id="wrapper" class="bg-test mt-[70px] pt-5">
+        <div id="container" class="py-5 my-5">
+          <SubSectionBanner title="Recent Clients" />
+          <div id="grid-wrapper" class="2xl:px-[50px] px-5">
+            <div
+              id="grid"
+              class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-x-[100px] gap-4 2xl:px-[150px] px-0"
+            >
+              {
+                allWorks.map((work) => (
+                  <div id="sq">
+                    <a href={work.url}>
+                      <img
+                        src={work.frontmatter.image.url}
+                        alt={work.frontmatter.image.alt}
+                        class="border border-black hover:border-2 hover:cursor-pointer lg:h-[500px] h-[300px] w-full"
+                      />
 
-                    <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
-                      <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
-                        {work.frontmatter.title}
-                      </h2>
-                      <p class="">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing ediv
-                        id="sq"t. Itaque ex nostrum veniam est? Voluptatum
-                        corporis inventore veniam quas, minus sed corrupti
-                        magnam, nostrum voluptates ipsum quibusdam fugit
-                        exercitationem? Maxime, eos!
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              ))
-            }
+                      <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
+                        <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
+                          {work.frontmatter.title}
+                        </h2>
+                        <p class="">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing ediv
+                          id="sq"t. Itaque ex nostrum veniam est? Voluptatum
+                          corporis inventore veniam quas, minus sed corrupti
+                          magnam, nostrum voluptates ipsum quibusdam fugit
+                          exercitationem? Maxime, eos!
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                ))
+              }
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- TODO:CREATE IN RECENT WORKS COMP ^ -->
+      <!-- TODO:CREATE IN RECENT WORKS COMP ^ -->
   </section>
   <AboutMe />
 </MainLayout>

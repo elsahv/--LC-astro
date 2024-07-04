@@ -2,7 +2,12 @@
    <!--*--*--*--*--*-v-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
-**CURRENTLY:IMPROVE MARKDOWNPOSTLAYOUT LAYOUT**
+**CURRENTLY:CREATE UNIVERSAL, DYNAMIC, CONDITIONALLY STYLED, GRID CARDS FOR:**
+**1. PKGTEMPLATES,**
+**2. RECENT WORKS,**
+**3. AND DEMOS**
+
+**_CURRENTLY:IMPROVE MARKDOWNPOSTLAYOUT LAYOUT_**
 title img
 fdfds img
 slot
