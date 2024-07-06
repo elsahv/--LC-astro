@@ -1,211 +1,67 @@
 ---
-import AboutMe from "../components/AboutMe.astro";
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
-import Hero from "../components/sections/Hero.astro";
 import LandingPgEx from "../components/LandingPgEx.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import Contact from "../components/sections/Contact.astro";
+import Dynamic_Hero from "../components/shared/Dynamic_Hero.astro";
 import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
-import PkgTemplates from "../components/PkgTemplates.astro";
 
 const allWorks = await Astro.glob("./works/*.md");
-const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
-
-import Pic1 from "../images/screenshots/site3.png";
-import Pic2 from "../images/screenshots/site4.png";
-
-// const pkgItems = [
-//   {
-//     title: "The Growing Pup",
-//     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES - perfect for when you need something a bit quicker!",
-//     img: Pic1,
-//     price: "99",
-//     listItem1: "STANDARD PAGES TEMPLATES (w/template components)",
-//     listItem2: "Home Page",
-//     listItem3: "About- w/ Interactive Photo Gallery",
-//     listItem4: "Contact Page and Form",
-//     demoLinks: "/demos/growing-pup-demo",
-//   },
-//   {
-//     title: "Rising Carnivore",
-//     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
-//     img: Pic2,
-//     price: "149",
-//     listItem1: "SPECIALIZED PGS(w/ specialized components)",
-//     listItem2: "Monthly hosting on secure off-site servers",
-//     listItem3: "Domain name purchase & annual renewals",
-//     listItem4: "Monthly security & software updates",
-//     demoLinks: "/demos/rising-carnivore-demo",
-//   },
-// ];
 ---
 
 <MainLayout>
-  <Hero />
-  <ProblemSolving />
-
-  <!-- *3. FIRST PERSON -->
-  <!--*HOW IT WORKS CTA-->
-  <!-- -give a step by step guide from start to finish, keep it simple to give your client an easy map of things, work from first interaction with you to end result -->
-  <!-- --3 to 5 steps max.  -->
-  <!-- --we want our customers to quickly scan the section and be able to envision a clear path to their goals -->
-
-  <!-- ?: CONTENT & DESIGN: SECTION CTA-->
-  <section id="build-authority-section" class="bg-">
-    <!-- ?list own small businesses to establish authority? -->
-    <!-- ?interactive landing page examples-->
-    <!-- *4.SOCIAL PROOF- use wtbh and jungle?? establish authority??-->
-    <!-- -headings -->
-    <!-- -testimonials -->
+  <div id="hero-section" class="mb-5 bg-">
+    <Dynamic_Hero
+      title="A Web Design Business for Busy Creatives/ Small Business Owners"
+      listitem1="What do you need for a website?"
+      listitem3="The Growing Pup? A template for small businesses just starting out,  increased potential customers, easier to find on Google."
+      listitem2="Or Rising Carnivore? You need a website not just to promote your business, but have the the ablity to tell your story and brand"
+      listitem4="A custom website that fits your business, personality, goals... and you alone."
+    />
+  </div>
+  <section id="how-it-works">
+    <ProblemSolving />
     <LandingPgEx />
-      <!-- TODO:CREATE IN RECENT WORKS COMP v -->
-      <div id="wrapper" class="bg-test mt-[70px] pt-5">
-        <div id="container" class="py-5 my-5">
-          <SubSectionBanner title="Recent Clients" />
-          <div id="grid-wrapper" class="2xl:px-[50px] px-5">
-            <div
-              id="grid"
-              class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-x-[100px] gap-4 2xl:px-[150px] px-0"
-            >
-              {
-                allWorks.map((work) => (
-                  <div id="sq">
-                    <a href={work.url}>
-                      <img
-                        src={work.frontmatter.image.url}
-                        alt={work.frontmatter.image.alt}
-                        class="border border-black hover:border-2 hover:cursor-pointer lg:h-[500px] h-[300px] w-full"
-                      />
+  </section>
 
-                      <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
-                        <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
-                          {work.frontmatter.title}
-                        </h2>
-                        <p class="">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing ediv
-                          id="sq"t. Itaque ex nostrum veniam est? Voluptatum
-                          corporis inventore veniam quas, minus sed corrupti
-                          magnam, nostrum voluptates ipsum quibusdam fugit
-                          exercitationem? Maxime, eos!
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                ))
-              }
-            </div>
+  <section id="featured-clients">
+    <div id="wrapper" class="bg-test mt-[70px] pt-5">
+      <div id="container" class="py-5 my-5">
+        <!-- !WTBH AND JUNGLE -->
+        <SubSectionBanner title="Featured Clients" />
+        <div id="grid-wrapper" class="2xl:px-[50px] px-5">
+          <div
+            id="grid"
+            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-x-[100px] gap-4 2xl:px-[150px] px-0"
+          >
+            {
+              allWorks.map((work) => (
+                <div id="sq">
+                  <a href={work.url}>
+                    <img
+                      src={work.frontmatter.image.url}
+                      alt={work.frontmatter.image.alt}
+                      class="border border-black hover:border-2 hover:cursor-pointer lg:h-[500px] h-[300px] w-full"
+                    />
+
+                    <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
+                      <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
+                        {work.frontmatter.title}
+                      </h2>
+                      <p class="">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing ediv
+                        id="sq"t. Itaque ex nostrum veniam est? Voluptatum
+                        corporis inventore veniam quas, minus sed corrupti
+                        magnam, nostrum voluptates ipsum quibusdam fugit
+                        exercitationem? Maxime, eos!
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>
-
-      <!-- TODO:CREATE IN RECENT WORKS COMP ^ -->
+    </div>
   </section>
-  <AboutMe />
 </MainLayout>
-
-<!-- TODO 5. WHATS INCLUDED-(ref section 5: Whats Included) -->
-<!-- -use bullets and focus on the benefits rather than the features, (features can be displayed in headings) -->
-<!-- --use a short one-sentence description -->
-<!-- --HEADING -->
-<!-- --DESCRIPTION -->
-<!-- --CTA -->
-
-<!-- TODO- 6. ARE YOU READY? -->
-
-<!-- <PkgTemplates /> -->
-<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-<!--*--*--*--*--*-NEW DYNAMIC PGS TEMPLATE PKGS v-*--*--*--*--*--*--*--*--*--*-->
-<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-<>
-  <div id="wrapper" class="2xl:mx-[230px]">
-    <div id="container" class="2xl:mx-[150px]">
-      <div id="grid-wrapper" class="p-5 bg-test">
-        <div
-          id="grid"
-          class="bg-test grid md:grid-cols-2 grid-cols-1 gap-y-[55px]"
-        >
-        {
-          allDemoCTAs.map((demoCTA) => (
-            <div
-            id="sq"
-            class="bg-teal text-papaya xl:mx-5 mx-3 xl:px-4 px-1 py-2 rounded"
-            >
-                <div id="padding" class="py-2">
-                  <div id="top-sq-content" class="p-2">
-
-                    <h2 class="">{demoCTA.frontmatter.title}</h2>
-                    <p class="text-test2 2xl:text-2xl md:text-lg text-md">{demoCTA.frontmatter.description}
-                    </p>
-                  </div>
-         
-
-                  <a href={demoCTA.url}>
-                    <img src={demoCTA.frontmatter.image.url}
-                      alt={demoCTA.frontmatter.image.alt}  class="my-1" />
-                      <!-- ! -->
-
-                      <div id="btm-sq-content" class="text- font-bold p-2">
-                      <p class="pl-1 pt-1">
-                      <span class="text-4xl">${demoCTA.frontmatter.price}</span>
-                      /year
-                    </p>
-
-
-
-                    <button
-                      id="btn"
-                      class="bg-caribbean text-test2 hover:text-orange pt-1 px-2 py-1 my-2"
-                      >
-                    <a href={demoCTA.url}>
-                      see "{demoCTA.frontmatter.title}"demo"
-                    </a>
-
-                    </button>
-
-
-
-                    
-                  </a>
-                <ul>
-                  <li>listItem1</li>
-                  <li>listItem2</li>
-                  <li>listItem3</li>
-                  <li>listItem4</li>
-                </ul>
-                </div>
-              </div>
-              </div>
-))
-}
-
-</div>
-</div>
-</div>
-</div>
-
-<!--!  -->
-</>
-
-<!--*--*--*--*--*-NEW DYNAMIC PGS TEMPLATE PKGS ^-*--*--*--*--*--*--*--*--*--*-->
-<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-
-<!--  TODO- 8. IS THIS FOR ME? -->
-<!-- -list 3-5 successful outcomes that your offer/product will help your audience to achieve. Again, use specific and inspirational scenarios to have your client think:"yes, that's exactly what I want!" -->
-<!-- --the more specific the better, helps ideal customer feel like your talking directly to them, and understand what they're going through
-  --description: "does this sound familiar?" 
-  --now imagine if you could... [list 3 to 5 successful outcomes that your offer/product will help your audience to achieve  -->
-
-<!--  TODO- 9. THIS IS NOT FOR YOU IF… -->
-<!-- -attracts the right people -->
-<!-- -sets yourself apart from others -->
-
-<!-- *10. FAQ- answer common questions by utilizing AI -->
-
-<!-- *11. CTA- finish desirable outcome and final cta- what do you want your customers to do next? -->
-<Contact />
-<!-- --HEADING- always use a question- (will you start your fitness journey now? instead of start your fitness journey now!)
-    --DESCRIPTION
-    --CTA -->
-<!-- ---gives your customer a sense of control and therefore they're more LIKELY TO TAKE THAT ACTION, SO YOU'RE NOT TELLING THEM WHAT TO DO OR THAT THEY NEED TO BUY YOUR PRODUCT NOW -->
-<!-- ---you want to ask them a yes or no question, give them a sense of ownership -->

@@ -1,5 +1,33 @@
 ---
-
+import MainLayout from "../../layouts/MainLayout.astro";
+// const { frontmatter } = Astro.props;
+import { Image } from "astro:assets";
+import Pic1 from "../../images/screenshots/site4.png";
 ---
 
-<h1>The Indoor Jungle Project- Landing Pg Demo</h1>
+<MainLayout>
+  <div id="grid" class="grid lg:grid-cols-2 grid-cols-1 dropshadow-3xl">
+    <div id="sq1" class="bg-lavender border border-black">
+      <div class="p-5 flex justify-center items-center flex-col h-full">
+        <h2 class="font-bold text-4xl">
+          Landing Pg Ex2- The Indoor Jungle Project
+        </h2>
+        <p class="text-2xl">category</p>
+      </div>
+    </div>
+    <div id="sq2" class="bg-test2">
+      <Image src={Pic1} alt="" class="border border-black hover:opacity-80" />
+    </div>
+  </div>
+
+  <div
+    class="absolute right-0 lg:w-3/4 w-full 2xl:p-4 p-5 2xl:text-2xl md:text-lg sm:text-md"
+  >
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio
+      repudiandae consequatur, non eius, ab sed tenetur veniam maiores
+      temporibus repellendus illo consequuntur? Voluptatum quibusdam iusto
+      aliquam aspernatur odio mollitia.
+    </p>
+  </div>
+</MainLayout>

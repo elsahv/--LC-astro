@@ -2,24 +2,20 @@
    <!--*--*--*--*--*-v-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
-**CURRENTLY:CREATE UNIVERSAL, DYNAMIC, CONDITIONALLY STYLED, GRID CARDS FOR:**
-**1. PKGTEMPLATES,**
-**2. RECENT WORKS,**
-**3. AND DEMOS**
-
-**_CURRENTLY:IMPROVE MARKDOWNPOSTLAYOUT LAYOUT_**
-title img
-fdfds img
-slot
+7/5/24:
+-Hero + how it works + featured clients
+-pkg
+-faq
+-contact
 
  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*-^-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
-**_CURRENTLY: FILL OUT ALL CONTENT_**
 ON DECK:
--CREATE DYNAMIC RECENT WORKS COMP
 -CREATE HAMBURGER MENU-7/2/24
+-constant ts for page tab names- 7/2/24
+-create footer banner 7/4/24
 
 - COPY PROMPTS
 - you're struggling to get [desirable result] because you don't have [missing piece]'
@@ -31,7 +27,7 @@ ON DECK:
 
 -(Interest)
 -The reason most people give up when it comes to working out, is they either follow random videos with no plan or guidance, or try to go from zero to 100 overnight- only to give up when it doesn't stick.
--That's why my workout plans are designed to gently ease you in to build habits that stick with you for life.
+-That's why my workout plans are designed to gently ease yoWu in to build habits that stick with you for life.
 -and my community will be here to give you the support, guidance, and accountability you need to be able to stick with it long term.
 
 -So that a year from now... you'll be able to look back at yourself and think, "wow! Did I do that?" -(Desire)

@@ -1,0 +1,87 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Dynamic_Hero from "../components/shared/Dynamic_Hero.astro";
+const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
+---
+
+<MainLayout>
+
+  <div id="hero-section" class="mb-5 bg-">
+    <Dynamic_Hero
+      title="Packages"
+      listitem1="What do you need for a website?"
+      listitem3="The Growing Pup? A template for small businesses just starting out,  increased potential customers, easier to find on Google."
+      listitem2="Or Rising Carnivore? You need a website not just to promote your business, but have the the ablity to tell your story and brand"
+      listitem4="A custom website that fits your business, personality, goals... and you alone."
+    />
+  </div>
+
+  <div id="wrapper" class="2xl:mx-[230px]">
+    <div id="container" class="2xl:mx-[150px]">
+      <div id="grid-wrapper" class="p-5 bg-test">
+        <div
+          id="grid"
+          class="bg-test grid md:grid-cols-2 grid-cols-1 gap-y-[55px]"
+        >
+        {
+          allDemoCTAs.map((demoCTA) => (
+            <div
+            id="sq"
+            class="bg-teal text-papaya xl:mx-5 mx-3 xl:px-4 px-1 py-2 rounded"
+            >
+                <div id="padding" class="py-2">
+                  <div id="top-sq-content" class="p-2">
+
+                    <h2 class="">{demoCTA.frontmatter.title}</h2>
+                    <p class="text-test2 2xl:text-2xl md:text-lg text-md">{demoCTA.frontmatter.description}
+                    </p>
+                  </div>
+         
+
+                  <a href={demoCTA.url}>
+                    <img src={demoCTA.frontmatter.image.url}
+                      alt={demoCTA.frontmatter.image.alt}  class="my-1" />
+                      <!-- ! -->
+
+                      <div id="btm-sq-content" class="text- font-bold p-2">
+                      <p class="pl-1 pt-1">
+                      <span class="text-4xl">${demoCTA.frontmatter.price}</span>
+                      /year
+                    </p>
+
+
+
+                    <button
+                      id="btn"
+                      class="bg-caribbean text-test2 hover:text-orange pt-1 px-2 py-1 my-2"
+                      >
+                    <a href={demoCTA.url}>
+                      see "{demoCTA.frontmatter.title}"demo"
+                    </a>
+
+                    </button>
+
+
+
+                    
+                  </a>
+                <ul>
+                  <li>listItem1</li>
+                  <li>listItem2</li>
+                  <li>listItem3</li>
+                  <li>listItem4</li>
+                </ul>
+                </div>
+              </div>
+              </div>
+))
+}
+
+</div>
+</div>
+</div>
+</div>
+
+<!--!  -->
+
+</MainLayout>

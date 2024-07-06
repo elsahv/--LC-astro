@@ -2,7 +2,6 @@
 import { Image } from "astro:assets";
 import Img1 from "../images/screenshots/site3.png";
 import Img2 from "../images/screenshots/site6.png";
-import TestCard from "./TestCard.astro";
 ---
 
 <div
@@ -14,10 +13,10 @@ import TestCard from "./TestCard.astro";
     <!--! LANDING PG EXAMPLES -->
     LANDING PG EXAMPLES- (why they work)
   </h2>
-  <div id="wrapper" class="flex justify-center md:p-5 p-1 bg-">
+  <div id="wrapper" class="flex justify-center md:p-5 p-1 m-[50px]">
     <div
       id="grid"
-      class="mt-5 pt-5 grid 2xl:grid-cols-2 grid-cols-1 gap-x-4 2xl:gap-y-24 gap-y-5 bg-"
+      class="mt-5 pt-5 grid 2xl:grid-cols-2 grid-cols-1 gap-x-4 2xl:gap-y-2 gap-y-5 bg-"
     >
       <div id="sq1" class="text-lavender p-5 mt-5 flex items-centerbg-">
         <a href="https://writingtobetterhealth.com">
@@ -25,8 +24,14 @@ import TestCard from "./TestCard.astro";
             <h3
               class="text-right md:text-4xl text-2xl hover:underline pb-1 pr-5 mr-4"
             >
-              demo- Writing To Better Health
+              first glimpse-Rising Carnivore
             </h3>
+
+            <!-- <h3
+            class="text-right md:text-4xl text-2xl hover:underline pb-1 pr-5 mr-4"
+          >
+            Writing To Better Health
+          </h3> -->
             <p class="opacity-90">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
               sit laboriosam exercitationem beatae, similique voluptatem fuga
@@ -53,7 +58,7 @@ import TestCard from "./TestCard.astro";
       </div>
 
       <div id="sq3" class="border hover:border-2 border-black hover:opacity-85">
-        <a href="https://theindoorjungleproject.com">
+        <a href="/demos/jungle">
           <Image src={Img2} alt="" />
         </a>
       </div>
@@ -64,7 +69,8 @@ import TestCard from "./TestCard.astro";
         <!-- <a href="https://theindoorjungleproject.com"> -->
         <div class="">
           <h3 class="md:text-4xl text-2xl hover:underline">
-            demo- <span class="font-bold">The Indoor Jungle Project</span>
+            <!-- <span class="font-bold">The Indoor Jungle Project</span> -->
+            <span class="font-bold">first glimpse-Growing Pup</span>
           </h3>
           <p class="mb-5 opacity-90">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sit
