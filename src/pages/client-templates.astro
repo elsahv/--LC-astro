@@ -1,14 +1,14 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Dynamic_Hero from "../components/shared/Dynamic_Hero.astro";
+import HeroContent from "../components/shared/HeroContent.astro";
 const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
 ---
 
 <MainLayout>
-  <div id="hero-section" class="mb-5 bg-">
-    <Dynamic_Hero
-      title="Packages"
+  <div id="client-templates-hero" class="mb-5 bg-">
+    <HeroContent
+      title="Client Templates"
       listitem1="What do you need for a website?"
       listitem3="The Growing Pup? A template for small businesses just starting out,  increased potential customers, easier to find on Google."
       listitem2="Or Rising Carnivore? You need a website not just to promote your business, but have the the ablity to tell your story and brand"
