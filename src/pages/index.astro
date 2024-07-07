@@ -1,9 +1,10 @@
 ---
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
-import LandingPgEx from "../components/LandingPgEx.astro";
+import LandingPgEx from "../components/sections/LandingPgEx.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Dynamic_Hero from "../components/shared/Dynamic_Hero.astro";
 import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
+import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
 
 const allWorks = await Astro.glob("./works/*.md");
 ---
@@ -11,8 +12,8 @@ const allWorks = await Astro.glob("./works/*.md");
 <MainLayout>
   <div id="hero-section" class="mb-5 bg-">
     <Dynamic_Hero
-      title="A Web Design Business for Busy Creatives/ Small Business Owners"
-      listitem1="What do you need for a website?"
+      title="A Web Design Service for Busy Creatives/ Small Business Owners"
+      listitem1="Have an idea for your next project? What do you need for a website?"
       listitem3="The Growing Pup? A template for small businesses just starting out,  increased potential customers, easier to find on Google."
       listitem2="Or Rising Carnivore? You need a website not just to promote your business, but have the the ablity to tell your story and brand"
       listitem4="A custom website that fits your business, personality, goals... and you alone."
@@ -64,4 +65,9 @@ const allWorks = await Astro.glob("./works/*.md");
       </div>
     </div>
   </section>
+  <FooterBannerCTA title="to client templates ->" link="/packages" />
+  <!-- <div id="footer-banner-cta">
+    <p>footer banner cta</p>
+    <a href="/packages">link</a>
+  </div> -->
 </MainLayout>

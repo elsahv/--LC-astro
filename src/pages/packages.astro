@@ -2,10 +2,10 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Dynamic_Hero from "../components/shared/Dynamic_Hero.astro";
 const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
+import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
 ---
 
 <MainLayout>
-
   <div id="hero-section" class="mb-5 bg-">
     <Dynamic_Hero
       title="Packages"
@@ -15,7 +15,6 @@ const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
       listitem4="A custom website that fits your business, personality, goals... and you alone."
     />
   </div>
-
   <div id="wrapper" class="2xl:mx-[230px]">
     <div id="container" class="2xl:mx-[150px]">
       <div id="grid-wrapper" class="p-5 bg-test">
@@ -36,8 +35,6 @@ const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
                     <p class="text-test2 2xl:text-2xl md:text-lg text-md">{demoCTA.frontmatter.description}
                     </p>
                   </div>
-         
-
                   <a href={demoCTA.url}>
                     <img src={demoCTA.frontmatter.image.url}
                       alt={demoCTA.frontmatter.image.alt}  class="my-1" />
@@ -48,9 +45,6 @@ const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
                       <span class="text-4xl">${demoCTA.frontmatter.price}</span>
                       /year
                     </p>
-
-
-
                     <button
                       id="btn"
                       class="bg-caribbean text-test2 hover:text-orange pt-1 px-2 py-1 my-2"
@@ -58,12 +52,7 @@ const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
                     <a href={demoCTA.url}>
                       see "{demoCTA.frontmatter.title}"demo"
                     </a>
-
                     </button>
-
-
-
-                    
                   </a>
                 <ul>
                   <li>listItem1</li>
@@ -76,12 +65,11 @@ const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
               </div>
 ))
 }
-
 </div>
 </div>
 </div>
 </div>
-
+<FooterBannerCTA title="to contact ->" link="/contact " />
 <!--!  -->
 
 </MainLayout>

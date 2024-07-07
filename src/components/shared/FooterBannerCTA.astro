@@ -1,0 +1,15 @@
+---
+export interface Props {
+  title: string;
+  link: string;
+}
+
+const { title, link } = Astro.props as Props;
+---
+
+<div id="footer-banner-cta" class="py-1 bg-coral flex justify-center">
+  <div id="container">
+    <p>footer banner cta</p>
+    <a href={link} class="underline">{title}</a>
+  </div>
+</div>
