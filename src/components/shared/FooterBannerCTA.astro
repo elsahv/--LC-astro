@@ -7,8 +7,11 @@ export interface Props {
 const { title, link } = Astro.props as Props;
 ---
 
-<div id="footer-banner-cta" class="py-1 bg-coral flex justify-center">
-  <div id="container">
+<div
+  id="footer-banner-cta"
+  class="mt-5 py-5 border border-black bg-coral flex justify-center"
+>
+  <div id="container" class="">
     <p>footer banner cta</p>
     <a href={link} class="underline">{title}</a>
   </div>

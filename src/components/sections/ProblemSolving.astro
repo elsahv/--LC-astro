@@ -76,38 +76,25 @@ const elaboratedItems = [
 --action -->
 <section
   id="main-grid_address-the-key-problem"
-  class="bg- grid lg:grid-cols-2 grid-cols-1 gap-8 pt-5 pl-5 pr-1 my-[105px]"
+  class="bg- grid 2xl:grid-cols-2 grid-cols-1 gap-8 pt-5 pl-5 pr-1 my-[105px]"
 >
-  <>
-    <div id="sq1" class="bg-orange">
-      <!-- ! -->
-      <div id="grid" class="p-5 grid md:grid-cols-2">
-        <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-        <!--*--*--*--*--*--intro grid v-*--*--*--*--*--*--*--*--*--*-->
-        <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-
-        {
-          introItems.map((introItem) => (
-            <div id="sq" class="border-2 border-black p-3">
-              <h2>{introItem.title}</h2>
-              <ul>
-                <li>{introItem.listItem1}-elaborate</li>
-                <li>{introItem.listItem2}-elaborate</li>
-                <li>{introItem.listItem3}-elaborate</li>
-                <li>{introItem.listItem4}-elaborate</li>
-              </ul>
-            </div>
-          ))
-        }
-
-        <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-        <!--*--*--*--*--*-sq3-intro grid ^-*--*--*--*--*--*--*--*--*--*-->
-        <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-      </div>
-
-      <!-- ! -->
+  <div id="sq1" class="bg-orange">
+    <div id="grid" class="p-5 grid md:grid-cols-2">
+      {
+        introItems.map((introItem) => (
+          <div id="sq" class="border-2 border-black p-3">
+            <h2>{introItem.title}</h2>
+            <ul>
+              <li>{introItem.listItem1}-elaborate</li>
+              <li>{introItem.listItem2}-elaborate</li>
+              <li>{introItem.listItem3}-elaborate</li>
+              <li>{introItem.listItem4}-elaborate</li>
+            </ul>
+          </div>
+        ))
+      }
     </div>
-  </>
+  </div>
 
   <div id="sq2" class="">
     <!-- *CONTENT EXANPLE IN PROGRESS v-->
@@ -146,14 +133,14 @@ const elaboratedItems = [
 
 <section
   id="grid-address the key problem"
-  class="bg- grid lg:grid-cols-2 grid-cols-1 gap-8 pt-5 pl-1 pr-1 my-[105px]"
+  class="bg-test2 border-2 border-teal grid md:grid-cols-2 grid-cols-1 gap-8 py-[30px] px-1 my-[105px]"
 >
   <!-- TODO: FIGURE OUT CONDITIONAL COLORS!, WILL EVENTUALLY REPLACE GRID BELOW! v-->
   <!--SQ1=lavender SQ2=coral  -->
   <!--SQ3=lightgreen SQ4=teal  -->
   {
     elaboratedItems.map((elaboratedItem) => (
-      <div id="sq" class="border-2 border-black p-3 bg-teal text-lavender">
+      <div id="sq" class=" p-3 bg-teal text-lavender">
         <h2>{elaboratedItem.title}</h2>
         <ul>
           <li>{elaboratedItem.listItem1}-elaborate</li>

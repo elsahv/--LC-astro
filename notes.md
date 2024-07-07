@@ -15,7 +15,6 @@
 ON DECK:
 -CREATE HAMBURGER MENU-7/2/24
 -constant ts for page tab names- 7/2/24
--create footer banner 7/4/24
 
 - COPY PROMPTS
 - you're struggling to get [desirable result] because you don't have [missing piece]'

@@ -2,7 +2,7 @@
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
 import LandingPgEx from "../components/sections/LandingPgEx.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import Dynamic_Hero from "../components/shared/HeroContent.astro";
+import HeroContent from "../components/shared/HeroContent.astro";
 import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
 
@@ -10,8 +10,8 @@ const allWorks = await Astro.glob("./works/*.md");
 ---
 
 <MainLayout>
-  <div id="hero-section" class="mb-5 bg-">
-    <Dynamic_Hero
+  <div id="hero-section" class="mb-5">
+    <HeroContent
       title="A Web Design Service for Busy Creatives/ Small Business Owners"
       listitem1="Have an idea for your next project? What do you need for a website?"
       listitem3="The Growing Pup? A template for small businesses just starting out,  increased potential customers, easier to find on Google."
@@ -28,15 +28,15 @@ const allWorks = await Astro.glob("./works/*.md");
     <div id="wrapper" class="bg-test mt-[70px] pt-5">
       <div id="container" class="py-5 my-5">
         <!-- !WTBH AND JUNGLE -->
-        <SubSectionBanner title="Featured Clients" />
-        <div id="grid-wrapper" class="2xl:px-[50px] px-5">
+        <SubSectionBanner title="Featured Websites" />
+        <div id="grid-wrapper" class="2xl:px-[50px] px-5 mb-[50px]">
           <div
             id="grid"
             class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-x-[100px] gap-4 2xl:px-[150px] px-0"
           >
             {
               allWorks.map((work) => (
-                <div id="sq">
+                <div id="sq" class="">
                   <a href={work.url}>
                     <img
                       src={work.frontmatter.image.url}
@@ -48,13 +48,7 @@ const allWorks = await Astro.glob("./works/*.md");
                       <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
                         {work.frontmatter.title}
                       </h2>
-                      <p class="">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing ediv
-                        id="sq"t. Itaque ex nostrum veniam est? Voluptatum
-                        corporis inventore veniam quas, minus sed corrupti
-                        magnam, nostrum voluptates ipsum quibusdam fugit
-                        exercitationem? Maxime, eos!
-                      </p>
+                      <p class="">{work.frontmatter.description}</p>
                     </div>
                   </a>
                 </div>
@@ -65,9 +59,6 @@ const allWorks = await Astro.glob("./works/*.md");
       </div>
     </div>
   </section>
-  <FooterBannerCTA title="to client templates ->" link="/packages" />
-  <!-- <div id="footer-banner-cta">
-    <p>footer banner cta</p>
-    <a href="/packages">link</a>
-  </div> -->
+
+  <FooterBannerCTA title="to client templates ->" link="/#client-templates" />
 </MainLayout>
