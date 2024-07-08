@@ -7,9 +7,10 @@ export interface Props {
   listitem2: string;
   listitem3: string;
   listitem4: string;
+  heroImg: string;
 }
 
-const { title, listitem1, listitem2, listitem3, listitem4 } =
+const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
   Astro.props as Props;
 ---
 
@@ -31,7 +32,7 @@ const { title, listitem1, listitem2, listitem3, listitem4 } =
           </div>
           <!-- * BTN WRAPPER   v-->
           <ButtonProps
-            btn1="see how we can reach your online goals!"
+            btn1="see content below!"
             btn2="contact"
             btn1Link="/#services"
             btn2Link="/#contact"
@@ -42,10 +43,7 @@ const { title, listitem1, listitem2, listitem3, listitem4 } =
     </div>
     <!-- /////////////////////////////////// -->
     <div id="sq2" class="bg- flex justify-center items-center lg:p-0 p-5">
-      <img
-        src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        class="border border-black"
-      />
+      <img src={heroImg} class="border border-black" />
     </div>
   </div>
 </div>
