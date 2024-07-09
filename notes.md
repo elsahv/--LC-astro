@@ -1,16 +1,12 @@
- <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-   <!--*--*--*--*--*-v-*--*--*--*--*--*--*--*--*--*-->
-   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-
 CURRENTLY-
-7/7/24: REVIEW IDEAL REACT STRUCTURE
+7/8/24: REVIEW IDEAL REACT STRUCTURE
 
  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*-^-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
 7/5/24:
--Hero + how it works + featured clients
+-Hero + How It Works + Featured Clients
 -pkg
 -faq
 -contact
@@ -18,37 +14,19 @@ CURRENTLY-
 ON DECK:
 -CREATE HAMBURGER MENU-7/2/24
 -constant ts for page tab names- 7/2/24
+-move all photos to /src/images folder- 7/8/24
 
-- COPY PROMPTS
-- you're struggling to get [desirable result] because you don't have [missing piece]'
-- you have [example], but you aren't [achieving this result]
-- How does this make them feel?
-- have you been in the same situation? How did you overcome this? How can you help them do the same?
+<!-- TODO: 7/8/24- USE FOR CONTENT v -->
+ <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*-vvv*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
--YOU'RE NOT LAZY, YOU JUST NEED THE RIGHT PLAN-(Attention)
+<!-- Mobile Optimization- Studies show that majority of website use is through mobile phones and tablets** -->
 
--(Interest)
--The reason most people give up when it comes to working out, is they either follow random videos with no plan or guidance, or try to go from zero to 100 overnight- only to give up when it doesn't stick.
--That's why my workout plans are designed to gently ease yoWu in to build habits that stick with you for life.
--and my community will be here to give you the support, guidance, and accountability you need to be able to stick with it long term.
-
--So that a year from now... you'll be able to look back at yourself and think, "wow! Did I do that?" -(Desire)
-PLAN MY WORKOUT -(Action)
-
-<!-- TODO: 6/20/24 v -->
-
-**HERO**
-**Why should you prefer a custom-made website, when you can simply use wix or wordpress? Why should you prefer a custom-made website, when you can simply use wix or wordpress? Because a custom website fits your business, personality, goals... and you alone.**
-
-**We have one main goal, to get more views towards your business! With Laughing Coyote Dev, you get more than just a website:**
-**Information displayed, accessible, easier to find on Google**
-**The ability to tell your story, owning a website gives you the ability to tell your business story without any limitations.**
-**Mobile Optimization- Studies show that majority of website use is through mobile phones and tablets**
-
-**ABOUT**
+<!-- ABOUT**
 **Hi there, and welcome to Laughing Coyote!**
 **I'm Elsa, and I love creating colorful and unconventional websites.**
-**As someone who has started a creative career from the ground up, I know what its like to be overwhelmed with figuring out web design, selling strategies, and marketing. This was what Laughing Coyote Dev was created for, to save you some headaches that come with learning about:** - **how to design a website** - **how to pick a domain and use hosting** - **and etc! See services below!**
+**As someone who has started a creative career from the ground up, I know what its like to be overwhelmed with figuring out web design, selling strategies, and marketing. This was what Laughing Coyote Dev was created for, to save you some headaches that come with learning about:** - **how to design a website** - **how to pick a domain and use hosting** - **and etc! See services below!**   -->
 
 Services Include:
 -Service and Support
@@ -63,16 +41,13 @@ Need to make a change? Or add more content or photos?. Monthly updates are avail
 -Mobile Optimization
 Studies show that the majority of website visitors use phones and tablets, as opposed to computers at home.
 
+ <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*-^^^-*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+
 <!--  TODO: 6/20/24 ^ -->
 
 -What specialties does LC offer?? ---small, quickly built websites for small and creative businesses. Colorful, modernist style, fast acting, headless cms niche
-
-EVENTUALLY- CHANGE SERVICES CONTENT TO ABOUT/ DIFFERENT CATEGORY\*\*
-EVENTUALLY- CREATE DYNAMIC MAP FOR HERO LISTS-HERO, CLIENT WORK, CONTACT
-EVENTUALLY- CREATE COMP (possibly dynamic) for client work grid
-EVENTUALLY-MAKE ALL SECTIONS MOBILE FRIENDLY
-EVENTUALLY- MAKE DYNAMIC CONTAINER/PADDING/MARGINS FOR EACH SECTIONS
-EVENTUALLY- 'CREATE BACK TO TOP' COMPONENT
 
 ??make the first 1/2 of website a different color scheme than the second half. Both halves should blend into the other ??maybe opposite color schemes?
 
@@ -80,20 +55,6 @@ EVENTUALLY- 'CREATE BACK TO TOP' COMPONENT
 - Lets not use the term case studies, instead just client work
 - Save case studies for EH
 -
--
--
-- I THINK ARTICLES SHOULD BE DISPLAYED AFTER CONTENT READY. LETS STICK WITH PGS:
-- HOMEPAGE
-- SERVICES
-- FEATURED WORK
-- CONTACT
-
-- 4/29
--
-
-- 4/25
-  1.move all photos to /src/images folder?????
-
 - 4/24
     <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--> //NEW "CURRENTLY DOING RIBBON"
 

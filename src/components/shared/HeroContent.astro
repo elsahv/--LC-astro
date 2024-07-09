@@ -3,14 +3,14 @@ import ButtonProps from "./ButtonProps.astro";
 
 export interface Props {
   title: string;
-  listitem1: string;
-  listitem2: string;
-  listitem3: string;
-  listitem4: string;
+  attention: string;
+  interest: string;
+  desire: string;
+  action: string;
   heroImg: string;
 }
 
-const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
+const { title, attention, interest, desire, action, heroImg } =
   Astro.props as Props;
 ---
 
@@ -24,11 +24,11 @@ const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
           </h1>
           <div>
             <h2 class="font-bold lowercase md:text-xl text-md">
-              - {listitem1}
+              - {attention}
             </h2>
-            <p class="mt-1 lowercase md:text-xl text-md">- {listitem2}</p>
-            <p class="lowercase md:text-xl text- my-1">- {listitem3}</p>
-            <p class="lowercase md:text-xl text-md">- {listitem4}</p>
+            <p class="mt-1 lowercase md:text-xl text-md">- {interest}</p>
+            <p class="lowercase md:text-xl text- my-1">- {desire}</p>
+            <p class="lowercase md:text-xl text-md">- {action}</p>
           </div>
           <!-- * BTN WRAPPER   v-->
           <ButtonProps
