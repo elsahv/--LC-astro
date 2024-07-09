@@ -10,31 +10,30 @@ const allWorks = await Astro.glob("./works/*.md");
 ---
 
 <MainLayout>
-  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-  <!--*--*-*-v-STARTED 7/8, CURRENTLY DOING-MOVE HERO TO PROBLEM SOLVING, SHORTEN OG HERO -*--*--*>
-  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-
   <div id="hero-section" class="mb-5">
-    <!-- ! -->
     <HeroContent
       title="A Web Design Service for Busy Creatives/ Small Business Owners"
       attention="...what is it?"
       interest=" ...Who is it for?"
       desire="...how will it make my life better?"
-      action="...what do you want me to do next??"
+      action="...lets talk about your future site!"
       heroImg="   https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     />
-    <!-- ! -->
-
-    <!-- ??BTN CTA- "lets talk about your future site!" ??-->
   </div>
+
+  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*-vvv*CURRENT--*--*--*--*--*--*-->
+  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
   <section id="how-it-works">
+    <h2>What LC is all about</h2>
+    <p>This is for you if you are looking for:</p>
     <ProblemSolving />
-    <LandingPgEx />
   </section>
   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
   <!--*--*--*--*--*-^-*--*--*--*--*--*--*--*--*--*-->
   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+
+    <!-- <LandingPgEx /> -->
   <section id="featured-websites">
     <div id="wrapper" class="bg-test mt-[70px] pt-5">
       <div id="container" class="py-5 my-5">
@@ -49,6 +48,7 @@ const allWorks = await Astro.glob("./works/*.md");
               allWorks.map((work) => (
                 <div id="sq" class="">
                   <a href={work.url}>
+                    "this is the best website ever!"  <!--TODO AFTER COMPLETED CUSTOMER SITES: ADD TESIMONIALS -->
                     <img
                       src={work.frontmatter.image.url}
                       alt={work.frontmatter.image.alt}

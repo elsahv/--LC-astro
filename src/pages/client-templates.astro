@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import HeroContent from "../components/shared/HeroContent.astro";
 const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
+import LandingPgEx from "../components/sections/LandingPgEx.astro";
 ---
 
 <MainLayout>
@@ -16,6 +17,9 @@ import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
       heroImg="https://images.pexels.com/photos/3046629/pexels-photo-3046629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     />
   </div>
+
+  <LandingPgEx />
+
   <div id="wrapper" class="2xl:mx-[230px]">
     <div id="container" class="2xl:mx-[150px]">
       <div id="grid-wrapper" class="p-5 bg-test">
