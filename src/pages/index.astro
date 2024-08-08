@@ -1,6 +1,6 @@
 ---
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
-import LandingPgEx from "../components/sections/LandingPgEx.astro";
+// import LandingPgEx from "../components/sections/LandingPgEx.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import HeroContent from "../components/shared/HeroContent.astro";
 import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
@@ -17,16 +17,16 @@ const allWorks = await Astro.glob("./works/*.md");
       interest=" ...Who is it for?"
       desire="...how will it make my life better?"
       action="...lets talk about your future site!"
-      heroImg="   https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      heroImg="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     />
   </div>
 
   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
   <!--*--*--*--*--*-vvv*CURRENT--*--*--*--*--*--*-->
   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-  <section id="how-it-works">
-    <h2>What LC is all about</h2>
-    <p>This is for you if you are looking for:</p>
+  <section id="how-it-works" class="ml-5 pl-5 ">
+    <h2 class="text-caribbean text-2xl font-bold">What LC is all about</h2>
+    <p class="text-caribbean">This is for you if you are looking for:</p>
     <ProblemSolving />
   </section>
   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
@@ -37,30 +37,33 @@ const allWorks = await Astro.glob("./works/*.md");
   <section id="featured-websites">
     <div id="wrapper" class="bg-test mt-[70px] pt-5">
       <div id="container" class="py-5 my-5">
-        <!-- !WTBH AND JUNGLE -->
         <SubSectionBanner title="Featured Websites" />
         <div id="grid-wrapper" class="2xl:px-[50px] px-5 mb-[50px]">
           <div
             id="grid"
-            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl: gap-x-[100px] gap-4 2xl:px-[150px] px-0"
+            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl: gap-[100px]  2xl:px-[150px] px-0"
           >
             {
               allWorks.map((work) => (
-                <div id="sq" class="pt-5 mt-5">
-                  <a href={work.url}>
+                <div id="sq" class="pt-5 mt-5 bg-test">
                     "this is the best website ever!"  <!--TODO AFTER COMPLETED CUSTOMER SITES: ADD TESIMONIALS -->
+                    <div id="img-container">
+                        <a href={work.frontmatter.websiteUrl}>
                     <img
                       src={work.frontmatter.image.url}
                       alt={work.frontmatter.image.alt}
                       class="border border-black hover:border-2 hover:cursor-pointer lg:h-[500px] h-[300px] w-full"
                     />
-                    <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
+                      </a>
+                    </div>
+                    <div id="content-container" class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
+                     <a href={work.url}>
                       <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
                         {work.frontmatter.title}
                       </h2>
-                      <p class="">{work.frontmatter.description}</p>
-                    </div>
+                      <p class="">{work.frontmatter.description } <span class="font-semibold text-onyx hover:text-caribbean">view website case study</span></p>
                   </a>
+                    </div>
                 </div>
               ))
             }
