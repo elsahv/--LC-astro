@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout:
 # title: "My First Blog Post"
 title: "The Indoor Jungle Project"
 category: "creative blog"
