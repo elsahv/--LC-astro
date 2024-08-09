@@ -2,7 +2,13 @@
    <!--*--*--*--*--*-v-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
-CURRENTLY-
+_CURRENTLY_-
+_TIERS_-
+_tier1-simple brochure_
+_tier2-simple blog_
+
+ <!-- todo: tier3-complicated blog* -->
+
 7/9/24: HOW IT WORKS comp- content, sections switched around
 7/9/24: REVIEW IDEAL REACT STRUCTURE
 

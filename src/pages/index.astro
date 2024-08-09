@@ -46,9 +46,9 @@ const allWorks = await Astro.glob("./works/*.md");
             {
               allWorks.map((work) => (
                 <div id="sq" class="pt-5 mt-5 bg-test">
-                    "this is the best website ever!"  <!--TODO AFTER COMPLETED CUSTOMER SITES: ADD TESIMONIALS -->
-                    <div id="img-container">
                         <a href={work.frontmatter.websiteUrl}>
+                  <p class="absolute text-white bg-onyx px-2 py-1 border border-black hover:text-test1">visit site</p>    <!--TODO AFTER COMPLETED CUSTOMER SITES: ADD TESIMONIALS -->
+                    <div id="img-container">
                     <img
                       src={work.frontmatter.image.url}
                       alt={work.frontmatter.image.alt}
@@ -61,9 +61,9 @@ const allWorks = await Astro.glob("./works/*.md");
                       <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
                         {work.frontmatter.title}
                       </h2>
-                      <p class="">{work.frontmatter.description } <span class="font-semibold text-onyx hover:text-caribbean">view website case study</span></p>
-                  </a>
+                      <p class="">{work.frontmatter.description } <span class="font- text-caribbean underline">view project</span></p>
                     </div>
+                  </a>
                 </div>
               ))
             }

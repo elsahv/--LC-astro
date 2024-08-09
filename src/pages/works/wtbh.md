@@ -4,7 +4,8 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Writing to Better Health"
 category: "creative blog"
 pubDate: 2022-07-01
-description: "sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
+description:
+  "COMPLICATED BLOG- sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:

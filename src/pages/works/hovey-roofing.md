@@ -5,7 +5,7 @@ title: "Hoveyroofing"
 category: "small business"
 pubDate: 2022-07-01
 description:
-  "a future Morongo Basin community website.  Corporis doloremque sit minus, asperiores quia velit
+  "SIMPLE BROCHURE- a future Morongo Basin community website.  Corporis doloremque sit minus, asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:

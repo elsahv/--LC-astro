@@ -4,7 +4,8 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "The Indoor Jungle Project"
 category: "creative blog"
 pubDate: 2022-07-01
-description: "sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
+description:
+  "SIMPLE BLOG- sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:
