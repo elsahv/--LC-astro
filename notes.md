@@ -4,8 +4,8 @@
 
 _CURRENTLY_-
 _TIERS_-
-_tier1-simple brochure_
-_tier2-simple blog_
+_tier1-simple brochure-hovey roofing_
+_tier2-simple blog wtbh_
 
  <!-- todo: tier3-complicated blog* -->
 

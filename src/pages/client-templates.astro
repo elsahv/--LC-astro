@@ -1,9 +1,27 @@
 ---
+import Image from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import HeroContent from "../components/shared/HeroContent.astro";
-const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
+// const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
-import LandingPgEx from "../components/sections/LandingPgEx.astro";
+// import LandingPgEx from "../components/sections/LandingPgEx.astro";
+
+import test1 from "./src/images/coyote.png";
+
+const items = [
+  {
+    title: "The Growing Pup",
+    p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
+    price: "99",
+    screenshot: { test1 },
+  },
+  {
+    title: "The Rising Carnivore",
+    p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
+    price: "199",
+    screenshot: { test1 },
+  },
+];
 ---
 
 <MainLayout>
@@ -18,9 +36,9 @@ import LandingPgEx from "../components/sections/LandingPgEx.astro";
     />
   </div>
 
-  <LandingPgEx />
+  <!-- <LandingPgEx /> -->
 
-  <div id="wrapper" class="2xl:mx-[230px]">
+  <div id="wrapper" class="bg-test2 border border-black py-[70px] my-[150px]">
     <div id="container" class="2xl:mx-[150px]">
       <div id="grid-wrapper" class="p-5 bg-test">
         <div
@@ -28,47 +46,53 @@ import LandingPgEx from "../components/sections/LandingPgEx.astro";
           class="bg-test grid md:grid-cols-2 grid-cols-1 gap-y-[55px]"
         >
           {
-            allDemoCTAs.map((demoCTA) => (
+            items.map((item) => (
               <div
                 id="sq"
                 class="bg-teal text-papaya xl:mx-5 mx-3 xl:px-4 px-1 py-2 rounded"
               >
                 <div id="padding" class="py-2">
                   <div id="top-sq-content" class="p-2">
-                    <h2 class="">{demoCTA.frontmatter.title}</h2>
+                    <h2>{item.title}</h2>
                     <p class="text-test2 2xl:text-2xl md:text-lg text-md">
-                      {demoCTA.frontmatter.description}
+                      {item.p}
                     </p>
-                  </div>
-                  <a href={demoCTA.url}>
-                    <img
-                      src={demoCTA.frontmatter.image.url}
-                      alt={demoCTA.frontmatter.image.alt}
-                      class="my-1"
-                    />
+
                     <div id="btm-sq-content" class="text- font-bold p-2">
                       <p class="pl-1 pt-1 text-test1">
-                        <span class="text-4xl">
-                          ${demoCTA.frontmatter.price}
-                        </span>
+                        <span class="text-4xl">${item.price}</span>
                         /year
                       </p>
+
                       <button
                         id="btn"
                         class="bg-caribbean text-test2 hover:text-orange pt-1 px-2 py-1 my-2"
                       >
-                        <a href={demoCTA.url}>
-                          see "{demoCTA.frontmatter.title}"demo"
-                        </a>
+                        <a href="/">learn more!</a>
                       </button>
                     </div>
+                  </div>
+
+  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*-^^^-*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+
+{/* TODO CURRENTLY: RENDER IMAGES THROUGH COMPS */}
+                  {/* <Image src={item.screenshot} alt={item.title} class="my-1" /> */}
+
+   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*-^^^-*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+
+
+                  <div id="list-item-container" class="pl-5">
                     <ul>
                       <li>listItem1</li>
                       <li>listItem2</li>
                       <li>listItem3</li>
-                      <li>listItem4</li>
+                      <li class="">see demo</li>
                     </ul>
-                  </a>
+                  </div>
                 </div>
               </div>
             ))
