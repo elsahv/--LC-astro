@@ -1,25 +1,25 @@
 ---
-import Image from "astro:assets";
+import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import HeroContent from "../components/shared/HeroContent.astro";
 // const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
 // import LandingPgEx from "../components/sections/LandingPgEx.astro";
-
-import test1 from "./src/images/coyote.png";
+import test1 from "./src/images/screenshots/site1.png";
+import test2 from "./src/images/screenshots/site2.png";
 
 const items = [
   {
     title: "The Growing Pup",
     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
     price: "99",
-    screenshot: { test1 },
+    screenshot: test1,
   },
   {
     title: "The Rising Carnivore",
     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
     price: "199",
-    screenshot: { test1 },
+    screenshot: test2,
   },
 ];
 ---
@@ -52,39 +52,26 @@ const items = [
                 class="bg-teal text-papaya xl:mx-5 mx-3 xl:px-4 px-1 py-2 rounded"
               >
                 <div id="padding" class="py-2">
-                  <div id="top-sq-content" class="p-2">
+                  <div id="" class="p-2">
                     <h2>{item.title}</h2>
                     <p class="text-test2 2xl:text-2xl md:text-lg text-md">
                       {item.p}
                     </p>
-
-                    <div id="btm-sq-content" class="text- font-bold p-2">
-                      <p class="pl-1 pt-1 text-test1">
-                        <span class="text-4xl">${item.price}</span>
-                        /year
-                      </p>
-
-                      <button
-                        id="btn"
-                        class="bg-caribbean text-test2 hover:text-orange pt-1 px-2 py-1 my-2"
-                      >
-                        <a href="/">learn more!</a>
-                      </button>
-                    </div>
                   </div>
+                  <Image src={item.screenshot} alt={item.title} class="my-1" />
 
-  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-   <!--*--*--*--*--*-^^^-*--*--*--*--*--*--*--*--*-->
-   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-
-{/* TODO CURRENTLY: RENDER IMAGES THROUGH COMPS */}
-                  {/* <Image src={item.screenshot} alt={item.title} class="my-1" /> */}
-
-   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-   <!--*--*--*--*--*-^^^-*--*--*--*--*--*--*--*--*-->
-   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-
-
+                  <div id="" class="text- font-bold p-2">
+                    <p class="pl-1 pt-1 text-test1">
+                      <span class="text-4xl">${item.price}</span>
+                      /year
+                    </p>
+                  </div>
+                  <button
+                    id="btn"
+                    class="bg-caribbean text-test2 hover:text-orange pt-1 px-2 py-1 my-2"
+                  >
+                    <a href="/">learn more!</a>
+                  </button>
                   <div id="list-item-container" class="pl-5">
                     <ul>
                       <li>listItem1</li>
