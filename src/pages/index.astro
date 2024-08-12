@@ -57,11 +57,14 @@ const allWorks = await Astro.glob("./works/*.md");
                       </a>
                     </div>
                     <div id="content-container" class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
-                     <a href={work.url}>
+                      <a href={work.frontmatter.websiteUrl}>
                       <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
                         {work.frontmatter.title}
                       </h2>
-                      <p class="">{work.frontmatter.description } <span class="font- text-caribbean underline">view project</span></p>
+                      <p class="">{work.frontmatter.description }<span class="">
+                        <a href={work.frontmatter.websiteUrl} class="underline text-teal">click here</a>
+                        
+                        </span>to visit site</p>
                     </div>
                   </a>
                 </div>
