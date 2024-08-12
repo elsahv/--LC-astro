@@ -5,21 +5,21 @@ import HeroContent from "../components/shared/HeroContent.astro";
 // const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
 // import LandingPgEx from "../components/sections/LandingPgEx.astro";
-import test1 from "./src/images/screenshots/site1.png";
-import test2 from "./src/images/screenshots/site2.png";
+// import test1 from "./src/images/screenshots/site1.png";
+// import test2 from "./src/images/screenshots/site2.png";
 
 const items = [
   {
     title: "The Growing Pup",
     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
     price: "99",
-    screenshot: test1,
+    // screenshot: test1,
   },
   {
     title: "The Rising Carnivore",
     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
     price: "199",
-    screenshot: test2,
+    // screenshot: test2,
   },
 ];
 ---
@@ -36,7 +36,9 @@ const items = [
     />
   </div>
 
+  <!-- ?DO I NEED??? v-->
   <!-- <LandingPgEx /> -->
+  <!-- ?DO I NEED??? ^-->
 
   <div id="wrapper" class="bg-test2 border border-black py-[70px] my-[150px]">
     <div id="container" class="2xl:mx-[150px]">
@@ -58,14 +60,24 @@ const items = [
                       {item.p}
                     </p>
                   </div>
-                  <Image src={item.screenshot} alt={item.title} class="my-1" />
-
+                  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+                    <!--*--CURRENTLY: figure out run build error v *--*-->
+                    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+                  {/* <Image src={item.screenshot} alt={item.title} class="my-1" /> */}
+                  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+                    <!--*--CURRENTLY: ^ *--*-->
+                    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
                   <div id="" class="text- font-bold p-2">
                     <p class="pl-1 pt-1 text-test1">
                       <span class="text-4xl">${item.price}</span>
                       /year
                     </p>
                   </div>
+
+
+                        {/*  */}
+                        {/*  */}
+                        {/*  */}
 
 
                   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
