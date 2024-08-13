@@ -5,21 +5,23 @@ import HeroContent from "../components/shared/HeroContent.astro";
 // const allDemoCTAs = await Astro.glob("./demos-cta/*.md");
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
 // import LandingPgEx from "../components/sections/LandingPgEx.astro";
-// import test1 from "./src/images/screenshots/site1.png";
-// import test2 from "./src/images/screenshots/site2.png";
+import test1 from "../images/screenshots/site1.png";
+import test2 from "../images/screenshots/site2.png";
 
 const items = [
   {
     title: "The Growing Pup",
     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
     price: "99",
-    // screenshot: test1,
+    demoLink: "/the-growing-pup-demo",
+    screenshot: test1,
   },
   {
     title: "The Rising Carnivore",
     p: "WEBSITE BUILD + BASIC SUPPORT SERVICES ",
     price: "199",
-    // screenshot: test2,
+        demoLink: "/rising-carnivore-demo",
+    screenshot: test2,
   },
 ];
 ---
@@ -63,7 +65,7 @@ const items = [
                   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
                     <!--*--CURRENTLY: figure out run build error v *--*-->
                     <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-                  {/* <Image src={item.screenshot} alt={item.title} class="my-1" /> */}
+                  <Image src={item.screenshot} alt={item.title} class="my-1" />
                   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
                     <!--*--CURRENTLY: ^ *--*-->
                     <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
@@ -87,7 +89,7 @@ const items = [
                     id="btn"
                     class="bg-caribbean text-test2 hover:text-orange pt-1 px-2 py-1 my-2"
                   >
-                    <a href="/">see demo</a>
+                    <a href={item.demoLink}>see demo</a>
                   </button>
                   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
                   <!--*--*--*--*--*-^^^-*--*--*--*--*--*--*--*--*-->

@@ -10,7 +10,7 @@ const allWorks = await Astro.glob("./works/*.md");
 ---
 
 <MainLayout>
-  <div id="hero-section" class="mb-5">
+  <div id="hero-section" class="mb-5 ">
     <HeroContent
       title="A Web Design Service for Busy Creatives/ Small Business Owners"
       attention="...what is it?"
@@ -29,20 +29,20 @@ const allWorks = await Astro.glob("./works/*.md");
       <div id="container" class="py-5 my-5">
         <SubSectionBanner title="Featured Websites" />
         <div id="grid-wrapper" class="2xl:px-[50px] px-5 mb-[50px]">
-          <div
+          <div  
             id="grid"
-            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl: gap-[100px]  2xl:px-[150px] px-0"
+            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-[100px] gap-4 2xl:px-[150px] px-0"
           >
             {
               allWorks.map((work) => (
-                <div id="sq" class="pt-5 mt-5 bg-test">
+                <div id="sq" class="pt-5 mt-5 bg-test ">
                         <a href={work.frontmatter.websiteUrl}>
                   <p class="absolute text-white bg-onyx px-2 py-1 border border-black hover:text-test1">visit site</p>    <!--TODO AFTER COMPLETED CUSTOMER SITES: ADD TESIMONIALS -->
                     <div id="img-container">
                     <img
                       src={work.frontmatter.image.url}
                       alt={work.frontmatter.image.alt}
-                      class="border border-black hover:border-2 hover:cursor-pointer lg:h-[500px] h-[300px] w-full"
+                      class="border border-black hover:border-2 hover:cursor-pointer lg:h-[450px] md:h-[300px] h-400px w-full"
                     />
                       </a>
                     </div>
@@ -53,7 +53,6 @@ const allWorks = await Astro.glob("./works/*.md");
                       </h2>
                       <p class="">{work.frontmatter.description }<span class="">
                         <a href={work.frontmatter.websiteUrl} class="underline text-teal">click here</a>
-                        
                         </span>to visit site</p>
                     </div>
                   </a>
