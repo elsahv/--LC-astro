@@ -70,83 +70,94 @@ const elaboratedItems = [
 ];
 ---
 
-<section
-  id="main-grid_address-the-key-problem"
-  class="bg- grid 2xl:grid-cols-2 grid-cols-1 gap-8 pt-5 pl-5 pr-1 my-[105px]"
->
-  <div id="sq1" class="bg-orange">
-    <div id="grid" class="p-5 grid md:grid-cols-2">
+<>
+  <div id="how-it-works" class="2xl:ml-5 2xl:pl-5 pl-1 bg-">
+    <h2 class="text-caribbean text-2xl font-bold">
+      What is LC Dev?? is all about
+    </h2>
+    <p class="text-caribbean">This is for you if you are looking for:</p>
+    <section
+      id="main-grid_address-the-key-problem"
+      class="bg- grid 2xl:grid-cols-2 grid-cols-1 gap-8 pt-5 2xl:pl-5 pl-0 pr-1 my-[55px]"
+    >
+      <div id="sq1" class="bg-orange">
+        <div id="grid" class="p-5 grid md:grid-cols-2">
+          {
+            introItems.map((introItem) => (
+              <div id="sq" class="border-2 border-black p-3">
+                <h2 class="font-bold">{introItem.title}</h2>
+                <ul>
+                  <li>{introItem.listItem1}-elaborate</li>
+                  <li>{introItem.listItem2}-elaborate</li>
+                  <li>{introItem.listItem3}-elaborate</li>
+                  <li>{introItem.listItem4}-elaborate</li>
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <div id="sq2" class="">
+        <!-- *CONTENT EXANPLE IN PROGRESS v-->
+
+        <div id="how-it-works" class="pt-[150px]">
+          <h2 class="text-3xl font-bold">How It Works</h2>
+          <p id="paragraph-ATTENTION" class="pt-5">
+            - How it works...A web design process from start to finish!
+          </p>
+          <div id="paragraph-wrapper" class="pl-1 pr-5 mr-5 max-w-[800px]">
+            <p class="pt-1" id="p1-INTEREST">
+              - Have an idea for your next project? What do you need for a
+              website?
+            </p>
+            <p class="pt-5" id="p2-desire">
+              - Because a custom website fits your business, personality,
+              goals... and you alone. The ability to tell your story, owning a
+              website gives you the ability to tell your business story without
+              any limitations.
+            </p>
+            <p class="pt-5" id="p3-action">
+              - A custom website that fits your business, personality, goals...
+              and you alone. We have one main goal, to get more views towards
+              your business! With Laughing Coyote Dev, you get more than just a
+              website... Information displayed, accessible, easier to find on
+              Google...
+            </p>
+          </div>
+        </div>
+
+        <button
+          id="CTA-ACTION"
+          class="border border-black bg-coral py-1 px-2 mt-3"
+          ><a href="/contact">Plan My Website</a></button
+        >
+        <!-- *CONTENT EXANPLE IN PROGRESS ^-->
+      </div>
+    </section>
+
+    <section
+      id="grid-address the key problem"
+      class="bg-test2 border-2 border-teal grid md:grid-cols-2 grid-cols-1 gap-8 py-[30px] px-1 my-[105px]"
+    >
+      <!-- TODO: FIGURE OUT CONDITIONAL COLORS!, WILL EVENTUALLY REPLACE GRID BELOW! v-->
+      <!--SQ1=lavender SQ2=coral  -->
+      <!--SQ3=lightgreen SQ4=teal  -->
       {
-        introItems.map((introItem) => (
-          <div id="sq" class="border-2 border-black p-3">
-            <h2 class="font-bold">{introItem.title}</h2>
-            <ul>
-              <li>{introItem.listItem1}-elaborate</li>
-              <li>{introItem.listItem2}-elaborate</li>
-              <li>{introItem.listItem3}-elaborate</li>
-              <li>{introItem.listItem4}-elaborate</li>
+        elaboratedItems.map((elaboratedItem) => (
+          <div id="sq" class=" p-3 bg-teal text-lavender">
+            <h2 class="text-lg font-bold">{elaboratedItem.title}</h2>
+            <ul class="">
+              <li>{elaboratedItem.listItem1}-elaborate</li>
+              <li>{elaboratedItem.listItem2}-elaborate</li>
+              <li>{elaboratedItem.listItem3}-elaborate</li>
+              <li>{elaboratedItem.listItem4}-elaborate</li>
             </ul>
           </div>
         ))
       }
-    </div>
+      <!-- TODO: FIGURE OUT CONDITIONAL COLORS! ^-->
+    </section>
   </div>
-
-  <div id="sq2" class="">
-    <!-- *CONTENT EXANPLE IN PROGRESS v-->
-
-    <div id="how-it-works" class="pt-[150px]">
-      <h2 class="text-3xl font-bold">How It Works</h2>
-      <p id="paragraph-ATTENTION" class="pt-5">
-        - How it works...A web design process from start to finish!
-      </p>
-      <div id="paragraph-wrapper" class="pl-1 pr-5 mr-5 max-w-[800px]">
-        <p class="pt-1" id="p1-INTEREST">
-          - Have an idea for your next project? What do you need for a website?
-        </p>
-        <p class="pt-5" id="p2-desire">
-          - Because a custom website fits your business, personality, goals...
-          and you alone. The ability to tell your story, owning a website gives
-          you the ability to tell your business story without any limitations.
-        </p>
-        <p class="pt-5" id="p3-action">
-          - A custom website that fits your business, personality, goals... and
-          you alone. We have one main goal, to get more views towards your
-          business! With Laughing Coyote Dev, you get more than just a
-          website... Information displayed, accessible, easier to find on
-          Google...
-        </p>
-      </div>
-    </div>
-
-    <button id="CTA-ACTION" class="border border-black bg-coral py-1 px-2 mt-3"
-      ><a href="/contact">Plan My Website</a></button
-    >
-    <!-- *CONTENT EXANPLE IN PROGRESS ^-->
-  </div>
-</section>
-
-<section
-  id="grid-address the key problem"
-  class="bg-test2 border-2 border-teal grid md:grid-cols-2 grid-cols-1 gap-8 py-[30px] px-1 my-[105px]"
->
-  <!-- TODO: FIGURE OUT CONDITIONAL COLORS!, WILL EVENTUALLY REPLACE GRID BELOW! v-->
-  <!--SQ1=lavender SQ2=coral  -->
-  <!--SQ3=lightgreen SQ4=teal  -->
-  {
-    elaboratedItems.map((elaboratedItem) => (
-      <div id="sq" class=" p-3 bg-teal text-lavender">
-        <h2 class="text-lg font-bold">{elaboratedItem.title}</h2>
-        <ul class="">
-          <li>{elaboratedItem.listItem1}-elaborate</li>
-          <li>{elaboratedItem.listItem2}-elaborate</li>
-          <li>{elaboratedItem.listItem3}-elaborate</li>
-          <li>{elaboratedItem.listItem4}-elaborate</li>
-        </ul>
-      </div>
-    ))
-  }
-  <!-- TODO: FIGURE OUT CONDITIONAL COLORS! ^-->
-</section>
-
+</>
 <!-- !GRID TO BE REPLACED v-->
