@@ -24,19 +24,19 @@ const allWorks = await Astro.glob("./works/*.md");
     <HowItWorks />
  
     <!-- <LandingPgEx /> -->
-  <section id="featured-websites">
+  <section id="featured-websites" class="px-[150px]">
     <div id="wrapper" class="bg-test mt-[70px] pt-5">
       <div id="container" class="py-5 my-5">
         <SubSectionBanner title="Featured Websites" />
         <div id="grid-wrapper" class="2xl:px-[50px] px-5 mb-[50px]">
           <div  
             id="grid"
-            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-[100px] gap-4 2xl:px-[150px] px-0"
+            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-[50px] gap-4 px-0"
           >
             {
               allWorks.map((work) => (
-                <div id="sq" class="pt-5 mt-5 bg-test ">
-                        <a href={work.frontmatter.websiteUrl}>
+                <div id="sq" class=" ">
+                <a href={work.frontmatter.websiteUrl}>
                   <p class="absolute text-white bg-onyx px-2 py-1 border border-black hover:text-test1">visit site</p>    <!--TODO AFTER COMPLETED CUSTOMER SITES: ADD TESIMONIALS -->
                     <div id="img-container">
                     <img

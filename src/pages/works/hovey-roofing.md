@@ -9,7 +9,7 @@ description:
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:
-  url: "https://docs.astro.build/assets/rose.webp"
+  url: "https://dl.dropboxusercontent.com/scl/fi/erd9kmg0sibit24225dhm/roof.png?rlkey=61gvo5esptj7x9sephthvvqvz&st=lo7uxn6u&dl=0"
   alt: "The Astro logo on a dark background with a pink glow."
 websiteUrl: "https://hoveyroofing.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
