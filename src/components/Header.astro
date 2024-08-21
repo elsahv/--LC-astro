@@ -4,7 +4,7 @@ const links = [
   { label: "How it works", href: "/#how-it-works" },
   { label: "Featured Projects", href: "/#featured-websites" },
   { label: "Website Templates", href: "/client-templates" },
-  // { label: "FAQ", href: "/about" },
+  { label: "Writing", href: "/writing" },
   { label: "Contact", href: "/contact" },
 ];
 ---
@@ -26,7 +26,7 @@ const links = [
       <ul class="flex justify-end 2xl:items-end items-center">
         {
           links.map((link) => (
-            <a class="mx-5" href={link.href}>
+            <a class="mx-4" href={link.href}>
               <li class="2xl:pt-5 pt-1 opacity-90 hover:opacity-100 drop-shadow-2xl">
                 {link.label}
               </li>

@@ -36,7 +36,8 @@ const allWorks = await Astro.glob("./works/*.md");
             {
               allWorks.map((work) => (
                 <div id="sq" class=" ">
-                <a href={work.frontmatter.websiteUrl}>
+                {/* <a href={work.frontmatter.websiteUrl}> */}
+                  <a href={work.url}>
                   <p class="absolute text-white bg-onyx px-2 py-1 border border-black hover:text-test1">visit site</p>    <!--TODO AFTER COMPLETED CUSTOMER SITES: ADD TESIMONIALS -->
                     <div id="img-container">
                     <img

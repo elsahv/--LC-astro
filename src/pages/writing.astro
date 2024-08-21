@@ -1,0 +1,18 @@
+---
+import HeroContent from "../components/shared/HeroContent.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+const allDemos = await Astro.glob("./demos-cta/*.md");
+---
+
+<MainLayout>
+  <div id="hero-section" class="mb-5">
+    <HeroContent
+      title="Writing"
+      attention="...what is it?"
+      interest=" ...Who is it for?"
+      desire="...how will it make my life better?"
+      action="...lets talk about your future site!"
+      heroImg="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    />
+  </div>
+</MainLayout>
