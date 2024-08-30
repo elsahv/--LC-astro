@@ -2,7 +2,7 @@
    <!--*--*--*--*--*-v-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
-_CURRENTLY: CREATE GROWING PUP DEMO, RISING CARNIVORE DEMO--- https://trello.com/c/8ZXCjh9w/290-create-growing-pup-demo-rising-carnivore-demo_
+\_CURRENTLY: USING TEMP PAGE FOR TURNING LC INTO BLOG
 
  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*-^^^-*--*--*--*--*--*--*--*--*-->

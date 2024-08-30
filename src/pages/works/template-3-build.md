@@ -1,17 +1,17 @@
 ---
-layout:
+layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "The Indoor Jungle Project"
+title: "Template 3 build"
 category: "creative blog"
 pubDate: 2022-07-01
 description:
-  "SIMPLE BLOG- sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
+  "COMPLICATED BLOG- sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:
-  url: "https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  url: "https://dl.dropboxusercontent.com/scl/fi/q14f9bigxyrl4lbq947d9/wtbh-3-26-24.png?rlkey=6s9bv10u0zkfdj63jsaj2sqml&st=ah4y96h4&dl=0"
   alt: "The full Astro logo."
-websiteUrl: "https://theindoorjungleproject.com"
+websiteUrl: "https://writingtobetterhealth.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---

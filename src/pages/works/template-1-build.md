@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "Hoveyroofing"
+title: "template 1 build"
 category: "small business"
 pubDate: 2022-07-01
 description:

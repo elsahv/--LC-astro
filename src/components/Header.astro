@@ -1,39 +1,30 @@
 ---
 const links = [
-  // { label: "Home", href: "/#HERO" },
-  { label: "How it works", href: "/#how-it-works" },
-  { label: "Featured Projects", href: "/#featured-websites" },
-  { label: "Website Templates", href: "/client-templates" },
+  { label: "Home", href: "/#HERO" },
+  // { label: "How it works", href: "/#how-it-works" },
+  // { label: "Featured Projects", href: "/#featured-websites" },
+  // { label: "Website Templates", href: "/client-templates" },
   { label: "Writing", href: "/writing" },
   { label: "Contact", href: "/contact" },
 ];
 ---
 
-<!-- todo: BOTTOM BORDER STYLE, ADD SHADOW BLUR (or teal background transition) WHEN SCROLLING -->
-<header
-  class="dropshadow-2xl bg-parchment border-b border-onyx text-onyx sticky top-0 z-50 pb-3 pt-2"
->
-  <nav
-    class="font-bold pl-5 md:pr-5 pr-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1 text-2xl"
-  >
-    <div class="flex justify-start items-end py-3 pl-1">
+<!-- todo: BOTTOM BORDER STYLE, ADD SHADOW BLUR (or teal background transition) WHEN SCROLLING 
+<header class="dropshadow-2xl text-onyx sticky top-0 z-50 pb-3 pt-2">
+  <nav class="flex justify-center font-bold pl-5 md:pr-5 pr-1 pt-1 text-2xl">
+  <div class="flex justify-start items-end py-3 pl-1">
       <div id="logo" class="md:text-3xl text-2xl">
         <a href="/">Laughing Coyote Dev</a>
       </div>
-    </div>
-
-    <div id="block-hidden" class="xl:block hidden">
-      <ul class="flex justify-end 2xl:items-end items-center">
-        {
-          links.map((link) => (
-            <a class="mx-4" href={link.href}>
-              <li class="2xl:pt-5 pt-1 opacity-90 hover:opacity-100 drop-shadow-2xl">
-                {link.label}
-              </li>
-            </a>
-          ))
-        }
-      </ul>
-    </div>
-  </nav>
-</header>
+    </div> -->
+<div id="block-hidden" class="bg- xl:block hidden">
+  <ul class="flex justify-end 2xl:items-end items-center">
+    {
+      links.map((link) => (
+        <a class="mx-4" href={link.href}>
+          <li class=" 2xl:pt-5 pt-1  drop-shadow-2xl">{link.label}</li>
+        </a>
+      ))
+    }
+  </ul>
+</div>

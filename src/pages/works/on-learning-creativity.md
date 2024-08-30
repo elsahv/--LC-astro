@@ -1,17 +1,16 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-# title: "My First Blog Post"
-title: "Writing to Better Health"
+layout:
+title: "On Learning Creativity"
 category: "creative blog"
 pubDate: 2022-07-01
 description:
-  "COMPLICATED BLOG- sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
+  "SIMPLE BLOG- sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:
-  url: "https://dl.dropboxusercontent.com/scl/fi/q14f9bigxyrl4lbq947d9/wtbh-3-26-24.png?rlkey=6s9bv10u0zkfdj63jsaj2sqml&st=ah4y96h4&dl=0"
+  url: "https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   alt: "The full Astro logo."
-websiteUrl: "https://writingtobetterhealth.com"
+websiteUrl: "https://theindoorjungleproject.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---
