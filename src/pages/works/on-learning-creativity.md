@@ -1,5 +1,5 @@
 ---
-layout:
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "On Learning Creativity"
 category: "creative blog"
 pubDate: 2022-07-01

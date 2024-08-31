@@ -34,7 +34,7 @@ const allWorks = await Astro.glob("./works/*.md");
                       <img
                         src={work.frontmatter.image.url}
                         alt={work.frontmatter.image.alt}
-                        class="border border-black hover:border-2 hover:cursor-pointer w-400px h-"
+                        class="border border-black hover:cursor-pointer w-400px h-"
                       />
                     </div>
                   </a>
@@ -44,7 +44,7 @@ const allWorks = await Astro.glob("./works/*.md");
                   >
                     <div id="content-padding" class="">
                       <a href={work.frontmatter.websiteUrl}>
-                        <h2 class="hover:font-semibold text-test lg:text-4xl md:text-3xl text-2xl underline pb-2">
+                        <h2 class="hover:font-semibold text-test lg:text-2xl md:text-3xl text-2xl underline pb-2">
                           {work.frontmatter.title}
                         </h2>
                         <p class="">
@@ -70,14 +70,18 @@ const allWorks = await Astro.glob("./works/*.md");
       </div>
     </div>
   </section>
-  <div id="hero-section" class="mb-5 bg-">
-    <HeroContent
-      title="Contact"
-      attention="What do you need for a website?"
-      interest="Or Rising Carnivore? You need a website not just to promote your business, but have the the ablity to tell your story and brand"
-      desire="The Growing Pup? A template for small businesses just starting out,  increased potential customers, easier to find on Google."
-      action="A custom website that fits your business, personality, goals... and you alone."
-      heroImg="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    />
-  </div>
+
+  <!--TODO: CURRENTLY: NEW CONTACT SECTION -->
+  <section
+    id="contact"
+    class="border border-black m-5 p-5 my-[150px] mx-[130px]"
+  >
+    <h2 class="text-4xl font-bold">Contact</h2>
+    <p>Best way to reach me would be through email : elsahvy@gmail.com</p>
+    <p>
+      I am always looking for opportunities to further my skills... and work
+      with other like minded people in tech. If you would like to contact me,
+      you can also find me at sm and sm
+    </p>
+  </section>
 </MainLayout>

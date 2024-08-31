@@ -1,63 +1,64 @@
 ---
-import HowItWorks from "../components/sections/HowItWorks.astro";
-// import LandingPgEx from "../components/sections/LandingPgEx.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import HeroContent from "../components/shared/HeroContent.astro";
-import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
-import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
+import Contact from "../components/sections/Contact.astro";
 
 const allWorks = await Astro.glob("./works/*.md");
 ---
 
 <MainLayout>
-  <div id="hero-section" class="mb-5 ">
+  <div id="hero-section" class="mb-5">
     <HeroContent
       title="Laughing Coyote Dev"
-      attention="A blog in progress"
-      interest=""
-      desire=""
-      action=""
+      attention="A blog in Progress"
+      interest="for small business owners"
+      desire="for creatives"
+      action="and web developers!"
       heroImg="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     />
   </div>
 
-    <HowItWorks />
- 
-    <!-- <LandingPgEx /> -->
   <section id="featured-websites" class="2xl:px-[150px] px-1">
     <div id="wrapper" class="bg-test mt-[70px] pt-5">
       <div id="container" class="py-5 my-5">
-        <SubSectionBanner title="Featured Websites" />
-        <div id="grid-wrapper" class="2xl:px-[50px] px-5 mb-[50px]">
-          <div  
-            id="grid"
-            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-[50px] gap-4 px-0"
-          >
+        <div id="grid-wrapper" class="">
+          <div id="grid" class="bg-test mt-5 pt-5 grid grid-2 gap-y-[90px]">
             {
               allWorks.map((work) => (
-                <div id="sq" class="md:pt-0 pt-5">
-                {/* <a href={work.frontmatter.websiteUrl}> */}
-                  <a href={work.url}>
-                  <p class="absolute text-white bg-onyx px-2 py-1 border border-black hover:text-test1">visit site</p>    <!--TODO AFTER COMPLETED CUSTOMER SITES: ADD TESIMONIALS -->
+                <a href={work.url}>
+                  <div
+                    id="sq"
+                    class="hover:opacity-80 md:pt-0 pt-5 flex items-center"
+                  >
                     <div id="img-container">
-                    <img
-                      src={work.frontmatter.image.url}
-                      alt={work.frontmatter.image.alt}
-                      class="border border-black hover:border-2 hover:cursor-pointer lg:h-[450px] md:h-[300px] h-400px w-full"
-                    />
-                      </a>
+                      <img
+                        src={work.frontmatter.image.url}
+                        alt={work.frontmatter.image.alt}
+                        class="border-2 border-black w-400px rounded-lg"
+                      />
                     </div>
-                    <div id="content-container" class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3">
-                      <a href={work.frontmatter.websiteUrl}>
-                      <h2 class="text-test lg:text-4xl md:text-3xl text-2xl font- pb-2">
-                        {work.frontmatter.title}
-                      </h2>
-                      <p class="">{work.frontmatter.description }<span class="">
-                        <a href={work.frontmatter.websiteUrl} class="underline text-teal">click here</a>
-                        </span>to visit site</p>
+                    {/* </a> */}
+                    <div
+                      id="content-container"
+                      class=" rounded-lg ml-5 mt-2 p-4 max-w-[900px]"
+                    >
+                      <div id="content-padding" class="py-5">
+                        <h2 class="hover:font- text-test lg:text-2xl md:text-3xl text-2xl underline pb-2">
+                          {work.frontmatter.title}
+                        </h2>
+                        <p class="">
+                          {work.frontmatter.description}
+                          <span class="">click here</span>
+                          to visit site
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Doloribus archit !
+                        </p>
+                      </div>
                     </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               ))
             }
           </div>
@@ -65,5 +66,24 @@ const allWorks = await Astro.glob("./works/*.md");
       </div>
     </div>
   </section>
-  <FooterBannerCTA title="to client templates ->" link="/#client-templates" />
+
+  <!--TODO: CURRENTLY: NEW CONTACT SECTION -->
+  <!-- <section id="contact" class="bg-onyx text-parchment p-5 my-[150px] -[130px]">
+    <div id="padding" class="p-5 flex justify-center">
+      <div class="">
+        <h2 class="text-4xl font-">Contact</h2>
+        <div class="font-semi pl-1">
+          <p class="">
+            Best way to reach me would be through email : elsahvy@gmail.com
+          </p>
+          <p>
+            I am always looking for opportunities to further my skills... and
+            work with other like minded people in tech. If you would like to
+            contact me, you can also find me at sm and sm
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <Contact />
 </MainLayout>

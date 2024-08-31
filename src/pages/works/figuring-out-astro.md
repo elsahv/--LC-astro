@@ -1,11 +1,11 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "Figuring Out Astro"
+title: "5/2/24"
 category: "creative blog"
 pubDate: 2022-07-01
 description:
-  "COMPLICATED BLOG- sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
+  "Figuring Out Astro- sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:

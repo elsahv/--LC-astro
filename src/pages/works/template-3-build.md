@@ -5,7 +5,7 @@ title: "Template 3 build"
 category: "creative blog"
 pubDate: 2022-07-01
 description:
-  "COMPLICATED BLOG- sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
+  "3/5/24 - sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:
