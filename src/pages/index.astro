@@ -1,12 +1,14 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
-import HeroContent from "../components/shared/HeroContent.astro";
 import Contact from "../components/sections/Contact.astro";
-
+import HeroContent from "../components/shared/HeroContent.astro";
+import SectionBanner from "../components/shared/Section_Banner.astro";
+import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 const allWorks = await Astro.glob("./works/*.md");
 ---
 
 <MainLayout>
+  <!-- ?REMOVE HERO FOR NOW?? -->
   <div id="hero-section" class="mb-5">
     <HeroContent
       title="Laughing Coyote Dev"
@@ -17,73 +19,56 @@ const allWorks = await Astro.glob("./works/*.md");
       heroImg="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     />
   </div>
+  <!-- *CURRENT WORKSPACE v-->
 
-  <section id="featured-websites" class="2xl:px-[150px] px-1">
-    <div id="wrapper" class="bg-test mt-[70px] pt-5">
-      <div id="container" class="py-5 my-5">
-        <div id="grid-wrapper" class="">
-          <div id="grid" class="bg-test mt-5 pt-5 grid grid-2 gap-y-[90px]">
-            {
-              allWorks.map((work) => (
-                <a href={work.url}>
-                  <div
-                    id="sq"
-                    class="hover:opacity-80 md:pt-0 pt-5 flex items-center"
-                  >
-                    <div id="img-container">
-                      <img
-                        src={work.frontmatter.image.url}
-                        alt={work.frontmatter.image.alt}
-                        class="border-2 border-black w-400px rounded-lg"
-                      />
-                    </div>
-                    {/* </a> */}
-                    <div
-                      id="content-container"
-                      class=" rounded-lg ml-5 mt-2 p-4 max-w-[900px]"
-                    >
-                      <div id="content-padding" class="py-5">
-                        <h2 class="hover:font- text-test lg:text-2xl md:text-3xl text-2xl underline pb-2">
-                          {work.frontmatter.title}
-                        </h2>
-                        <p class="">
-                          {work.frontmatter.description}
-                          <span class="">click here</span>
-                          to visit site
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit, amet consectetur adipisicing
-                          elit. Doloribus archit !
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              ))
-            }
-          </div>
-        </div>
+  <SectionBanner
+    title="Blog"
+    paragraph="jflkdsjd jkfdsjf klsdjf sdlkjfklds fjdlkf jd skfljdslkfjslk , klsfksfjlkdsgnsd,k,"
+  />
+  <!-- <SubSectionBanner title="title" /> -->
+
+  <div
+    id="wrapper"
+    class="bg- flex justify-center p-[50px] mx-[90px] bg- rounded-lg"
+  >
+    <div id="grid-container" class="bg-test">
+      <div
+        id="grid"
+        class="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 2xl:mr-5 mr-1 2xl:px-[25px] px-2 py-[50px]"
+      >
+        {
+          allWorks.map((work) => (
+            <div
+              id="sq"
+              class="bg-teal text-test2 rounded-lg border-2 border-black hover:opacity-90"
+            >
+              <div id="sq-container" class="bg-">
+                <h2 class="text-lavender font-bold  p-3 mt-2 ">
+                  {work.frontmatter.title}
+                </h2>
+
+                <img
+                  src={work.frontmatter.image.url}
+                  alt=""
+                  class="bg-test1 h-[300px] w-full border border-black"
+                />
+              </div>
+              {/* BOTTOM CONTENT */}
+              <div class="p-3">
+                <p class="mr-1 opacity-90 p-1">
+                  {work.frontmatter.description}
+                </p>
+                <p class="underline opacity-80 hover:opacity-100 text-lavender ml-1">
+                  read more...
+                </p>
+              </div>
+            </div>
+          ))
+        }
       </div>
     </div>
-  </section>
+  </div>
 
-  <!--TODO: CURRENTLY: NEW CONTACT SECTION -->
-  <!-- <section id="contact" class="bg-onyx text-parchment p-5 my-[150px] -[130px]">
-    <div id="padding" class="p-5 flex justify-center">
-      <div class="">
-        <h2 class="text-4xl font-">Contact</h2>
-        <div class="font-semi pl-1">
-          <p class="">
-            Best way to reach me would be through email : elsahvy@gmail.com
-          </p>
-          <p>
-            I am always looking for opportunities to further my skills... and
-            work with other like minded people in tech. If you would like to
-            contact me, you can also find me at sm and sm
-          </p>
-        </div>
-      </div>
-    </div>
-  </section> -->
   <Contact />
+  <!-- *CURRENT WORKSPACE ^-->
 </MainLayout>

@@ -1,8 +1,10 @@
+**_CURRENTLY DOING: CREATE CONTENT v_**
+make astro template from nextjs template
+**_CURRENTLY DOING CREATE CONTENT^_**
+
  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*-v-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-
-\_CURRENTLY: USING TEMP PAGE FOR TURNING LC INTO BLOG
 
  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*-^^^-*--*--*--*--*--*--*--*--*-->
