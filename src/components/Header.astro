@@ -1,32 +1,30 @@
 ---
 const links = [
-  { label: "Blog", href: "/#HERO" },
-  // { label: "How it works", href: "/#how-it-works" },
-  // { label: "Featured Projects", href: "/#featured-websites" },
-  // { label: "Website Templates", href: "/client-templates" },
-  { label: "About", href: "/#writing" },
-  { label: "Contact", href: "/#contact" },
+  { label: "About", href: "/#about-section" },
+  { label: "Writing", href: "/#writing-section" },
+  { label: "Contact", href: "/#contact-section" },
 ];
 ---
 
-<!-- todo: BOTTOM BORDER STYLE, ADD SHADOW BLUR (or teal background transition) WHEN SCROLLING  -->
-<header class="dropshadow-2xl text-onyx sticky top-0 z-50 pb-3 pt-2">
-  <nav class="flex justify-center font-bold pl-5 md:pr-5 pr-1 pt-1 text-2xl">
-    <div class="flex justify-start items-end py-3 pl-1">
-      <div id="logo" class="md:text-3xl text-2xl">
-        <a href="/">Laughing Coyote Dev</a>
+<header class="bg-orange border-2 border-b-black mb-[150px]">
+  <div>
+    <nav class="px-5 2xl:pt-0 md:pt-[50px]">
+      <h1 class="text- 2xl:text-[105px] md:text-6xl text-5xl py-5">
+        <a href="/"> Laughing Coyote Dev </a>
+      </h1>
+      <div
+        class="flex flex-col border-black border-t-2 pl-5 text-2xl py-5 mr-5 l text-onyx justify-start"
+      >
+        <ul class="">
+          {
+            links.map((link) => (
+              <a class="" href={link.href}>
+                <li class=" drop-shadow-2xl">{link.label}</li>
+              </a>
+            ))
+          }
+        </ul>
       </div>
-    </div>
-    <div id="block-hidden" class="bg- xl:block hidden">
-      <ul class="flex justify-end 2xl:items-end items-center">
-        {
-          links.map((link) => (
-            <a class="mx-4" href={link.href}>
-              <li class=" 2xl:pt-5 pt-1  drop-shadow-2xl">{link.label}</li>
-            </a>
-          ))
-        }
-      </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>

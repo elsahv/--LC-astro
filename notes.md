@@ -1,5 +1,5 @@
 **_CURRENTLY DOING: CREATE CONTENT v_**
-make astro template from nextjs template
+make astro template from nextjs template- MOVE TEST-PG TO HOME
 **_CURRENTLY DOING CREATE CONTENT^_**
 
  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
