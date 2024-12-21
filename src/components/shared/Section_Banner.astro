@@ -7,16 +7,16 @@ export interface Props {
 const { title, paragraph } = Astro.props as Props;
 ---
 
-<section class="bg-test">
-  <div class="2xl:py-3 py-0 flex justify-center bg-">
-    <h2 class="lg:text-5xl md:text-4xl text-3xl px-5 py-2 font-bold underline">
-      {title}
-    </h2>
-  </div>
+<section class="px-1 py-1 my-2 text-left">
+  <h2
+    class="font-bold text-3xl md:text-left text- text-onyx md:pl-1 pl-1 md:pt-[280px] pt-1"
+  >
+    -{title}-
+  </h2>
 
-  <div id="ABOUT" class="flex justify-center">
-    <div class="2xl:max-w-[1160px] pt-1 px-[30px]">
-      <p class="md:text-xl text-lg">{paragraph}</p>
-    </div>
+  <div id="ABOUT" class="flex justify-">
+    <p class="pl-5 bg- text-onyx md:text-left">
+      {paragraph}
+    </p>
   </div>
 </section>

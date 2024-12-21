@@ -1,4 +1,5 @@
 ---
+import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
 import MainLayout from "./MainLayout.astro";
 const { frontmatter } = Astro.props;
 ---
@@ -36,5 +37,6 @@ const { frontmatter } = Astro.props;
     class="bg-orange border border-onyx absolute right-0 lg:w-3/4 w-full m-5 pr-[150px] p-5 2xl:text-xl md:text-lg sm:text-md"
   >
     <slot />
+    <FooterBannerCTA title="test title" link="test link" />
   </div>
 </MainLayout>

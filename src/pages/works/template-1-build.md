@@ -5,8 +5,9 @@ title: "template 1 build"
 category: "small business"
 pubDate: 2022-07-01
 description:
-  "SIMPLE BROCHURE- a future Morongo Basin community website.  Corporis doloremque sit minus, asperiores quia velit
-  inventore nostrum! Dicta alias corporis numquam."
+  "template-1 (-what do I do better than anyone else, and allows me to charge a premium? ) a future Morongo Basin community website.  -benefits of react/ headless cms 
+* become really good at crafting messaging that converts
+* to have a unique approach to web design through storytelling and sales psychology"
 author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/erd9kmg0sibit24225dhm/roof.png?rlkey=61gvo5esptj7x9sephthvvqvz&st=lo7uxn6u&dl=0"

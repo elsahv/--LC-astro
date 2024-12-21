@@ -1,0 +1,59 @@
+---
+import Header from "../components/Header.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import SectionBanner from "../components/shared/Section_Banner.astro";
+import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
+import HeroContent from "../components/shared/HeroContent.astro";
+import ContactSection from "../components/sections/ContactSection.astro";
+const allWorks = await Astro.glob("./works/*.md");
+---
+
+<MainLayout>
+  <div id="container" class="">
+    <!-- *LEFT PANEL v-->
+    <section
+      id="left-panel"
+      class="border-onyx border-r-2 bg-parchment md:h-screen h-full md:left-0 top-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+    >
+      <Header />
+
+      <section id="about-section" class="ml-3 mr-5 p-3 m-2">
+        <!-- <About /> -->
+        <HeroContent
+          title="CONTACT- for creatives and small businesses"
+          attention=" Why should you prefer a custom-made website, when you can simply use wix or wordpress? "
+          interest="The ability to tell your story, owning a website gives you the ability to tell your business story without any limitations."
+          desire="Because a custom website fits your business, personality, goals... and you alone. "
+          action="We have one main goal, to get more views towards your business! "
+        />
+      </section>
+    </section>
+    <!-- *RIGHT PANEL v-->
+    <section
+      id="right-panel"
+      class="md:h-screen bg-lightSeaGreen md:absolute relative md:right-0 bottom-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden p-5"
+    >
+      <!-- TAGLINE-->
+      <div class="md:mt-[150px] mt-2 2xl:w-3/4 w-full mx-5 px-5">
+        <div class="md:block hidden text-aquamarine">
+          <p class="md:text-3xl text-2xl">
+            PROFESSIONAL WEB DESIGN SERVICES for creatives and small businesses
+          </p>
+        </div>
+      </div>
+      <div id="">
+        <div id="web-development">
+          <SectionBanner
+            title="CONTACT-Web development"
+            paragraph="Why should you prefer a custom-made website, when you can simply use wix or wordpress? Because a custom website fit s your business, personality, goals... and you alone. "
+          />
+        </div>
+      </div>
+      <ContactSection />
+
+      <FooterBannerCTA title="test tile" link="link" />
+
+      <!-- WRITING  ^-->
+    </section>
+  </div>
+</MainLayout>

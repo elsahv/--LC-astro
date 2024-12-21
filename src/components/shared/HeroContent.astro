@@ -7,35 +7,38 @@ export interface Props {
   interest: string;
   desire: string;
   action: string;
-  heroImg: string;
+  // heroImg: string;
 }
 
-const { title, attention, interest, desire, action, heroImg } =
-  Astro.props as Props;
+const {
+  title,
+  attention,
+  interest,
+  desire,
+  action,
+  //  heroImg
+} = Astro.props as Props;
 ---
 
-<div
-  id="hero-wrapper"
-  class="flex justify-center pt-1 2xl:h-screen h-[100%] text-onyx"
->
-  <div id="grid" class="grid lg:grid-cols-2 grid-cols-1">
-    <div id="sq1" class="bg- p-5 px-5 py-3 mb-5 2xl:mt-[250px] mt-1">
+<div id="hero-wrapper" class="flex justify-center pt-1 text-onyx bg-">
+  <div id="grid" class="grid grid-cols-1">
+    <div id="sq1" class="bg-test2 border border-black py-4 mb-5">
       <div id="padding" class="lg:p-5 p-1 bg-">
         <div class="">
-          <h1 class="text-test lg:text-4xl text-3xl font-extrabold pb-2">
+          <h1 class="text-test lg:text-2xl text-lg font-extrabold pb-2">
             {title}
           </h1>
-          <div>
-            <h2 class="font-bold lowercase md:text-xl text-md">
+          <div class="font-medium">
+            <h2 class="lowercase md:text-xl text-md">
               - {attention}
             </h2>
-            <p class="mt-1 lowercase md:text-xl text-md">- {interest}</p>
+            <p class="lowercase md:text-xl text-md mt-5">- {interest}</p>
             <p class="lowercase md:text-xl text- my-1">- {desire}</p>
             <p class="lowercase md:text-xl text-md">- {action}</p>
           </div>
           <!-- * BTN WRAPPER   v-->
           <ButtonProps
-            btn1="see content below!"
+            btn1="see featured works!"
             btn2="contact"
             btn1Link="/#services"
             btn2Link="/#contact"
@@ -45,8 +48,8 @@ const { title, attention, interest, desire, action, heroImg } =
       </div>
     </div>
     <!-- /////////////////////////////////// -->
-    <div id="sq2" class="bg- flex justify-center items-center lg:p-0 p-5">
-      <img src={heroImg} class="border-2 border-black" />
-    </div>
+    <!-- <div id="sq2" class="bg- flex justify-center items-center lg:p-0 p-5"> -->
+    <!-- <img src={heroImg} class="border-2 border-black" /> -->
+    <!-- </div> -->
   </div>
 </div>

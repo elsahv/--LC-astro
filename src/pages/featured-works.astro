@@ -1,12 +1,11 @@
 ---
 import Header from "../components/Header.astro";
-// import Contact from "../components/sections/Contact.astro";
 import About from "../components/sections/About.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import SectionBanner from "../components/shared/Section_Banner.astro";
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
 import PkgTemplates from "../components/sections/PkgTemplates.astro";
-// import Services from "../components/sections/Services.astro";
+import Services from "../components/sections/Services.astro";
 import HowItWorks from "../components/sections/HowItWorks.astro";
 import HeroContent from "../components/shared/HeroContent.astro";
 const allWorks = await Astro.glob("./works/*.md");
@@ -21,16 +20,16 @@ const allWorks = await Astro.glob("./works/*.md");
     >
       <Header />
 
-      <section id="about-section" class="ml-3 mr-5 p-3 m-2">
+      <div id="about-section" class="ml-3 mr-5 p-3 m-2">
         <!-- <About /> -->
         <HeroContent
-          title="PROFESSIONAL WEB DESIGN SERVICES for creatives and small businesses"
+          title="FEATURED WORKS- for creatives and small businesses"
           attention=" Why should you prefer a custom-made website, when you can simply use wix or wordpress? "
           interest="The ability to tell your story, owning a website gives you the ability to tell your business story without any limitations."
           desire="Because a custom website fits your business, personality, goals... and you alone. "
           action="We have one main goal, to get more views towards your business! "
         />
-      </section>
+      </div>
     </section>
     <!-- *RIGHT PANEL v-->
     <section
@@ -63,12 +62,13 @@ const allWorks = await Astro.glob("./works/*.md");
         <!-- TODO v -->
         <!-- <Services /> -->
         <!-- <PkgTemplates /> -->
+        <!-- < /> -->
         <!-- <HowItWorks /> -->
         <!-- TODO ^ -->
 
         <div id="web-development">
           <SectionBanner
-            title="templates & development"
+            title="FEATURED WORKS-Web development"
             paragraph="Why should you prefer a custom-made website, when you can simply use wix or wordpress? Because a custom website fit s your business, personality, goals... and you alone. "
           />
         </div>
@@ -111,7 +111,7 @@ const allWorks = await Astro.glob("./works/*.md");
       <!-- WEB DEV  ^-->
 
       <!-- WRITING  v-->
-      <!--  
+      <div id="TEST2">
         <div id="writing">
           <SectionBanner
             title="Writing"
@@ -153,7 +153,7 @@ const allWorks = await Astro.glob("./works/*.md");
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <FooterBannerCTA title="test tile" link="link" />
 
       <!-- WRITING  ^-->
