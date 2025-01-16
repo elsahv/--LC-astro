@@ -1,31 +1,23 @@
 ---
 import Header from "../components/Header.astro";
-// import Contact from "../components/sections/Contact.astro";
-import About from "../components/sections/About.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import SectionBanner from "../components/shared/Section_Banner.astro";
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
-import PkgTemplates from "../components/sections/PkgTemplates.astro";
-import HowItWorks from "../components/sections/HowItWorks.astro";
-import HeroContent from "../components/shared/HeroContent.astro";
-import PhotoGallery from "../components/sections/WebDev/PhotoGallery.astro";
+import About from "../components/shared/About.astro";
 import LandingPgEx from "../components/sections/LandingPgEx.astro";
 const allWorks = await Astro.glob("./works/*.md");
 ---
 
 <MainLayout>
   <div id="container" class="">
-    <!-- *LEFT PANEL v-->
     <section
       id="left-panel"
       class="border-onyx border-r-2 bg-parchment md:h-screen h-full md:left-0 top-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
     >
       <Header />
-
       <section id="about-section" class="ml-3 mr-5 p-3 m-2">
-        <!-- <About /> -->
-        <HeroContent
-          title="PROFESSIONAL WEB DESIGN SERVICES for creatives and small businesses"
+        <About
+          title="templates for creatives and small businesses"
           attention=" Why should you prefer a custom-made website, when you can simply use wix or wordpress? "
           interest="The ability to tell your story, owning a website gives you the ability to tell your business story without any limitations."
           desire="Because a custom website fits your business, personality, goals... and you alone. "
@@ -33,7 +25,6 @@ const allWorks = await Astro.glob("./works/*.md");
         />
       </section>
     </section>
-    <!-- *RIGHT PANEL v-->
     <section
       id="right-panel"
       class="md:h-screen bg-lightSeaGreen md:absolute relative md:right-0 bottom-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden p-5"

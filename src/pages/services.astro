@@ -1,14 +1,11 @@
 ---
 import Header from "../components/Header.astro";
-import About from "../components/sections/About.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import SectionBanner from "../components/shared/Section_Banner.astro";
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
-import PkgTemplates from "../components/sections/PkgTemplates.astro";
 import ServicesSection from "../components/sections/ServicesSection.astro";
-import HowItWorks from "../components/sections/HowItWorks.astro";
-import HeroContent from "../components/shared/HeroContent.astro";
-const allWorks = await Astro.glob("./works/*.md");
+import About from "../components/shared/About.astro";
+import Tagline from "../components/shared/Tagline.astro";
 ---
 
 <MainLayout>
@@ -21,9 +18,8 @@ const allWorks = await Astro.glob("./works/*.md");
       <Header />
 
       <section id="about-section" class="ml-3 mr-5 p-3 m-2">
-        <!-- <About /> -->
-        <HeroContent
-          title="Services"
+        <About
+          title="Services- a one-stop-chop for sales pg solutions"
           attention="testing Why should you prefer a custom-made website, when you can simply use wix or wordpress? "
           interest="The ability to tell your story, owning a website gives you the ability to tell your business story without any limitations."
           desire="blah blah blah Because a custom website fits your business, personality, goals... and you alone. "
@@ -37,18 +33,13 @@ const allWorks = await Astro.glob("./works/*.md");
       class="md:h-screen bg-lightSeaGreen md:absolute relative md:right-0 bottom-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden p-5"
     >
       <!-- TAGLINE-->
-      <div class="md:mt-[150px] mt-2 2xl:w-3/4 w-full mx-5 px-5">
-        <div class="md:block hidden text-aquamarine">
-          <p class="md:text-3xl text-2xl">
-            PROFESSIONAL WEB DESIGN SERVICES for creatives and small businesses
-          </p>
-        </div>
-      </div>
+      <Tagline
+        title="PROFESSIONAL WEB DESIGN SERVICES for creatives and small businesses "
+      />
+
       <div id="">
         <!-- TODO v -->
         <ServicesSection />
-        <!-- <PkgTemplates /> -->
-        <!-- <HowItWorks /> -->
         <!-- TODO ^ -->
 
         <div id="web-development">

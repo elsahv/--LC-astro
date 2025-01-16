@@ -1,0 +1,23 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+<!-- TAGLINE-->
+<div class="md:mt-[150px] mt-2 2xl:w-3/4 w-full mx-5 px-5">
+  <div class="md:block hidden text-aquamarine">
+    <p class="md:text-3xl text-2xl">
+      <h1 class="text-3xl text-2xl">
+        {title}
+      </h1>
+    </p>
+  </div>
+
+  <!-- TODO: ALT: TAGLINE v -->
+  <!-- <p class="md:text-3xl text-2xl"> -->
+  <!-- - **WEBSITE SOLUTIONS for creatives and small businesses** -->
+  <!-- </p>   -->
+</div>

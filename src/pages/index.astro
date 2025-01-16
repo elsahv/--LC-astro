@@ -1,14 +1,10 @@
 ---
 import Header from "../components/Header.astro";
-// import Contact from "../components/sections/Contact.astro";
-import About from "../components/sections/About.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import SectionBanner from "../components/shared/Section_Banner.astro";
 import FooterBannerCTA from "../components/shared/FooterBannerCTA.astro";
-import PkgTemplates from "../components/sections/PkgTemplates.astro";
-// import Services from "../components/sections/Services.astro";
-import HowItWorks from "../components/sections/HowItWorks.astro";
-import HeroContent from "../components/shared/HeroContent.astro";
+import About from "../components/shared/About.astro";
+import Tagline from "../components/shared/Tagline.astro";
 const allWorks = await Astro.glob("./works/*.md");
 ---
 
@@ -20,10 +16,8 @@ const allWorks = await Astro.glob("./works/*.md");
       class="border-onyx border-r-2 bg-parchment md:h-screen h-full md:left-0 top-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
     >
       <Header />
-
       <section id="about-section" class="ml-3 mr-5 p-3 m-2">
-        <!-- <About /> -->
-        <HeroContent
+        <About
           title="PROFESSIONAL WEB DESIGN SERVICES for creatives and small businesses"
           attention=" Why should you prefer a custom-made website, when you can simply use wix or wordpress? "
           interest="The ability to tell your story, owning a website gives you the ability to tell your business story without any limitations."
@@ -37,17 +31,10 @@ const allWorks = await Astro.glob("./works/*.md");
       id="right-panel"
       class="md:h-screen bg-lightSeaGreen md:absolute relative md:right-0 bottom-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden p-5"
     >
-      <!-- TAGLINE-->
-      <div class="md:mt-[150px] mt-2 2xl:w-3/4 w-full mx-5 px-5">
-        <div class="md:block hidden text-aquamarine">
-          <p class="md:text-3xl text-2xl">
-            PROFESSIONAL WEB DESIGN SERVICES for creatives and small businesses
-          </p>
-          <!-- <p class="md:text-3xl text-2xl">
-            - **WEBSITE SOLUTIONS for creatives and small businesses**
-          </p> -->
-        </div>
-      </div>
+      <Tagline
+        title="PROFESSIONAL WEB DESIGN SERVICES for creatives and small businesses"
+      />
+
       <div id="">
         <!-- Why should you prefer a custom-made website, when you can simply use wix
         or wordpress? Why should you prefer a custom-made website, when you can
@@ -59,12 +46,6 @@ const allWorks = await Astro.glob("./works/*.md");
         you the ability to tell your business story without any limitations.
         Mobile Optimization- Studies show that majority of website use is
         through mobile phones and tablets -->
-
-        <!-- TODO v -->
-        <!-- <Services /> -->
-        <!-- <PkgTemplates /> -->
-        <!-- <HowItWorks /> -->
-        <!-- TODO ^ -->
 
         <div id="web-development">
           <SectionBanner
